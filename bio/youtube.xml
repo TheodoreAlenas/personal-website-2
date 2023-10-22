@@ -1,0 +1,14 @@
+<all>
+  <h2><en>YouTube</en><gr>YouTube</gr></h2>
+  <p>
+    <en>
+      Recorded
+      <a href="youtube">YouTube videos</a>
+      using ffmpeg,
+      piping /dev/video0 to mpv
+      for showing the webcam's output on the screen.
+      The purpose of the YouTube channel is
+      to share knowledge and life experiences.
+    </en>
+  </p>
+</all>
