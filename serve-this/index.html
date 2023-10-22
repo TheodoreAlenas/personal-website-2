@@ -105,6 +105,8 @@ button { cursor: pointer; }
 </style>
 
 <script>
+/* scheme-lang.js */
+
 function switchColorScheme() {
     setColorScheme(old => old === "light" ? "dark" : "light");
 }
@@ -134,6 +136,9 @@ if (localStorage.getItem("lastLanguage") == "gr")
     setLanguage(_ => "gr");
 else
     setLanguage(_ => "en");
+
+
+/* The original file had the MIT notice here */
 </script>
 
 </head>
