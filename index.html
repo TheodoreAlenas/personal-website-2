@@ -39,12 +39,14 @@ button { cursor: pointer; }
 .m0a { margin: 0 auto; }      .gr-tcol-a { grid-template-columns: auto; }
 .m0 { margin: 0; }            .gr-acol-a { grid-auto-columns: auto; }
 .m1 { margin: 0.5em; }        .gr-acol-m { grid-auto-columns: max-content; }
-.p1 { padding: 1em 1.2em; }   .gr-r1 { grid-row: 1; }
+.p1 { padding: 1.5em 1.5em; } .gr-r1 { grid-row: 1; }
 .p2 { padding: 0.5em 1em; }
+.pl3 { padding-left: 3em; }
+.pr3 { padding-right: 3em; }
 
 .flattened-list { list-style: none; padding: 0; }
 
-.fn1 { font-family: system-ui; font-size: 0.6cm; }
+.fn1 { font-family: system-ui; font-size: 0.5cm; }
 .fn2 { font-family: system-ui; font-size: 0.4cm; }
 .phone { display: none; }
 .phone-grid { display: none; }
@@ -114,22 +116,21 @@ button { cursor: pointer; }
                    shadow flattened-list mxw2 m0a bg1
                    grid ali-c gr-tcol-a gr-acol-m">
             <li class="ilbl gr-r1">
-                <a id="menu-home" href="#" class="ilbl p1 hov-bg3">
+                <a id="menu-home" href="#"
+                    class="ilbl p1 pl3 pr3 hov-bg3">
                     <span lang="en">Home</span>
                     <span lang="gr">Αρχική</span>
                 </a>
             </li>
             <li class="ilbl gr-r1">
-                <button
-                        class="ilbl p1 fn2 bg1 fg1 b1 br1 m1 hov-bg3"
+                <button class="ilbl p1 fn2 bg1 fg1 b1 br1 m1 hov-bg3"
                         onclick="switchColorScheme()">
                     <span lang="en">Colors</span>
                     <span lang="gr">Χρώμα</span>
                 </button>
             </li>
             <li class="ilbl gr-r1">
-                <button
-                        class="ilbl p1 fn2 bg1 fg1 b1 br1 m1 hov-bg3"
+                <button class="ilbl p1 fn2 bg1 fg1 b1 br1 m1 hov-bg3"
                         onclick="switchLanguage()">
                     <span lang="en">Greek</span>
                     <span lang="gr">English</span>
@@ -147,7 +148,7 @@ button { cursor: pointer; }
                 </a>
             </li>
             <li class="ilbl gr-r1">
-                <a href="#" class="ilbl p1">
+                <a href="#" class="ilbl p1 pr3">
                     Contact
                 </a>
             </li>
