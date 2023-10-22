@@ -3,17 +3,34 @@
 <header id="menu" style="position: sticky; top: 0;">
     <script>
         function switchColorScheme() {
+            setColorScheme(old => old === "light" ? "dark" : "light");
+        }
+        function setColorScheme(switcher) {
             const definer = document.querySelector("[scheme]");
-            if (definer.getAttribute("scheme") === "dark")
-                definer.setAttribute("scheme", "light");
-            else
-                definer.setAttribute("scheme", "dark");
+            const s = switcher(definer.getAttribute("scheme"));
+            definer.setAttribute("scheme", s);
+            localStorage.setItem("lastTheme", s);
+        }
+        if (localStorage.getItem("lastTheme") === "dark") {
+            setColorScheme(_ => "dark");
+        }
+        else {
+            setColorScheme(_ => "light");
         }
         function switchLanguage() {
+            setLanguage(old => old === "en" ? "gr" : "en");
+        }
+        function setLanguage(switcher) {
             const definer = document.querySelector("[lang]");
-            const current = definer.getAttribute("lang");
-            const other = {en: "gr", gr: "en"}[current];
-            definer.setAttribute("lang", other);
+            const s = switcher(definer.getAttribute("lang"));
+            definer.setAttribute("lang", s);
+            localStorage.setItem("lastLanguage", s);
+        }
+        if (localStorage.getItem("lastLanguage") == "gr") {
+            setLanguage(_ => "gr");
+        }
+        else {
+            setLanguage(_ => "en");
         }
     </script>
     <nav>
