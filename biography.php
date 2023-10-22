@@ -18,7 +18,25 @@
 <body class="bg1 fg1 fn1 m0 lnh1">
 <script>const currentPage = "home";</script>
 <?php include("header.html") ?>
-<?php include("main.html") ?>
+
+<main class="mxw1 m0a b2 p1 bg1 fg1">
+<?php
+$files = [
+    "bio/architecture.html",
+    "bio/arts.html",
+    "bio/friends.html",
+    "bio/high-school.html",
+    "bio/languages.html",
+    "bio/minimalism.html",
+    "bio/youtube.html"
+];
+foreach ($files as $file) {
+    echo "<!-- $file -->";
+    include($file);
+}
+?>
+</main>
+
 </body>
 
 </html>
