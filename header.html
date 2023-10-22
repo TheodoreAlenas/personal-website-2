@@ -1,0 +1,108 @@
+<!-- <?php echo basename(__FILE__);  // header.html as of now ?> -->
+
+<header id="menu" style="position: sticky; top: 0;">
+    <script>
+        function switchColorScheme() {
+            const definer = document.querySelector("[scheme]");
+            if (definer.getAttribute("scheme") === "dark")
+                definer.setAttribute("scheme", "light");
+            else
+                definer.setAttribute("scheme", "dark");
+        }
+        function switchLanguage() {
+            const definer = document.querySelector("[lang]");
+            const current = definer.getAttribute("lang");
+            const other = {en: "gr", gr: "en"}[current];
+            definer.setAttribute("lang", other);
+        }
+    </script>
+    <nav>
+        <input id="hamburger-checkbox" type="checkbox" class="phone" />
+        <label for="hamburger-checkbox"
+               class="shadow p2 bg1 phone-grid gr-acol-a">
+            <span class="gr-r1">Home</span>
+            <span class="gr-r1" style="text-align: end">☰</span>
+        </label>
+        <ul class="
+                   shadow flattened-list mxw2 m0a bg1
+                   grid ali-c gr-tcol-a gr-acol-m">
+            <li class="ilbl gr-r1">
+                <a id="menu-home" href="#" class="ilbl p1 hov-bg3">
+                    <span lang="en">Home</span>
+                    <span lang="gr">Αρχική</span>
+                </a>
+            </li>
+            <li class="ilbl gr-r1">
+                <button
+                        class="ilbl p1 fn2 bg1 fg1 b1 br1 m1 hov-bg3"
+                        onclick="switchColorScheme()">
+                    <span lang="en">Colors</span>
+                    <span lang="gr">Χρώμα</span>
+                </button>
+            </li>
+            <li class="ilbl gr-r1">
+                <button
+                        class="ilbl p1 fn2 bg1 fg1 b1 br1 m1 hov-bg3"
+                        onclick="switchLanguage()">
+                    <span lang="en">Greek</span>
+                    <span lang="gr">English</span>
+                </button>
+            </li>
+            <li class="ilbl gr-r1">
+                <a id="menu-portfolio" href="#"
+                    class="ilbl p1 hov-bg3">
+                    Portfolio
+                </a>
+            </li>
+            <li class="ilbl gr-r1">
+                <a href="#" class="ilbl p1">
+                    Biography
+                </a>
+            </li>
+            <li class="ilbl gr-r1">
+                <a href="#" class="ilbl p1">
+                    Contact
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <script>
+        function setBg3To(e) {
+            try {
+                document.getElementById(e).classList.add("bg3");
+            }
+            catch (exc) {
+                console.error(`Cannot add to classList of element ` +
+                    `with ID ${e} of type ${typeof(e)}:` + exc);
+            }
+        }
+        switch (currentPage) {
+            case "home": setBg3To("menu-home"); break
+            case "portfolio": setBg3To("menu-portfolio"); break
+            default: console.error("Can't hl " + currentPage); break
+        }
+    </script>
+</header>
+
+
+<!-- <?php echo "The original file had the MIT notice here"; /*
+    Copyright (c) 2023 Dimakopoulos Theodoros
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
+    */ ?> -->

@@ -1,0 +1,87 @@
+/* <?php echo basename(__FILE__);  // s.css as of now ?> */
+
+html { color-scheme: light; }
+h2 { margin-top: 3rem; margin-left: 2rem; }
+button { cursor: pointer; }
+
+[lang=en] [lang=gr] { display: none; }
+[lang=gr] [lang=en] { display: none; }
+
+[scheme=light] .bg1 { background-color: #fff; }           [scheme=dark] .bg1 { background-color: #223; }
+[scheme=light] .bg3 { background-color: #eee; }           [scheme=dark] .bg3 { background-color: #112; }
+[scheme=light] .hov-bg3:hover { background-color: #eee; } [scheme=dark] .hov-bg3:hover { background-color: #112; }
+[scheme=light] .fg1 { color: #000; }                      [scheme=dark] .fg1 { color: #888; }
+[scheme=light] .b1 { border-color: #ccc; }                [scheme=dark] .b1 { border-color: #334; }
+[scheme=light] .b2 { border-color: #ccc; }                [scheme=dark] .b2 { border-color: #334; }
+[scheme=light] .shadow { box-shadow: #ccc 0 0 1rem 0; }   [scheme=dark] .shadow { box-shadow: #445 0 0 1rem 0; }
+
+.b1 { border: 2px grey solid; }
+.b2 { border-left: 1px solid; border-right: 1px solid; }
+.br1 { border-radius: 3px; }
+
+.lnh1 { line-height: 1.5em; } .ilbl { display: inline-block; }
+.mxw1 { max-width: 30cm; }    .grid { display: grid; }
+.mxw2 { max-width: 60cm; }    .ali-c { align-items: center; }
+.m0a { margin: 0 auto; }      .gr-tcol-a { grid-template-columns: auto; }
+.m0 { margin: 0; }            .gr-acol-a { grid-auto-columns: auto; }
+.m1 { margin: 0.5em; }        .gr-acol-m { grid-auto-columns: max-content; }
+.p1 { padding: 1em 1.2em; }   .gr-r1 { grid-row: 1; }
+.p2 { padding: 0.5em 1em; }
+
+.flattened-list { list-style: none; padding: 0; }
+
+.fn1 { font-family: system-ui; font-size: 0.6cm; }
+.fn2 { font-family: system-ui; font-size: 0.4cm; }
+.phone { display: none; }
+.phone-grid { display: none; }
+
+@media screen and (max-width: 20cm) {
+    .fn1 { font-size: 0.4cm; }
+    .fn2 { font-size: 0.3cm; }
+
+    .desktop { display: none; } 
+    .phone { display: unset; }  
+    .phone-grid { display: grid; }
+
+    #hamburger-checkbox {
+        position: absolute; top: 0.65em; right: 0.75em; opacity: 30%;
+    }
+    #hamburger-checkbox:not(:checked) + label + ul {
+        display: none;
+    }
+    #hamburger-checkbox:checked + label::before {
+        content: ""; position: absolute;
+        top: 0; left: 0; width: 100vw; height: 100vh;
+    }
+    #menu ul {
+        position: absolute;
+        top: 1em; right: 1em;
+        border-radius: 5px;
+        display: grid; grid-auto-rows: auto; align-items: center;
+    }
+    #menu li {
+        display: grid; grid-column: 1; grid-row: unset;
+    }
+}
+
+/* <?php echo "The original file had the MIT notice here";
+// Copyright (c) 2023 Dimakopoulos Theodoros
+
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+
+// The above copyright notice and this permission notice shall be included in all
+// copies or substantial portions of the Software.
+
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+// SOFTWARE.
+?> */
