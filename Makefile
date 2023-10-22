@@ -5,7 +5,7 @@ all: $Tindex.html $Tbiography.html
 clean:
 	rm -vf $Tindex.html $Tbiography.html
 
-M = header.html s.css metas.html
+M = header.html s.css metas.html scheme-lang.js
 
 $Tindex.html: index.php $M
 	php $< > $@

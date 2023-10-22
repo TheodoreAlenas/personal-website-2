@@ -14,6 +14,10 @@
 <?php include("s.css") ?>
 </style>
 
+<script>
+<?php include("scheme-lang.js"); ?>
+</script>
+
 </head>
 
 <body class="bg1 fg1 fn1 m0 lnh1">
