@@ -6,6 +6,7 @@
 <head>
 
 <title>Theodoros - Home</title>
+<script>const currentPage = "home";</script>
 
 <meta name="author" content="Dimakopoulos Theodoros">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -51,7 +52,7 @@ button { cursor: pointer; }
 .phone { display: none; }
 .phone-grid { display: none; }
 
-@media screen and (max-width: 20cm) {
+@media screen and (max-width: 25cm) {
     .fn1 { font-size: 0.4cm; }
     .fn2 { font-size: 0.3cm; }
 
@@ -72,11 +73,14 @@ button { cursor: pointer; }
     #menu ul {
         position: absolute;
         top: 1em; right: 1em;
-        border-radius: 5px;
+        border-radius: 5px; overflow: hidden;
         display: grid; grid-auto-rows: auto; align-items: center;
     }
     #menu li {
         display: grid; grid-column: 1; grid-row: unset;
+    }
+    #menu li a {
+        padding: 1.5em 2em;
     }
 }
 
@@ -86,7 +90,6 @@ button { cursor: pointer; }
 </head>
 
 <body class="bg1 fg1 fn1 m0 lnh1">
-<script>const currentPage = "home";</script>
 <!-- header.html -->
 
 <header id="menu" style="position: sticky; top: 0;">
@@ -137,19 +140,27 @@ button { cursor: pointer; }
                 </button>
             </li>
             <li class="ilbl gr-r1">
-                <a id="menu-portfolio" href="portfolio.html"
-                    class="ilbl p1 hov-bg3">
-                    Portfolio
+                <a id="menu-portfolio"
+                   href="portfolio.html"
+                   class="ilbl p1 hov-bg3">
+                    <span lang="en">Portfolio</span>
+                    <span lang="gr">Χαρτοφυλάκιο</span>
                 </a>
             </li>
             <li class="ilbl gr-r1">
-                <a href="biography.html" class="ilbl p1">
-                    Biography
+                <a id="menu-biography"
+                   href="biography.html"
+                   class="ilbl p1 hov-bg3">
+                    <span lang="en">Biography</span>
+                    <span lang="gr">Βιογραφικό</span>
                 </a>
             </li>
             <li class="ilbl gr-r1">
-                <a href="contact.html" class="ilbl p1 pr3">
-                    Contact
+                <a id="menu-contact"
+                   href="contact.html"
+                   class="ilbl p1 pr3 hov-bg3">
+                    <span lang="en">Contact</span>
+                    <span lang="gr">Επικοινωνία</span>
                 </a>
             </li>
         </ul>
@@ -164,11 +175,7 @@ button { cursor: pointer; }
                     `with ID ${e} of type ${typeof(e)}:` + exc);
             }
         }
-        switch (currentPage) {
-            case "home": setBg3To("menu-home"); break
-            case "portfolio": setBg3To("menu-portfolio"); break
-            default: console.error("Can't hl " + currentPage); break
-        }
+        setBg3To("menu-" + currentPage);
     </script>
 </header>
 

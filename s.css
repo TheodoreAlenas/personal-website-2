@@ -37,7 +37,7 @@ button { cursor: pointer; }
 .phone { display: none; }
 .phone-grid { display: none; }
 
-@media screen and (max-width: 20cm) {
+@media screen and (max-width: 25cm) {
     .fn1 { font-size: 0.4cm; }
     .fn2 { font-size: 0.3cm; }
 
@@ -58,11 +58,14 @@ button { cursor: pointer; }
     #menu ul {
         position: absolute;
         top: 1em; right: 1em;
-        border-radius: 5px;
+        border-radius: 5px; overflow: hidden;
         display: grid; grid-auto-rows: auto; align-items: center;
     }
     #menu li {
         display: grid; grid-column: 1; grid-row: unset;
+    }
+    #menu li a {
+        padding: 1.5em 2em;
     }
 }
 

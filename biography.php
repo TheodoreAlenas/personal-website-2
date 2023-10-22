@@ -6,6 +6,7 @@
 <head>
 
 <title><?php echo "Theodoros - Biography" ?></title>
+<script>const currentPage = "biography";</script>
 
 <?php include("metas.html") ?>
 
@@ -16,7 +17,6 @@
 </head>
 
 <body class="bg1 fg1 fn1 m0 lnh1">
-<script>const currentPage = "home";</script>
 <?php include("header.html") ?>
 
 <main class="mxw1 m0a b2 p1 bg1 fg1">
