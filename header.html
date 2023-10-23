@@ -19,16 +19,13 @@
     </def-macro>
     <script>
         function expandMacros() {
-            function fe(q, c) {
-                document.querySelectorAll(q).forEach(c);
-            }
+            const fe = (q, c) => document.querySelectorAll(q).forEach(c);
             fe("def-macro", definition => {
                 const n = definition.getAttribute("name");
                 fe("[macro=" + n + "]", instance => {
-                    const a = instance.getAttribute("args");
-                    const s = instance.getAttribute("sep");
+                    const ga = a => instance.getAttribute(a);
                     let h = definition.getInnerHTML();
-                    a.split(s).forEach((argument, i) => {
+                    ga("args").split(ga("sep")).forEach((argument, i) => {
                         h = h.replaceAll("ARG-" + i, argument);
                     });
                     instance.innerHTML = h;
