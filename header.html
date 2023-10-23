@@ -3,16 +3,13 @@
 <header id="menu" style="position: sticky; top: 0;">
 
     <def-macro name="menu-a" style="display: none">
-        <a id="ARG-0"
-           href="ARG-1"
-           class="ilbl p1 ARG-4 hov-bg3">
+        <a id="ARG-0" href="ARG-1" class="ilbl p1 ARG-4 hov-bg3">
             <span lang="en">ARG-2</span>
             <span lang="gr">ARG-3</span>
         </a>
     </def-macro>
     <def-macro name="menu-b" style="display: none">
-        <button class="ilbl p1 fn2 bg1 fg1 b1 br1 m1 hov-bg3"
-                onclick="ARG-0">
+        <button onclick="ARG-0" class="ilbl p1 fn2 bg1 fg1 b1 br1 m1 hov-bg3">
             <span lang="en">ARG-1</span>
             <span lang="gr">ARG-2</span>
         </button>
@@ -20,14 +17,10 @@
 
     <nav>
         <input id="hamburger-checkbox" type="checkbox" class="phone" />
-        <label for="hamburger-checkbox"
-               class="shadow p2 bg1 phone-grid gr-acol-a">
-            <span class="gr-r1">Home</span>
-            <span class="gr-r1" style="text-align: end">☰</span>
+        <label for="hamburger-checkbox" class="shadow p2 bg1 phone-grid gr-acol-a">
+            <span id="menu-label" class="gr-r1">Home</span><span class="gr-r1" style="text-align: end">☰</span>
         </label>
-        <ul class="
-                   shadow flattened-list mxw2 m0a bg1
-                   grid ali-c gr-tcol-a gr-acol-m">
+        <ul class="shadow flattened-list mxw2 m0a bg1 grid ali-c gr-tcol-a gr-acol-m">
             <li class="ilbl gr-r1" macro="menu-a" sep="|" args="menu-home|index.html|Home|Αρχική|pl3 pr3"></li>
             <li class="ilbl gr-r1" macro="menu-b" sep="|" args="switchColorScheme()|Colors|Χρώμα"></li>
             <li class="ilbl gr-r1" macro="menu-b" sep="|" args="switchLanguage()|Greek|English"></li>
@@ -37,10 +30,9 @@
         </ul>
     </nav>
     <script>
-        expandMacros();
-        setUpColorScheme();
-        setUpLanguage();
-        document.getElementById("menu-" + currentPage).classList.add("bg3");
+        expandMacros(); setUpColorScheme(); setUpLanguage();
+        document.getElementById("menu-" + currentPage.id).classList.add("bg3");
+        document.getElementById("menu-label").innerHTML = currentPage.en;
     </script>
 </header>
 

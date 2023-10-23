@@ -6,7 +6,11 @@
 <head>
 
 <title><?php echo "Theodoros - Home" ?></title>
-<script>const currentPage = "home";</script>
+<script>
+const currentPage = {
+    id: "home", en: "Home", gr: "Αρχική"
+};
+</script>
 
 <meta name="author" content="Dimakopoulos Theodoros">
 <meta name="viewport" content="width=device-width, initial-scale=1">
