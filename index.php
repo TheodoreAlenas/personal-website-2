@@ -8,14 +8,16 @@
 <title><?php echo "Theodoros - Home" ?></title>
 <script>const currentPage = "home";</script>
 
-<?php include("metas.html") ?>
+<meta name="author" content="Dimakopoulos Theodoros">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
 
 <style>
 <?php include("s.css") ?>
 </style>
 
 <script>
-<?php include("scheme-lang.js"); ?>
+<?php include("s.js"); ?>
 </script>
 
 </head>

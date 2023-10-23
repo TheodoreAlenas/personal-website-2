@@ -1,35 +1,51 @@
 /* <?php echo basename(__FILE__);  // scheme-lang.js as of now ?> */
 
 function switchColorScheme() {
-    setColorScheme(old => old === "light" ? "dark" : "light");
+    const definer = document.querySelector("[scheme]");
+    let setTo = "light";
+    if (definer.getAttribute("scheme") === "light")
+        setTo = "dark";
+    definer.setAttribute("scheme", setTo);
+    localStorage.setItem("lastTheme", setTo);
 }
 function switchLanguage() {
-    setLanguage(old => old === "en" ? "gr" : "en");
-}
-
-function setColorScheme(switcher) {
-    const definer = document.querySelector("[scheme]");
-    const s = switcher(definer.getAttribute("scheme"));
-    definer.setAttribute("scheme", s);
-    localStorage.setItem("lastTheme", s);
-}
-function setLanguage(switcher) {
     const definer = document.querySelector("[lang]");
-    const s = switcher(definer.getAttribute("lang"));
-    definer.setAttribute("lang", s);
-    localStorage.setItem("lastLanguage", s);
+    let setTo = "gr";
+    if (definer.getAttribute("lang") === "gr")
+        setTo = "en";
+    definer.setAttribute("lang", setTo);
+    localStorage.setItem("lastLanguage", setTo);
+}
+function setUpColorScheme() {
+    const definer = document.querySelector("[scheme]");
+    let setTo = "dark";
+    if (localStorage.getItem("lastTheme") === "light")
+        setTo = "light";
+    console.log({setTo});
+    definer.setAttribute("scheme", setTo);
+}
+function setUpLanguage() {
+    const definer = document.querySelector("[lang]");
+    let setTo = "en";
+    if (localStorage.getItem("lastLanguage") === "gr")
+        setTo = "gr";
+    definer.setAttribute("lang", setTo);
 }
 
-if (localStorage.getItem("lastTheme") === "dark")
-    setColorScheme(_ => "dark");
-else
-    setColorScheme(_ => "light");
-
-if (localStorage.getItem("lastLanguage") == "gr")
-    setLanguage(_ => "gr");
-else
-    setLanguage(_ => "en");
-
+function expandMacros() {
+    const fe = (q, c) => document.querySelectorAll(q).forEach(c);
+    fe("def-macro", definition => {
+        const n = definition.getAttribute("name");
+        fe("[macro=" + n + "]", instance => {
+            const ga = a => instance.getAttribute(a);
+            let h = definition.getInnerHTML();
+            ga("args").split(ga("sep")).forEach((argument, i) => {
+                h = h.replaceAll("ARG-" + i, argument);
+            });
+            instance.innerHTML = h;
+        });
+    });
+}
 
 /* <?php echo "The original file had the MIT notice here";
 // Copyright (c) 2023 Dimakopoulos Theodoros

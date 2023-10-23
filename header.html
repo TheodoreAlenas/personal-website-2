@@ -17,22 +17,6 @@
             <span lang="gr">ARG-2</span>
         </button>
     </def-macro>
-    <script>
-        function expandMacros() {
-            const fe = (q, c) => document.querySelectorAll(q).forEach(c);
-            fe("def-macro", definition => {
-                const n = definition.getAttribute("name");
-                fe("[macro=" + n + "]", instance => {
-                    const ga = a => instance.getAttribute(a);
-                    let h = definition.getInnerHTML();
-                    ga("args").split(ga("sep")).forEach((argument, i) => {
-                        h = h.replaceAll("ARG-" + i, argument);
-                    });
-                    instance.innerHTML = h;
-                });
-            });
-        }
-    </script>
 
     <nav>
         <input id="hamburger-checkbox" type="checkbox" class="phone" />
@@ -54,6 +38,8 @@
     </nav>
     <script>
         expandMacros();
+        setUpColorScheme();
+        setUpLanguage();
         document.getElementById("menu-" + currentPage).classList.add("bg3");
     </script>
 </header>
