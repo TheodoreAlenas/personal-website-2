@@ -35,7 +35,7 @@ $files = [
     "bio/youtube.html"
 ];
 foreach ($files as $file) {
-    echo "<!-- $file -->";
+    echo "<!-- $file -->\n";
     include($file);
 }
 ?>
