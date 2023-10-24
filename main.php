@@ -44,17 +44,17 @@ echo "</script>\n";
 <?php
 switch (getenv("FILE")) {
 case "serve-this/index.html": $files = [
-    "main.html",
-    "main.html"
+    "lorem.html",
+    "lorem.html"
 ]; break;
 case "serve-this/biography.html": $files = [
-    "bio/architecture.html",
-    "bio/arts.html",
-    "bio/friends.html",
-    "bio/high-school.html",
-    "bio/languages.html",
-    "bio/minimalism.html",
-    "bio/youtube.html"
+    "bio-architecture.html",
+    "bio-arts.html",
+    "bio-friends.html",
+    "bio-high-school.html",
+    "bio-languages.html",
+    "bio-minimalism.html",
+    "bio-youtube.html"
 ]; break;
 default: exit(-1);
 }
