@@ -10,13 +10,12 @@
 - Text that stays in place as data loads
 - No opportunities for bugs, due to technical simplicity
 
-## Aesthetic
+## Aesthetics
 
-Oftentimes, websites don't look similar
-to what the website owner likes.
-The owner's car house and workplace may have
-a serious aesthetic,
-while the website has an energetic aesthetic,
+Oftentimes, there's a mismatch between
+the appearance of someone's website
+and the appearance of their house, car and workspace.
+The website tends to have an energetic aesthetic,
 or an aesthetic based off craving for attention.
 
 This website is meant to be mine in every sense.
@@ -25,31 +24,26 @@ This website is meant to be mine in every sense.
 
 My mind.
 
-I have a good fundamental understanding
-of the approaches I take and the decisions I make.
+I improvised a client side macro expansion system
+that serves the code I wrote by hand itself,
+and leaves footprints that show how the expansion happened.
 
 The site is HTML CSS and Javascript files
-concatenated using PHP.
-PHP only serves for concatenation,
-to generate new longer files,
-and then the new files are served statically.
+concatenated using PHP. PHP doesn't run on the server.
+The concatenated files don't repeat the license
+but do leave a trail that hints their original name.
 
 ## Upgrade
 
-The first version of my website was
-not only bad as a piece of text,
-but also way too complicated.
-People thought it was Wordpress, which is not true,
-but they were right to expect less complexity
-when one doesn't use pre-made templates.
+The new design follows the original premise of the web more closely:
+*the served files are not too far from what I wrote myself*.
+That ties together the code editor and the browser's developer tools.
+The browser console feels like a shell.
 
-The new design takes ideas from the old one
-and judges what code is not worth it's cost.
-As a result, it's
-- closer to the original intended use of the web,
-- faster to understand,
-- more accessible to understand from a broader audience and
-- much easier to expand and maintain.
+The first version of my website focused on
+allowing me to display 2 menu bars,
+or a side by side view of the mobile and desktop versions and so on.
+People thought it was Wordpress, which is not true.
 
 ## Message
 
