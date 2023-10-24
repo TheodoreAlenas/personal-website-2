@@ -15,13 +15,15 @@ function switchLanguage() {
         setTo = "en";
     definer.setAttribute("lang", setTo);
     localStorage.setItem("lastLanguage", setTo);
+    document.getElementById("menu-label").innerHTML = currentPage[setTo];
+    const p = {en: "Theodore - ", gr: "Θοδωρής - "}[setTo];
+    document.querySelector("title").innerHTML = p + currentPage[setTo];
 }
 function setUpColorScheme() {
     const definer = document.querySelector("[scheme]");
     let setTo = "dark";
     if (localStorage.getItem("lastTheme") === "light")
         setTo = "light";
-    console.log({setTo});
     definer.setAttribute("scheme", setTo);
 }
 function setUpLanguage() {
@@ -30,6 +32,9 @@ function setUpLanguage() {
     if (localStorage.getItem("lastLanguage") === "gr")
         setTo = "gr";
     definer.setAttribute("lang", setTo);
+    document.getElementById("menu-label").innerHTML = currentPage[setTo];
+    const p = {en: "Theodore - ", gr: "Θοδωρής - "}[setTo];
+    document.querySelector("title").innerHTML = p + currentPage[setTo];
 }
 
 function expandMacros() {

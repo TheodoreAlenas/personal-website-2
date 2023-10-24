@@ -1,16 +1,27 @@
 <!DOCTYPE HTML>
-<!-- <?php echo basename(__FILE__);  // wrap.php as of now ?> -->
+<!-- <?php echo basename(__FILE__) . " for " . getenv("FILE"); ?> -->
 
 <html lang="en" scheme="dark">
 
 <head>
 
-<title><?php echo "Theodoros - Home" ?></title>
-<script>
-const currentPage = {
-    id: "home", en: "Home", gr: "Αρχική"
-};
-</script>
+<title>Loading</title>
+
+<!-- script tag added by PHP -->
+<?php
+$cases = array(
+
+    "serve-this/index.html"
+    => "id: 'home', en: 'Home', gr: 'Αρχική'",
+
+    "serve-this/biography.html"
+    => "id: 'biography', en: 'Biography', gr: 'Βιογραφικό'"
+);
+$t = $cases[getenv("FILE")];
+echo "<script>\n";
+echo "const currentPage = { $t };\n";
+echo "</script>\n";
+?>
 
 <meta name="author" content="Dimakopoulos Theodoros">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,7 +39,32 @@ const currentPage = {
 
 <body class="bg1 fg1 fn1 m0 lnh1">
 <?php include("header.html") ?>
-<?php include("main.html") ?>
+
+<main class="mxw1 m0a b2 p1 bg1 fg1">
+<?php
+switch (getenv("FILE")) {
+case "serve-this/index.html": $files = [
+    "main.html",
+    "main.html"
+]; break;
+case "serve-this/biography.html": $files = [
+    "bio/architecture.html",
+    "bio/arts.html",
+    "bio/friends.html",
+    "bio/high-school.html",
+    "bio/languages.html",
+    "bio/minimalism.html",
+    "bio/youtube.html"
+]; break;
+default: exit(-1);
+}
+foreach ($files as $file) {
+    echo "<!-- $file -->\n";
+    include($file);
+}
+?>
+</main>
+
 </body>
 
 </html>

@@ -7,8 +7,8 @@ clean:
 
 M = header.html s.css s.js
 
-$Tindex.html: index.php $M
-	php $< > $@
+$Tindex.html: main.php $M main.html
+	FILE=$@ php $< > $@
 
-$Tbiography.html: biography.php $M $(wildcard bio/*)
-	php $< > $@
+$Tbiography.html: main.php $M $(wildcard bio/*)
+	FILE=$@ php $< > $@
