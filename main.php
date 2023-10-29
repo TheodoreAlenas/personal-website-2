@@ -48,12 +48,12 @@ case "serve-this/index.html": $files = [
     "lorem.html"
 ]; break;
 case "serve-this/biography.html": $files = [
-    "bio-architecture.html",
-    "bio-arts.html",
-    "bio-friends.html",
+    "bio-minimalism.html",
     "bio-high-school.html",
     "bio-languages.html",
-    "bio-minimalism.html",
+    "bio-architecture.html",
+    "bio-friends.html",
+    "bio-arts.html",
     "bio-youtube.html"
 ]; break;
 default: exit(-1);
