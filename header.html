@@ -4,21 +4,31 @@
 
     <def-macro name="menu-a" style="display: none">
         <a id="ARG-0" href="ARG-1" class="ilbl p1 ARG-4 hov-bg3">
-            <span lang="en">ARG-2</span>
-            <span lang="gr">ARG-3</span>
+            <?php $EN(<<<EOF
+ARG-2
+EOF) ?>
+            <?php $GR(<<<EOF
+ARG-3
+EOF) ?>
         </a>
     </def-macro>
     <def-macro name="menu-b" style="display: none">
         <button onclick="ARG-0" class="ilbl p1 fn2 bg1 fg1 b1 br1 m1 hov-bg3">
-            <span lang="en">ARG-1</span>
-            <span lang="gr">ARG-2</span>
+            <?php $EN(<<<EOF
+ARG-1
+EOF) ?>
+            <?php $GR(<<<EOF
+ARG-2
+EOF) ?>
         </button>
     </def-macro>
 
     <nav>
         <input id="hamburger-checkbox" type="checkbox" class="phone" />
         <label for="hamburger-checkbox" class="shadow p2 bg1 phone-grid gr-acol-a">
-            <span id="menu-label" class="gr-r1">Home</span><span class="gr-r1" style="text-align: end">☰</span>
+            <span id="menu-label" class="gr-r1">HomeEOF
+) ?><span class="gr-r1" style="text-align: end">☰
+EOF) ?>
         </label>
         <ul class="shadow flattened-list mxw2 m0a bg1 grid ali-c gr-tcol-a gr-acol-m">
             <li class="ilbl gr-r1" macro="menu-a" sep="|" args="menu-home|index.html|Home|Αρχική|pl3 pr3"></li>

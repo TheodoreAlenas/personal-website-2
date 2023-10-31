@@ -1,14 +1,19 @@
-T = serve-this/
+E = serve-this/en/
+G = serve-this/gr/
 
-all: $Tindex.html $Tbiography.html
+A = index.html biography.html
+
+all: $(addprefix $E,$A) $(addprefix $G,$A)
 
 clean:
 	rm -vf $Tindex.html $Tbiography.html
 
 M = header.html s.css s.js
 
-$Tindex.html: main.php $M lorem.html
+%/index.html: main.php $M lorem.html
+	mkdir -p $E $G
 	FILE=$@ php $< > $@
 
-$Tbiography.html: main.php $M $(wildcard bio-*)
+%/biography.html: main.php $M $(wildcard bio-*)
+	mkdir -p $E $G
 	FILE=$@ php $< > $@

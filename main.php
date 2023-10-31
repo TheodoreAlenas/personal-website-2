@@ -9,15 +9,16 @@
 
 <!-- script tag added by PHP -->
 <?php
-$cases = array(
 
-    "serve-this/index.html"
-    => "id: 'home', en: 'Home', gr: 'Αρχική'",
+    function skip_region($t) {
+    }
+     function echo_region($t) {
+         echo $t;
+     }
+$GR = "skip_region";
+$EN = "echo_region";
 
-    "serve-this/biography.html"
-    => "id: 'biography', en: 'Biography', gr: 'Βιογραφικό'"
-);
-$t = $cases[getenv("FILE")];
+$t = "id: 'home', en: 'Home', gr: 'Αρχική'";
 echo "<script>\n";
 echo "const currentPage = { $t };\n";
 echo "</script>\n";
@@ -42,12 +43,7 @@ echo "</script>\n";
 
 <main class="mxw1 m0a b2 p1 bg1 fg1">
 <?php
-switch (getenv("FILE")) {
-case "serve-this/index.html": $files = [
-    "lorem.html",
-    "lorem.html"
-]; break;
-case "serve-this/biography.html": $files = [
+$files = [
     "bio-minimalism.html",
     "bio-high-school.html",
     "bio-languages.html",
@@ -55,9 +51,7 @@ case "serve-this/biography.html": $files = [
     "bio-friends.html",
     "bio-arts.html",
     "bio-youtube.html"
-]; break;
-default: exit(-1);
-}
+];
 foreach ($files as $file) {
     echo "<!-- $file -->\n";
     include($file);
