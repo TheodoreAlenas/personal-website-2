@@ -62,8 +62,6 @@
                 $files = [
                     "bio-minimalism.php",
                     "bio-high-school.php",
-                    "bio-languages.php",
-                    "bio-architecture.php",
                     "biography.php",
                 ];
                 foreach ($files as $file) {

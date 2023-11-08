@@ -1,5 +1,6 @@
 <?php
     $bio_php_files = [
+        "bio-languages.php",
         "bio-architecture.php", "bio-friends.php",
         "bio-arts.php", "bio-youtube.php"];
     foreach ($bio_php_files as $file) {include_once($file);}
@@ -8,6 +9,24 @@
     }
     $a = "biography_print_en_gr";
 ?>
+
+
+<h2><?php $a($bio_languages_title) ?></h2>
+
+<p>
+    <?php $a($bl_warm_ups) ?>
+    <a href="https://www.youtube.com/watch?v=kScFczWbwRM">TDD</a>,
+    <a href="https://youtu.be/tnO2Mos0RjU?si=OhTk8fUdI0FPTWT6">TCR</a>
+    <?php $a($bl_often_in_vi) ?>
+</p>
+<p>
+    <?php $a($bl_touched); $a($bl_rust_awk); ?>
+    <a href="https://code.jsoftware.com/wiki/Studio/TasteofJPart1">J</a>
+    <?php $a($bl_slightly_and_ts) ?>
+</p>
+<p>
+    <?php $a($bl_for_uni) ?>
+</p>
 
 
 <h2><?php $a($bio_architecture_title) ?></h2>
