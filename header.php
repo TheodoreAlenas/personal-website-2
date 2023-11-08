@@ -1,6 +1,4 @@
-<!-- <?php
-         echo basename(__FILE__);  // header.html as of now
-         ?> -->
+<!-- <?php echo basename(__FILE__); ?> -->
 <?php
     function menu_print_li_attributes() {
         echo 'class="ilbl gr-r1"';
@@ -75,8 +73,7 @@
     </li>
 </ul>
 
-
-<?php echo "<!-- The original file had the MIT notice here -->";
+<?php
     /*
        Copyright (c) 2023 Dimakopoulos Theodoros
 

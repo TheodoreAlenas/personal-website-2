@@ -50,8 +50,10 @@
 
     <body class="bg1 fg1 fn1 m0 lnh1">
         <header id="menu" style="position: sticky; top: 0;">
-            <nav><nav>
+            <nav>
+
                 <?php include("header.php") ?>
+
             </nav>
         </header>
 
@@ -63,7 +65,6 @@
                     "bio-languages.php",
                     "bio-architecture.php",
                     "biography.php",
-                    "bio-youtube.php"
                 ];
                 foreach ($files as $file) {
                     echo "<!-- $file -->\n";

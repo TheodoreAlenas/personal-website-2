@@ -1,5 +1,6 @@
 <?php
-    $bio_php_files = ["bio-arts.php", "bio-friends.php"];
+    $bio_php_files = [
+        "bio-friends.php", "bio-arts.php","bio-youtube.php"];
     foreach ($bio_php_files as $file) {include_once($file);}
     function biography_print_en_gr($array) {
         global $EN, $GR; $EN($array[0]); $GR($array[1]);
@@ -26,6 +27,16 @@
     <?php $a($ba_quit_drawing); ?>
 </p>
 <p><?php $a($ba_cultivated); ?></p>
+
+
+<h2><?php $a($bio_youtube_title); ?></h2>
+
+<p>
+    <?php $a($byt_recorded) ?>
+    <a href="https://www.youtube.com/@theodorealenas3171"
+    ><?php $a($byt_videos) ?></a>
+    <?php $a($byt_using_tricks) ?>
+</p>
 
 <?php
     /*
