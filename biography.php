@@ -30,14 +30,14 @@
     <a href="https://www.youtube.com/@Mathologer">Mathologer</a>,
     <a href="https://www.youtube.com/@numberphile">Numberphile</a>,
     <a href="https://www.youtube.com/@Computerphile">Computerphile</a>
-    <?php $EN("and", "και") ?>
+    <?php $EN("and"); $GR("και"); ?>
     <a href="https://www.youtube.com/@standupmaths">Matt Parker</a>.
 </p>
 <p>
     <?php $a($bh_in_uni_also) ?>
     <a href="https://www.youtube.com/@ThePrimeagen">ThePrimeagen</a>,
     <a href="https://www.youtube.com/@HealthyGamerGG">Healthy Gamer GG</a>
-    <?php $EN("and", "και") ?>
+    <?php $EN("and"); $GR("και"); ?>
     <a href="https://www.youtube.com/@RamseyDewey">Ramsey Dewey</a>.
 </p>
 <p>
