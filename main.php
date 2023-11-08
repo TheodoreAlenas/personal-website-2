@@ -60,8 +60,6 @@
         <main class="mxw1 m0a b2 p1 bg1 fg1">
             <?php
                 $files = [
-                    "bio-minimalism.php",
-                    "bio-high-school.php",
                     "biography.php",
                 ];
                 foreach ($files as $file) {

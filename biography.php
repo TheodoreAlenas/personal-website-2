@@ -1,14 +1,56 @@
 <?php
-    $bio_php_files = [
-        "bio-languages.php",
-        "bio-architecture.php", "bio-friends.php",
-        "bio-arts.php", "bio-youtube.php"];
-    foreach ($bio_php_files as $file) {include_once($file);}
+    $bio_php_files = ["minimalism", "high-school", "languages",
+                      "architecture", "friends", "arts", "youtube"];
+    foreach ($bio_php_files as $file) {include_once("bio-$file.php");}
     function biography_print_en_gr($array) {
         global $EN, $GR; $EN($array[0]); $GR($array[1]);
     }
     $a = "biography_print_en_gr";
 ?>
+
+
+<h2><?php $a($bio_minimalism_title) ?></h2>
+
+<p><?php $a($bm_arch)   ?></p>
+<p><?php $a($bm_now_vi) ?></p>
+
+
+<h2><?php $a($bio_high_school_title) ?></h2>
+<p>
+    <?php $a($bh_graduated) ?>
+    <a href="http://2lyk-amaliad.ilei.sch.gr/wordpress17/"
+    ><?php $a($bh_high_school) ?></a>
+    <?php $a($bh_went_to_france_with) ?>
+    <a href="https://school-education.ec.europa.eu/en/etwinning"
+    >E-Twinning</a>.
+</p>
+<p>
+    <?php $a($bh_crafted_and_watched) ?>
+    <a href="https://www.youtube.com/@3blue1brown">3blue1brown</a>,
+    <a href="https://www.youtube.com/@Mathologer">Mathologer</a>,
+    <a href="https://www.youtube.com/@numberphile">Numberphile</a>,
+    <a href="https://www.youtube.com/@Computerphile">Computerphile</a>
+    <?php $EN("and", "και") ?>
+    <a href="https://www.youtube.com/@standupmaths">Matt Parker</a>.
+</p>
+<p>
+    <?php $a($bh_in_uni_also) ?>
+    <a href="https://www.youtube.com/@ThePrimeagen">ThePrimeagen</a>,
+    <a href="https://www.youtube.com/@HealthyGamerGG">Healthy Gamer GG</a>
+    <?php $EN("and", "και") ?>
+    <a href="https://www.youtube.com/@RamseyDewey">Ramsey Dewey</a>.
+</p>
+<p>
+    <?php $a($bh_went_to_uoa_to) ?>
+    <a href="https://www.di.uoa.gr"
+    ><?php $a($bh_di) ?></a>.
+    <?php $a($bh_participated_in) ?>
+    <a href="https://github.com/ACM-UoA-Student-Chapter/dil"
+    ><?php $a($bh_acm) ?></a>,
+    <?php $a($bh_but_noob_then_helvia) ?>
+    <a href="https://helvia.io">Helvia</a>
+    <?php $a($bh_saw_web_dev) ?>
+</p>
 
 
 <h2><?php $a($bio_languages_title) ?></h2>
@@ -51,9 +93,11 @@
 <p><?php $a($ba_quit_piano); ?></p>
 <p>
     <?php $a($ba_drew_by); ?>
-    <a href="https://drawabox.com"><?php $a($ba_drawabox) ?></a>,
+    <a href="https://drawabox.com"
+    ><?php $a($ba_drawabox) ?></a>,
     <?php $a($ba_and_with); ?>
-    <a href="https://www.proko.com"><?php $a($ba_proko) ?></a>.
+    <a href="https://www.proko.com"
+    ><?php $a($ba_proko) ?></a>.
     <?php $a($ba_quit_drawing); ?>
 </p>
 <p><?php $a($ba_cultivated); ?></p>
