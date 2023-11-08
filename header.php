@@ -8,7 +8,7 @@
     function menu_print_a_attributes($href, $extra_classes, $file) {
         echo 'href="' . $href . '" ';
         echo 'class="ilbl p1 hov-bg3 ';
-        echo $extra_classes;
+        echo $extra_classes . ' ';
         if ($href == basename($file)) {
             echo "bg3 ";
         }
@@ -30,7 +30,7 @@
     for="hamburger-checkbox"
     class="shadow p2 bg1 phone-grid gr-acol-a"
 >
-    <span id="menu-label" class="gr-r1">Home</span>
+    <span id="menu-label" class="gr-r1"><?php echo $TITLE ?></span>
     <span class="gr-r1" style="text-align: end">☰</span>
 </label>
 <ul

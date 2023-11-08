@@ -59,12 +59,11 @@
 
         <main class="mxw1 m0a b2 p1 bg1 fg1">
             <?php
-                $files = [
-                    "biography.php",
-                ];
-                foreach ($files as $file) {
-                    echo "<!-- $file -->\n";
-                    include($file);
+                if (basename($ORIGIN_FILE) == "biography.html") {
+                    include("biography.php");
+                }
+                else {
+                    include("lorem.php");
                 }
             ?>
         </main>

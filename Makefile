@@ -10,7 +10,7 @@ clean:
 
 M = header.php s.css s.js
 
-%/index.html: main.php $M lorem.html
+%/index.html: main.php $M lorem.php
 	mkdir -p $E $G
 	FILE=$@ php $< > $@
 
