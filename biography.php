@@ -1,12 +1,23 @@
 <?php
     $bio_php_files = [
-        "bio-friends.php", "bio-arts.php","bio-youtube.php"];
+        "bio-architecture.php", "bio-friends.php",
+        "bio-arts.php", "bio-youtube.php"];
     foreach ($bio_php_files as $file) {include_once($file);}
     function biography_print_en_gr($array) {
         global $EN, $GR; $EN($array[0]); $GR($array[1]);
     }
     $a = "biography_print_en_gr";
 ?>
+
+
+<h2><?php $a($bio_architecture_title) ?></h2>
+
+<p><?php $a($bac_os) ?></p>
+<p>
+    <?php $a($bac_values) ?>
+    <a href="http://agilemanifesto.org/"
+    ><?php $a($bac_manifesto) ?></a>.
+</p>
 
 
 <h2><?php $a($bio_friends_title); ?></h2>
