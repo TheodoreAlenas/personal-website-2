@@ -29,9 +29,7 @@
 ?>
 
 <html scheme="dark">
-
     <head>
-
         <title><?php echo $TITLE ?></title>
 
         <meta name="author" content="Dimakopoulos Theodoros">
@@ -47,7 +45,6 @@
         </script>
 
     </head>
-
     <body class="bg1 fg1 fn1 m0 lnh1">
         <header id="menu" style="position: sticky; top: 0;">
             <nav>
@@ -56,7 +53,6 @@
 
             </nav>
         </header>
-
         <main class="mxw1 m0a b2 p1 bg1 fg1">
             <?php
                 if (basename($ORIGIN_FILE) == "biography.html") {
@@ -67,9 +63,7 @@
                 }
             ?>
         </main>
-
     </body>
-
 </html>
 
 <!--
