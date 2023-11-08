@@ -6,18 +6,13 @@
     $ba_quit_piano = [
         <<<EOF
 Quit the piano after 7/9 steps to the diploma,
-because it was a lonely abuse
-of engineering and composing genious
-for artificial goals and nerd-pride.
-Never for replacing Spotify,
-and never for friends.
+when the world view changed and didn't line up with
+the typcial motivations for playing.
 EOF,
         <<<EOF
 Εγκατέλειψε το πιάνο στο επίπεδο πρώτης ανωτέρας,
-θεωρώντας το κατάχρηση της τέχνης και
-επινοητικότητας για εσωστρεφείς και
-εγωκεντρικούς σκοπούς, αντί για
-κοινωνική και ψυχαγωγική χρήση.
+όταν άλλαξε τρόπο σκέψης και τα μέχρι τότε κίνητρα
+για μελέτη δεν εφαρμόζονταν.
 EOF];
 
     $ba_drew_by = [

@@ -1,23 +1,23 @@
 <?php
-    $bio_php_files = [
-        "bio-arts.php"
-    ];
-    foreach ($bio_php_files as $file) {
-        include_once($file);
-    }
+    $bio_php_files = ["bio-arts.php", "bio-friends.php"];
+    foreach ($bio_php_files as $file) {include_once($file);}
     function biography_print_en_gr($array) {
-        global $EN, $GR;
-        $EN($array[0]);
-        $GR($array[1]);
+        global $EN, $GR; $EN($array[0]); $GR($array[1]);
     }
     $a = "biography_print_en_gr";
 ?>
 
+
+<h2><?php $a($bio_friends_title); ?></h2>
+
+<p><?php $a($bf_psychotherapy) ?></p>
+<p><?php $a($bf_collabs)       ?></p>
+<p><?php $a($bf_jackasses)     ?></p>
+
+
 <h2><?php $a($bio_arts_title); ?></h2>
 
-<p>
-    <?php $a($ba_quit_piano); ?>
-</p>
+<p><?php $a($ba_quit_piano); ?></p>
 <p>
     <?php $a($ba_drew_by); ?>
     <a href="https://drawabox.com"><?php $a($ba_drawabox) ?></a>,
@@ -25,9 +25,7 @@
     <a href="https://www.proko.com"><?php $a($ba_proko) ?></a>.
     <?php $a($ba_quit_drawing); ?>
 </p>
-<p>
-    <?php $a($ba_cultivated); ?>
-</p>
+<p><?php $a($ba_cultivated); ?></p>
 
 <?php
     /*

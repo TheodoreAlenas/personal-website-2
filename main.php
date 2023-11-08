@@ -62,7 +62,6 @@
                     "bio-high-school.php",
                     "bio-languages.php",
                     "bio-architecture.php",
-                    "bio-friends.php",
                     "biography.php",
                     "bio-youtube.php"
                 ];
