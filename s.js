@@ -8,17 +8,7 @@ function switchColorScheme() {
     definer.setAttribute("scheme", setTo);
     localStorage.setItem("lastTheme", setTo);
 }
-function switchLanguage() {
-    const definer = document.querySelector("[lang]");
-    let setTo = "gr";
-    if (definer.getAttribute("lang") === "gr")
-        setTo = "en";
-    definer.setAttribute("lang", setTo);
-    localStorage.setItem("lastLanguage", setTo);
-    document.getElementById("menu-label").innerHTML = currentPage[setTo];
-    const p = {en: "Theodore - ", gr: "Θοδωρής - "}[setTo];
-    document.querySelector("title").innerHTML = p + currentPage[setTo];
-}
+
 function setUpColorScheme() {
     const definer = document.querySelector("[scheme]");
     let setTo = "dark";
@@ -26,31 +16,7 @@ function setUpColorScheme() {
         setTo = "light";
     definer.setAttribute("scheme", setTo);
 }
-function setUpLanguage() {
-    const definer = document.querySelector("[lang]");
-    let setTo = "en";
-    if (localStorage.getItem("lastLanguage") === "gr")
-        setTo = "gr";
-    definer.setAttribute("lang", setTo);
-    document.getElementById("menu-label").innerHTML = currentPage[setTo];
-    const p = {en: "Theodore - ", gr: "Θοδωρής - "}[setTo];
-    document.querySelector("title").innerHTML = p + currentPage[setTo];
-}
 
-function expandMacros() {
-    const fe = (q, c) => document.querySelectorAll(q).forEach(c);
-    fe("def-macro", definition => {
-        const n = definition.getAttribute("name");
-        fe("[macro=" + n + "]", instance => {
-            const ga = a => instance.getAttribute(a);
-            let h = definition.getInnerHTML();
-            ga("args").split(ga("sep")).forEach((argument, i) => {
-                h = h.replaceAll("ARG-" + i, argument);
-            });
-            instance.innerHTML = h;
-        });
-    });
-}
 
 /* <?php echo "The original file had the MIT notice here";
 // Copyright (c) 2023 Dimakopoulos Theodoros
