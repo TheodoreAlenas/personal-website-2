@@ -28,7 +28,7 @@
 
 ?>
 
-<html lang="en" scheme="dark">
+<html scheme="dark">
 
     <head>
 
