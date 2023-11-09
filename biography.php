@@ -6,26 +6,31 @@
         global $EN, $GR; $EN($array[0]); $GR($array[1]);
     }
     $a = "biography_print_en_gr";
+    function biography_array_to_en_gr($array) {
+        global $EN, $GR; $EN($array->en); $GR($array->gr);
+    }
+    $b = "biography_array_to_en_gr";
 ?>
 
 
-<h2><?php $a($bio_minimalism_title) ?></h2>
+<?php $m = simplexml_load_file("bio-minimalism.xml") ?>
+<h2><?php $b($m->title) ?></h2>
+<p><?php $b($m->arch) ?></p>
+<p><?php $b($m->now_vi) ?></p>
 
-<p><?php $a($bm_arch)   ?></p>
-<p><?php $a($bm_now_vi) ?></p>
 
-
-<h2><?php $a($bio_high_school_title) ?></h2>
+<?php $h = simplexml_load_file("bio-high-school.xml") ?>
+<h2><?php $b($h->title) ?></h2>
 <p>
-    <?php $a($bh_graduated) ?>
+    <?php $b($h->graduated) ?>
     <a href="http://2lyk-amaliad.ilei.sch.gr/wordpress17/"
-    ><?php $a($bh_high_school) ?></a>
-    <?php $a($bh_went_to_france_with) ?>
+    ><?php $b($h->high_school) ?></a>
+    <?php $b($h->went_to_france_with) ?>
     <a href="https://school-education.ec.europa.eu/en/etwinning"
     >E-Twinning</a>.
 </p>
 <p>
-    <?php $a($bh_crafted_and_watched) ?>
+    <?php $b($h->crafted_and_watched) ?>
     <a href="https://www.youtube.com/@3blue1brown">3blue1brown</a>,
     <a href="https://www.youtube.com/@Mathologer">Mathologer</a>,
     <a href="https://www.youtube.com/@numberphile">Numberphile</a>,
@@ -34,22 +39,22 @@
     <a href="https://www.youtube.com/@standupmaths">Matt Parker</a>.
 </p>
 <p>
-    <?php $a($bh_in_uni_also) ?>
+    <?php $b($h->in_uni_also) ?>
     <a href="https://www.youtube.com/@ThePrimeagen">ThePrimeagen</a>,
     <a href="https://www.youtube.com/@HealthyGamerGG">Healthy Gamer GG</a>
     <?php $EN("and"); $GR("και"); ?>
     <a href="https://www.youtube.com/@RamseyDewey">Ramsey Dewey</a>.
 </p>
 <p>
-    <?php $a($bh_went_to_uoa_to) ?>
+    <?php $b($h->went_to_uoa_to) ?>
     <a href="https://www.di.uoa.gr"
-    ><?php $a($bh_di) ?></a>.
-    <?php $a($bh_participated_in) ?>
+    ><?php $b($h->di) ?></a>.
+    <?php $b($h->participated_in) ?>
     <a href="https://github.com/ACM-UoA-Student-Chapter/dil"
-    ><?php $a($bh_acm) ?></a>,
-    <?php $a($bh_but_noob_then_helvia) ?>
+    ><?php $b($h->acm) ?></a>,
+    <?php $b($h->but_noob_then_helvia) ?>
     <a href="https://helvia.io">Helvia</a>
-    <?php $a($bh_saw_web_dev) ?>
+    <?php $b($h->saw_web_dev) ?>
 </p>
 
 

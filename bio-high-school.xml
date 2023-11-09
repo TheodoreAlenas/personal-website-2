@@ -1,0 +1,99 @@
+<all>
+<title><en>High school</en><gr>Λύκειο</gr></title>
+<graduated><en>Graduated</en><gr>Απολύθηκε από</gr></graduated>
+<high_school><en>high school</en><gr>το λύκειο</gr></high_school>
+<went_to_france_with>
+<en>
+with a 17325/20000 score on 2019.
+The final exams included algebra, physics,
+the hardest chemistry exam in a long time,
+and essay reading and writing.
+Went to France with the program
+</en>
+<gr>
+με 17325 μόρια το 2019,
+με κατεύθυνση Θετικές επιστήμες.
+Πήγε Γαλλία με το πρόγραμμα
+</gr>
+</went_to_france_with>
+<crafted_and_watched>
+<en>
+Improvised a proof for the volume of a cone,
+math for Wolfenstein 3D - style graphics
+without being taught vectors yet,
+and watched plenty from the YouTube channels
+</en>
+<gr>
+Αυτοσχεδίασε απόδειξη για τον όγκο του κώνου,
+μαθηματικά για γραφικά στον υπολογιστή τύπου
+Wolfenstein 3D χωρίς να γνωρίζει από διανύσματα,
+και παρακολούθησε αρκετό από το περιεχόμενο των καναλιών
+</gr>
+</crafted_and_watched>
+<in_uni_also>
+<en>In the University got interest in</en>
+<gr>Στο πανεπιστήμιο παρακολούθησε</gr>
+</in_uni_also>
+<went_to_uoa_to>
+<en>
+Went to the
+National and Kapodistrian University of Athens (UoA),
+to the
+</en>
+<gr>
+Σπούδασε στο Εθνικό και Καπποδιστριακό Πανεπιστήμιο Αθηνών
+(ΕΚΠΑ) στο
+</gr>
+</went_to_uoa_to>
+<di>
+<en>Department of Informatics (DI)</en>
+<gr>Τμήμα Πληροφορικής και Τηλεπικοινωνιών</gr>
+</di>
+<participated_in>
+<en>Participated with effort and enthousiasm in the</en>
+<gr>Συμμετείχε με ενθουσιασμό στο</gr>
+</participated_in>
+<acm>
+<en>the open source compiler project of ACM's student chapter</en>
+<gr>πρότζεκτ open source μεταγλωττιστή του ACM student chapter</gr>
+</acm>
+<bh_but_noob_then_helvia>
+<en>
+though the knowledge gap didn't allow to contribute much.
+As of now, Autumn 2023, hasn't worked.
+Had a tiny internship with
+</en>
+<gr>
+αν και δεν κατείχε γνώσεις ώστε να προσφέρει πολλά.
+Ως τώρα, το Φθινόπωρο του 2023, δεν έχει εργαστεί.
+Έκανε ελάχιστη πρακτική εργασία με την εταιρεία
+</gr>
+</bh_but_noob_then_helvia>
+
+<saw_web_dev>
+<en>that introduced web development basics.</en>
+<gr>με την οποία είδε βασικές αρχές του web development.</gr>
+</saw_web_dev>
+</all>
+<!--
+    Copyright (c) 2023 Dimakopoulos Theodoros
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+-->
