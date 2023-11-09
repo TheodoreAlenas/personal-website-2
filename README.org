@@ -1,6 +1,6 @@
-# Second take on my website
+* Second take on my website
 
-## Goals
+** Goals
 
 - Aesthetics that align with me
 - Accessibility
@@ -9,7 +9,7 @@
 - Instant access to the text on load
 - Text that stays in place as data loads
 
-## Aesthetics
+** Aesthetics
 
 Oftentimes, there's a mismatch between
 the appearance of someone's website
@@ -17,12 +17,12 @@ and the appearance of their house, car and workspace.
 The website tends to have an energetic aesthetic.
 This website is meant to be mine in every sense.
 
-## Tools
+** Tools
 
 None. This is an improvised workflow, inspired by LaTeX
 and general experiences programming.
 
-## Upgrade
+** Upgrade
 
 The first version of my website used PHP functions to
 concatenate strings into HTML.
@@ -37,7 +37,7 @@ The most noticable advantage compared to the first version
 is the simplicity, and the separation of PHP that prepares text
 from PHP that templates HTML.
 
-## Message
+** Message
 
 This kind of website is trivial to improvise,
 I improvised 3 versions in a few months.
