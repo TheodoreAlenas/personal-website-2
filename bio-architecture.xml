@@ -1,0 +1,85 @@
+<all>
+<title><en>Architecture</en><gr>Αρχιτεκτονική</gr></title>
+<os>
+<en>
+Reworked the operating system's
+key binding framework, home directory structure and image tagging
+systems about 5 times each,
+following my needs and addressing inabilities,
+in a natural and slow pace over the span of 2 years.
+The approaches were radical to me,
+
+images placed in a binary tree
+of manual binary grouping decisions,
+
+coding projects getting tagged
+by language using symlinks,
+
+a snippet completion and generation system
+providing shell scripts for key bindings,
+
+and a lot more.
+Ended up with technically elegant solutions.
+</en>
+<gr>
+Επανασχεδίασε 5 φορές τα τμήματα του λειτουργικού του συστήματος
+που αφορούν τους συνδυασμούς πλήκτρων, τη κύρια δομή αρχείων
+και την ταξινόμηση εικόνων.
+Οι αλλαγές ακολουθούσαν προσωπικές ανάγκες και ελλείψεις,
+με αργό και σταθερό ρυθμό επί 2 χρόνια.
+Οι τεχνικές έδιναν μια αίσθηση των άκρων,
+
+με εικόνες τοποθετημένες σε δυαδικό δέντρο
+από χειροκίνητες αποφάσεις ομαδοποίησης,
+
+πρότζεκτ με κώδικα να ταξινομούνται χρησιμοποιώντας symlinks,
+
+ένα σύστημα συμπλήρωσης και δημιουργίας φράσεων
+να παράγει shell scripts για συνδυασμούς πλήκτρων
+
+και πολλά ακόμα.
+Κατέληξε με τεχνικά κομψές λύσεις.
+</gr>
+</os>
+<values>
+<en>
+Through this journey I got to value
+prototyping,
+thinking in tradeoffs,
+technical simplicity from high to low levels,
+and the
+</en>
+<gr>
+Μέσα από αυτά τα κινήματα καλλιέργησε
+σεβασμό στα προτότυπα,
+αίσθηση των υπέρ και κατά μιας ιδέας,
+εκτίμηση στην τεχνική απλότητα από υψηλό ως χαμηλό επίπεδο,
+και σμπάθεια στο
+</gr>
+</values>
+<manifesto>
+<en>Manifesto for Agile Software Development</en>
+<gr>Manifesto for Agile Software Development</gr>
+</manifesto>
+</all>
+<!--
+    Copyright (c) 2023 Dimakopoulos Theodoros
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
