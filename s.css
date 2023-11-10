@@ -3,6 +3,13 @@
 html { color-scheme: light; }
 h2 { margin-top: 3rem; margin-left: 2rem; }
 button { cursor: pointer; }
+a { text-underline-offset: 0.2em; }
+main a:hover { position: relative; z-index: 1; }
+main a:hover::before {
+    position: absolute; z-index: -1;
+    display: inline-block; content: "";
+    left: 0; right: 0; top: -0.2em; bottom: 0;
+}
 
 [lang=en] [lang=gr] { display: none; }
 [lang=gr] [lang=en] { display: none; }
@@ -13,6 +20,8 @@ button { cursor: pointer; }
 [scheme=light] .fg1 { color: #111111; }
 [scheme=light] .hov-bg3:hover,
 [scheme=light] a:hover,
+[scheme=light] main a:hover::before,
+[scheme=light] *::selection,
 [scheme=light] a.bg3,
 [scheme=light] .bg3 { background-color: #111122; color: #c0caf5 }
 [scheme=light] .b1,
@@ -26,6 +35,8 @@ button { cursor: pointer; }
 [scheme=dark] .fg1 { color: #c0caf5; }
 [scheme=dark] .hov-bg3:hover,
 [scheme=dark] a:hover,
+[scheme=dark] main a:hover::before,
+[scheme=dark] *::selection,
 [scheme=dark] a.bg3,
 [scheme=dark] .bg3 { background-color: #e0af68; color: #1d202f }
 [scheme=dark] .b1,
@@ -58,8 +69,8 @@ button { cursor: pointer; }
     .fn1 { font-size: 0.4cm; }
     .fn2 { font-size: 0.3cm; }
 
-    .desktop { display: none; } 
-    .phone { display: unset; }  
+    .desktop { display: none; }
+    .phone { display: unset; }
     .phone-grid { display: grid; }
 
     #hamburger-checkbox {
