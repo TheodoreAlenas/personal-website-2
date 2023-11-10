@@ -10,7 +10,7 @@ clean:
 
 M = header.php s.css s.js
 
-%/index.html: main.php $M lorem.php
+%/index.html: main.php $M $(wildcard home*)
 	mkdir -p $E $G
 	FILE=$@ php $< > $@
 

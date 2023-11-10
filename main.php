@@ -59,7 +59,7 @@
                     include("biography.php");
                 }
                 else {
-                    include("lorem.php");
+                    include("home.php");
                 }
             ?>
         </main>
