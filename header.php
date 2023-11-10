@@ -62,13 +62,8 @@
         </a>
     </li>
     <li <?php $l() ?>>
-        <a <?php $a("biography.html", "", $ORIGIN_FILE); ?>>
+        <a <?php $a("biography.html", "pr3", $ORIGIN_FILE); ?>>
             <?php $EN("Biography"); $GR("Βιογραφικό"); ?>
-        </a>
-    </li>
-    <li <?php $l() ?>>
-        <a <?php $a("contact.html", "pr3", $ORIGIN_FILE); ?>>
-            <?php $EN("Contact"); $GR("Επικοινωνία"); ?>
         </a>
     </li>
 </ul>
