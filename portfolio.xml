@@ -1,0 +1,52 @@
+<all>
+<site>
+<title><en>This website</en><gr>Αυτός ο ιστοχώρος</gr></title>
+<body>
+<en>
+A pre-rendered site that's been reworked 3 times
+to be as simple and easy to maintain, by me, as possible.
+As of November 2023, it uses 2 layers of PHP
+and a layer of XML for the text,
+where the XML text is treated similar to Tailwind CSS,
+and JavaScript exposes functions similar to Tailwind CSS,
+and PHP HTML markups are also treated like Tailwind CSS.
+That is, looking at the PHP code, one can guess how
+the different languages form and interact.
+This means there's no abstraction.
+It was hard to believe that the level of complexity
+of this site doesn't justify abstraction,
+but after multiple rewrites, it became obvious.
+</en>
+</body>
+<its_on>
+<en>You may find the source code of this site on</en>
+</its_on>
+<with>
+<en>as well as it's</en>
+</with>
+<v1>
+<en>first version</en>
+</v1>
+</site>
+</all>
+<!--
+    Copyright (c) 2023 Dimakopoulos Theodoros
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->

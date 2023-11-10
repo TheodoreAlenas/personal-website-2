@@ -1,7 +1,3 @@
-<!DOCTYPE HTML>
-<!-- <?php
-         echo basename(__FILE__) . " for " . getenv("FILE");
-         ?> -->
 <?php
     function skip_region($t) {}
     function echo_region($t) {echo $t;}
@@ -27,7 +23,7 @@
     }
 
 ?>
-
+<!DOCTYPE HTML>
 <html scheme="dark">
     <head>
         <title><?php echo $TITLE ?></title>
@@ -41,7 +37,7 @@
         </style>
 
         <script>
-            <?php include("s.js"); ?>
+            <?php include("s.js") ?>
         </script>
 
     </head>
@@ -55,11 +51,11 @@
         </header>
         <main class="mxw1 m0a b2 p1 bg1 fg1">
             <?php
-                if (basename($ORIGIN_FILE) == "biography.html") {
-                    include("biography.php");
-                }
-                else {
-                    include("home.php");
+                switch (basename($ORIGIN_FILE)) {
+                    case "biography.html": include("biography.php"); break;
+                    case "portfolio.html": include("portfolio.php"); break;
+                    case "index.html": include("home.php"); break;
+                    default: echo "<big>Invalid origin file</big>"; break;
                 }
             ?>
         </main>
