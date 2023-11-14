@@ -3,7 +3,7 @@
 html { color-scheme: light; }
 h2 { margin-top: 3rem; margin-left: 2rem; }
 button { cursor: pointer; }
-pre { border-radius: 5px; padding-left: 1em; }
+pre { border-radius: 5px; padding-left: 1em; overflow: scroll; }
 a { text-underline-offset: 0.2em; }
 main a:hover { position: relative; z-index: 1; }
 main a:hover::before {
@@ -16,20 +16,18 @@ main a:hover::before {
 [lang=gr] [lang=en] { display: none; }
 
 /* Improvised bright color scheme and TokyoNight color scheme */
-[scheme=light] pre,
-[scheme=light] a { color: #000066; }
 [scheme=light] pre b,
+[scheme=light] a { color: #000066; }
 [scheme=light] a:visited { color: #660044; }
 [scheme=light] .bg1 { background-color: #ffffff; }
-[scheme=light] pre { background-color: #eeeeee; }
+[scheme=light] pre,
 [scheme=light] .fg1 { color: #111111; }
 
-[scheme=dark] pre,
-[scheme=dark] a { color: #7aa2f7; }
+[scheme=dark] pre { color: #7dcfff; }
 [scheme=dark] pre b,
+[scheme=dark] a { color: #7aa2f7; }
 [scheme=dark] a:visited { color: #bb9af7; }
 [scheme=dark] .bg1 { background-color: #24283b; }
-[scheme=dark] pre { background-color: #1d202f; }
 [scheme=dark] .fg1 { color: #c0caf5; }
 
 [scheme=light] .hov-bg3:hover,
@@ -40,6 +38,7 @@ main a:hover::before {
 [scheme=light] .bg3 { background-color: #111122; color: #c0caf5 }
 [scheme=light] .b1,
 [scheme=light] .b2 { border-color: #cccccc; }
+[scheme=light] pre { background-color: #eeeeee; }
 [scheme=light] .shadow { box-shadow: #cccccc 0 0 1rem 0; }
 
 [scheme=dark] .hov-bg3:hover,
@@ -50,9 +49,10 @@ main a:hover::before {
 [scheme=dark] .bg3 { background-color: #e0af68; color: #1d202f }
 [scheme=dark] .b1,
 [scheme=dark] .b2 { border-color: #1d202f; }
+[scheme=dark] pre { background-color: #1d202f; }
 [scheme=dark] .shadow { box-shadow: #1d202f 0 0 1rem 0; }
 
-.b1 { border: 2px grey solid; }
+.b1 { border-style: solid; border-width: 2px; }
 .b2 { border-left: 1px solid; border-right: 1px solid; }
 .br1 { border-radius: 3px; }
 
