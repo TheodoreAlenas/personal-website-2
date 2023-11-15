@@ -17,6 +17,52 @@
     $POR_CODE = array(
 
 
+         "php 1" => [
+              ["get_typical_layout", '$language'],
+              <<<EOPHP
+<?php
+/* License at the bottom */
+
+include_once("common/wraps/typical-layouts.php");
+include_once("common/wraps/external-links.php");
+include_once("common/wraps/xml.php");
+
+[...]
+
+function get_biography_html(string \$language) {
+
+  return get_typical_layout(
+    \$language,
+    "biography",
+    [],
+    "",
+    //get_bio_content(\$language)
+    extract_html_from_biography_xmls(\$language)
+  );
+
+}
+EOPHP],
+
+
+        "php 2" => [
+             ['$EN', '$GR', "title", "graduated", "high_school"],
+             <<<EOPHP
+<?php
+    function biography_array_to_en_gr(\$array) {
+        global \$EN, \$GR; \$EN(\$array->en); \$GR(\$array->gr);
+    }
+    \$b = "biography_array_to_en_gr";
+?>
+[...]
+<?php \$h = simplexml_load_file("bio-high-school.xml") ?>
+<h2><?php \$b(\$h->title) ?></h2>
+<p>
+    <?php \$b(\$h->graduated) ?>
+    <a href="http://2lyk-amaliad.ilei.sch.gr/wordpress17/"
+    ><?php \$b(\$h->high_school) ?></a>
+EOPHP],
+
+
          "al" => [
               ["set_interactive", "alk-router", "execute_al "],
               <<<EOSH

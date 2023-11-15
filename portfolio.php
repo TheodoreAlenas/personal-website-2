@@ -9,16 +9,21 @@
 ?>
 
 
-<?php $p = simplexml_load_file("por-this.xml"); $s = $p->site; ?>
+<?php $s = simplexml_load_file("por-this.xml") ?>
 <h2><?php $a($s->title) ?></h2>
+<p><?php $a($s->body) ?></p>
+<pre><?php $c("php 1") ?></pre>
+<i>V1</i>
+<pre><?php $c("php 2") ?></pre>
+<i>V2</i>
 <p>
-    <?php $a($s->body) ?>
-    <?php $a($s->its_on) ?>
-    <a href="https://github.com/TheodoreAlenas/personal-website-2/"
-    >GitHub</a>,
-    <?php $a($s->with) ?>
+    <?php $a($s->find) ?>
     <a href="https://github.com/TheodoreAlenas/personal-home-page/"
-    ><?php $a($s->v1) ?></a>.
+    ><?php $a($s->v1) ?></a>
+    <?php $a($s->and) ?>
+    <a href="https://github.com/TheodoreAlenas/personal-website-2/"
+    ><?php $a($s->v2) ?></a>
+    <?php $a($s->on_gh) ?>.
 </p>
 
 <?php $s = simplexml_load_file("por-hotkeys.xml") ?>

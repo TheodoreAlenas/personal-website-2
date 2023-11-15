@@ -1,42 +1,26 @@
 <all>
-<site>
 <title><en>This website</en><gr>Αυτός ο ιστοχώρος</gr></title>
 <body>
 <en>
-A pre-rendered site that's been through 3 major versions
+A pre-rendered site that's been rewritten
 to be as simple and easy to maintain, by me, as possible.
-As of November 2023, it uses 2 layers of PHP
-and a layer of XML for the text,
-where the XML text is treated similar to Tailwind CSS,
-and JavaScript exposes functions similar to Tailwind CSS,
-and PHP HTML markups are also treated like Tailwind CSS.
-That is, looking at the PHP code, one can guess how
-the different languages form and interact.
-This means there's no abstraction.
-It was hard to believe that the level of complexity
-of this site doesn't justify abstraction,
-but after multiple rewrites, it became obvious.
+The first version abstracted while the secord abbreviated.
 </en>
 <gr>
-Pre-rendered ιστοχώρος. Επανασχεδιάστηκε 3 φορές με στόχο
-κάθε επανασχεδιασμού να γίνει εύκολα τροποποιήσιμος,
+Pre-rendered ιστοχώρος. Επανασχεδιάστηκε με στόχο
+να γίνει εύκολα τροποποιήσιμος,
 από εμένα συγκεκριμένα, και να διατηρήσει απλή δομή.
-Τώρα, το Νοέμβριο του 2023, χρησιμοποιεί 2 επίπεδα PHP
-και ένα επίπεδο XML για το κείμενο,
-όπου το XML χρησιμοποιείται με ανάλογο τρόπο του Tailwind CSS,
-και η JavaScript εκθέτει συναρτήσεις με ανάλογο τρόπο, όπως και
-οι HTML ετικέτες της PHP επίσης χρησιμοποιούνται με ανάλογο τρόπο.
-Έτσι, κοιτώντας τον κώδικα PHP, μπορεί κανείς να μαντέψει
-των κώδικα των υπολοίπων γλωσσών που συμμετέχουν.
-Συνεπώς, χάνεται η έννοια της αφαιρετικότητας του κώδικα.
-Δύσκολα πείθεται κανείς ότι είναι σωστή αυτή η πρακτική,
-αλλά προέκυψε από επανασχεδιασμούς.
+Η πρώτη έκδοση βασιζόταν σε αφαίρεση, ενώ η δεύτερη σε συντομογραφίες.
 </gr>
 </body>
-<its_on>
-<en>You may find the source code of this site on</en>
-<gr>Μπορείτε να βρείτε τον κώδικα του ιστοχώρου στο</gr>
-</its_on>
+<find>
+<en>You may find the</en>
+<gr>Μπορείτε να βρείτε και την</gr>
+</find>
+<v1><en>first</en><gr>πρώτη</gr></v1>
+<and><en>and</en><gr>και τη</gr></and>
+<v2><en>second</en><gr>δεύτερη</gr></v2>
+<on_gh><en>version on GitHub</en><gr>έκδοση στο GitHub</gr></on_gh>
 <with>
 <en>as well as it's</en>
 <gr>καθώς και την</gr>
@@ -45,7 +29,6 @@ Pre-rendered ιστοχώρος. Επανασχεδιάστηκε 3 φορές �
 <en>first version</en>
 <gr>πρώτη του έκδοση</gr>
 </v1>
-</site>
 </all>
 <!--
     Copyright (c) 2023 Dimakopoulos Theodoros
