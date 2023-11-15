@@ -18,7 +18,11 @@
 
 
          "php 1" => [
-              ["get_typical_layout", '$language'],
+              [
+                  "typical-layouts",
+                  "get_typical_layout",
+                  "get_biography_html"
+              ],
               <<<EOPHP
 <?php
 /* License at the bottom */

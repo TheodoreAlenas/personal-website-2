@@ -86,7 +86,7 @@ in a terminal, if it was called from an environment without the
 </in_term_if_env_wo>
 <var_set_the_defs_of>
 <en>variable set. The shell function definitions of the</en>
-<en>Οι ορισμοί των shell functions των εκτελέσιμων</en>
+<gr>Οι ορισμοί των shell functions των εκτελέσιμων</gr>
 </var_set_the_defs_of>
 <compile_to_help_note_posix>
 <en>

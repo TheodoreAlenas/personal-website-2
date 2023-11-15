@@ -50,7 +50,7 @@
     <?php $a($s->the) ?> <code>al</code> <?php $a($s->shows) ?>
     <code>stdout</code> <?php $EN("and"); $GR("και"); ?>
     <code>stderr</code> <?php $a($s->in_term_if_env_wo) ?>
-    <code>INTERACTIVE</code> <?php $a($s->var_set_the_defs_of) ?>
+    <code>INTERACTIVE</code>. <?php $a($s->var_set_the_defs_of) ?>
     <code>alk-*</code> <?php $a($s->compile_to_help_note_posix) ?>
 </p>
 <pre><?php $c("al") ?></pre>
