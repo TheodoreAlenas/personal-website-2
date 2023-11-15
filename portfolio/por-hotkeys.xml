@@ -149,13 +149,13 @@ plus I abandoned it before publishing it.
 και επίσης το παράτησα πριν αποφασίσω να το εκδόσω.
 </gr>
 </snip_gen_w_compl_unpublished>
-<but_never_used_snips_and_martin_bloat>
+<but_never_used_snips_and_martin_bloat_find_on>
 <en>
 I didn't ever use snippets, nor did I start using
 snippets then. So it still was a hotkey system only.
 It abused mr Robert C. Martin's insights too, making it
 one of the most complicated pieces of software
-I had made by then.
+I had made by then. I uploaded the project once I made this site, on
 </en>
 <gr>
 Ποτέ μου δεν είχα χρησιμοποιήσει έτοιμες φράσεις κώδικα,
@@ -163,8 +163,9 @@ I had made by then.
 Οπότε το σύστημα ανέλαβε μόνο το ρόλο του συνδυασμού πλήκτρων.
 Επίσης η κατάχρηση της έμπνευσης από τον κύριο Robert C. Martin
 έκανε το σύστημα περίπλοκο σε κάθε κλίμακα για τον έως τότε κώδικά μου.
+Φτιάχνοντας αυτό τον ιστοχώρο, το δημοσίευσα στο
 </gr>
-</but_never_used_snips_and_martin_bloat>
+</but_never_used_snips_and_martin_bloat_find_on>
 <a_single_file>
 <en>A single file.</en>
 <gr>Ένα αρχείο.</gr>

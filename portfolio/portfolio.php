@@ -42,7 +42,10 @@
     <?php $a($s->often_does_nothing) ?>
 </p>
 <pre><?php $c("hk-tui.bash") ?></pre>
-<i><?php $a($s->part_of_file) ?> <code>hk-tui.bash</code></i>
+<i>
+    <?php $a($s->part_of_file) ?>
+    <code><a href="../hk-tui.bash">hk-tui.bash</a></code>
+</i>
 <p><?php $a($s->but_windows_break_like_this) ?></p>
 <h3>alk</h3>
 <p>
@@ -54,16 +57,25 @@
     <code>alk-*</code> <?php $a($s->compile_to_help_note_posix) ?>
 </p>
 <pre><?php $c("al") ?></pre>
-<i><?php $a($s->part_of_file) ?> <code>al</code></i>
+<i>
+    <?php $a($s->part_of_file) ?>
+    <code><a href="https://github.com/TheodoreAlenas/alk/blob/main/al"
+    >https://github.com/TheodoreAlenas/alk/blob/main/al</a></code>
+</i>
 <p><?php $a($s->but_verbose_and_never_term) ?></p>
 <h3>alsnip</h3>
 <p><?php $a($s->snip_gen_w_compl_unpublished) ?></p>
 <pre><?php $c("example-config/reset.sh") ?></pre>
 <i>
     <?php $a($s->part_of_file) ?>
-    <code>example-config/reset.sh</code>
+    <code><a href="https://github.com/TheodoreAlenas/alsnip/blob/main/example-config/reset.sh"
+    >https://github.com/TheodoreAlenas/alsnip/blob/main/example-config/reset.sh</a></code>
 </i>
-<p><?php $a($s->but_never_used_snips_and_martin_bloat) ?></p>
+<p>
+    <?php $a($s->but_never_used_snips_and_martin_bloat_find_on) ?>
+    <a href="https://github.com/TheodoreAlenas/alsnip">GitHub</a>.
+</p>
+
 <h3>scmd</h3>
 <p><?php $a($s->a_single_file) ?></p>
 <pre><?php $c("scmd volume") ?></pre>
@@ -71,7 +83,8 @@
 <pre><?php $c("scmd this_file") ?></pre>
 <p><?php $a($s->im_most_proud_and_nobody_understands) ?></p>
 <pre><?php $c("scmd sxhkd") ?></pre>
-
+<a href="https://github.com/TheodoreAlenas/dotfiles/blob/main/c/scmd.sh"
+>https://github.com/TheodoreAlenas/dotfiles/blob/main/c/scmd.sh</a>.
 <?php
     $unused_variable_for_holding_license =
         <<<EOF

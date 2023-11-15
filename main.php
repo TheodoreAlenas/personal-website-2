@@ -58,7 +58,7 @@
                     case "$b.html": include("$b/$b.php"); break;
                     case "$p.html": include("$p/$p.php"); break;
                     case "index.html": include("$h/$h.php"); break;
-                    default: echo "<big>Invalid origin</big>"; break;
+                    default: echo "<big>Invalid origin</big>"; exit(1);
                 }
             ?>
         </main>

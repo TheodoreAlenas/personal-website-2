@@ -4,7 +4,9 @@ G = serve-this/gr/
 
 A = index.html portfolio.html biography.html
 
-all: $(addprefix $E,$A) $(addprefix $G,$A) $P/cv.pdf
+C = $(wildcard cp-to-serve-this/*)
+
+all: $(addprefix $E,$A) $(addprefix $G,$A) $P/cv.pdf $(C:cp-to-%=%)
 
 clean:
 	rm -vfr $P/* cv/fonts/
@@ -38,3 +40,7 @@ cv/fonts/:
 	cd cv && mv OTF fonts
 	cd cv && rm -rf __MACOSX
 	cd cv && cp FontAwesome.ttf fonts/
+
+$P/%: cp-to-serve-this/%
+	-test -f $@ && rm -rf $@
+	cp -r $< $@
