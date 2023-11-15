@@ -6,18 +6,30 @@
 Welcome people! I've failed and rebuilt myself so much by now
 that reworks are something I've come to trust.
 </en>
+<gr>
+Χαίρετε! Χρειάστηκε να επανασχεδιάσω τη ζωή μου τόσο
+που πλέον εμπιστεύομαι τους επανασχεδιασμούς.
+</gr>
 </i_trust_reworks>
 <i_value_emotions>
 <en>
 Through this journey I've come to value observing emotions
-over avoiding shame, and simplifying requirements over guessing.
+over avoiding shame, and simplifying requirements over analyzing.
 </en>
+<gr>
+Μέσα από αυτό το ταξίδι προτεραιοποίησα την κατανόηση συναισθημάτων
+αντί της ντροπής και την απλοποίηση απαιτήσεων έναντι της ανάλυσης.
+</gr>
 </i_value_emotions>
 <i_relax_coding>
 <en>
 Reworking my identity is draining, so I spend a lot of time
 programming to relax, since I always had a head start in it.
 </en>
+<gr>
+Η επανάχτιση του εαυτού μου είναι εξαντλητική, οπότε ξοδεύω
+πολύ χρόνο προγραμματίζοντας για ανακούφιση, επειδή εκεί έχω προβάδισμα.
+</gr>
 </i_relax_coding>
 <lets_go_out>
 <en>
@@ -26,13 +38,31 @@ As of 2023, I don't have hands-on experience developing
 websites and web apps except this site.
 I've used various tools and techniques
 for my personal environment,
-and I feel comfortable handling complexity sometimes,
+and I'm comfortable handling complexity given I'm undergraduate,
 so I'd say if you're okay with it
 I'd like to go outside with the developers
 and have some fun talking and coding,
 perhaps doing our warm ups or exercises.
 Then we can all judge together if I fit and where I'd fit.
+Of course I'll cover up for backlash from higher ups wherever I can
+and I don't insist at all in this idea in general.
 </en>
+<gr>
+Συντηρώ αυτό τον ιστοχώρο κυρίως για εργοδότες.
+Μέχρι στιγμής, το 2023, δεν έχω πρακτική εμπειρία στις
+διαδικτυακές εφαρμογές και ιστοχώρους εκτός από αυτόν εδώ.
+Έχω χριησιμοποιήσει μια μεγάλη ποικιλία εργαλείων και τεχνικών
+προγραμματισμού για το προσωπικό μου περιβάλλον,
+και είμαι αρκετά άνετος στη διαχείριση πολυπλοκότητας
+για τα δεδομένα προπτυχιακού φοιτητή,
+οπότε αν δεν έχετε πρόβλημα θα χαιρόμουν να βγω με τους προγραμματιστές
+και να συζητήσουμε ή να κάνουμε μαζί ασκήσεις ή προθέρμανση
+αν τους ενδιαφέρουν αυτά.
+Μετά μπορούμε να συμφωνήσουμε όλοι μαζί
+αν ταιριάζω στην εταιρία και πού.
+Εννοείται πως θα βοηθήσω στην κάλυψη από προβλήματα με ανώτερα στελέχη
+όπου μπορώ, και ούτε επιμένω στην όλη ιδέα γενικότερα.
+</gr>
 </lets_go_out>
 </all>
 <!--
