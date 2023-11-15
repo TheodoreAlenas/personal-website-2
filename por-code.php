@@ -1,4 +1,19 @@
 <?php
+
+    function encode_and_surround_with_b_tag($strings, $code) {
+        $code = htmlspecialchars($code);
+        foreach ($strings as $string) {
+            $code = str_replace($string, "<b>$string</b>", $code);
+        }
+        echo $code;
+    }
+
+    function encode_and_surround_with_b_tag_code($key) {
+        global $POR_CODE;
+        $chosen = $POR_CODE[$key];
+        encode_and_surround_with_b_tag($chosen[0], $chosen[1]);
+    }
+
     $POR_CODE = array(
 
 

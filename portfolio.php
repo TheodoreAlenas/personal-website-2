@@ -4,20 +4,7 @@
     }
     $a = "portfolio_array_to_en_gr";
 
-    function encode_and_surround_with_b_tag($strings, $code) {
-        $code = htmlspecialchars($code);
-        foreach ($strings as $string) {
-            $code = str_replace($string, "<b>$string</b>", $code);
-        }
-        echo $code;
-    }
     include_once("por-code.php");
-    function encode_and_surround_with_b_tag_code($key) {
-        global $POR_CODE;
-        $chosen = $POR_CODE[$key];
-        encode_and_surround_with_b_tag($chosen[0], $chosen[1]);
-    }
-    $b = "encode_and_surround_with_b_tag";
     $c = "encode_and_surround_with_b_tag_code";
 ?>
 
@@ -51,9 +38,7 @@
 </p>
 <pre><?php $c("hk-tui.bash") ?></pre>
 <i><?php $a($s->part_of_file) ?> <code>hk-tui.bash</code></i>
-<p>
-    <?php $a($s->but_windows_break_like_this) ?>
-</p>
+<p><?php $a($s->but_windows_break_like_this) ?></p>
 <h3>alk</h3>
 <p>
     <?php $a($s->alk_is_scripts) ?>
@@ -65,31 +50,21 @@
 </p>
 <pre><?php $c("al") ?></pre>
 <i><?php $a($s->part_of_file) ?> <code>al</code></i>
-<p>
-    <?php $a($s->but_verbose_and_never_term) ?>
-</p>
+<p><?php $a($s->but_verbose_and_never_term) ?></p>
 <h3>alsnip</h3>
-<p>
-    <?php $a($s->snip_gen_w_compl_unpublished) ?>
-</p>
+<p><?php $a($s->snip_gen_w_compl_unpublished) ?></p>
 <pre><?php $c("example-config/reset.sh") ?></pre>
 <i>
     <?php $a($s->part_of_file) ?>
     <code>example-config/reset.sh</code>
 </i>
-<p>
-    <?php $a($s->but_never_used_snips_and_martin_bloat) ?>
-</p>
+<p><?php $a($s->but_never_used_snips_and_martin_bloat) ?></p>
 <h3>scmd</h3>
 <p><?php $a($s->a_single_file) ?></p>
 <pre><?php $c("scmd volume") ?></pre>
-<p>
-    <?php $a($s->line_types) ?>
-</p>
+<p><?php $a($s->line_types) ?></p>
 <pre><?php $c("scmd this_file") ?></pre>
-<p>
-    <?php $a($s->im_most_proud_and_nobody_understands) ?>
-</p>
+<p><?php $a($s->im_most_proud_and_nobody_understands) ?></p>
 <pre><?php $c("scmd sxhkd") ?></pre>
 
 <?php
