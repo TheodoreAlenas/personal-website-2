@@ -13,7 +13,7 @@ M = header.php s.css s.js
 %/index.html: main.php $M $(wildcard home*)
 	mkdir -p $E $G && FILE=$@ php $< > $@
 
-%/portfolio.html: main.php $M $(wildcard portfolio*)
+%/portfolio.html: main.php $M $(wildcard por*)
 	mkdir -p $E $G && FILE=$@ php $< > $@
 
 %/biography.html: main.php $M $(wildcard bio*)

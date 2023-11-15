@@ -15,7 +15,7 @@
 ?>
 
 
-<?php $p = simplexml_load_file("portfolio.xml"); $s = $p->site; ?>
+<?php $p = simplexml_load_file("por-this.xml"); $s = $p->site; ?>
 <h2><?php $a($s->title) ?></h2>
 <p>
     <?php $a($s->body) ?>
@@ -27,26 +27,20 @@
     ><?php $a($s->v1) ?></a>.
 </p>
 
-<h2>System's hotkey system</h2>
+<?php $s = simplexml_load_file("por-hotkeys.xml") ?>
+<h2><?php $a($s->title) ?></h2>
 <p>
-    A system to provide a listing of key bindings and optional
-    input box to key bindings, built around
-    <code>sxhkd</code>, with 4 major versions:
+    <?php $a($s->hk_sys_around) ?><code>sxhkd</code>,
+    <?php $a($s->w_4_vers) ?>:
 </p>
 <h3>alchain</h3>
 <p>
-    3 programs,
+    <?php $a($s->alchain_3_prog) ?>,
     <code>alchain</code>,
-    <code>alpopup</code> and
+    <code>alpopup</code> <?php $EN("and"); $GR("και"); ?>
     <code>hk-tui.bash</code>,
-    working together so that when pressing the Windows key
-    a terminal appears at the bottom of the screen,
-    full width, displays possible
-    key bindings and waits for key input.
-    After pressing Windows, getting the terminal,
-    and pressing another key such as <code>W</code>,
-    often nothing would have happened yet and the terminal
-    would be showing next possible key presses.
+    <?php $a($s->working_together_and_key) ?><code>W</code>,
+    <?php $a($s->often_does_nothing) ?>
 </p>
 <pre><?php
     $b(["read", "next", '$REPLY', '$state'],
@@ -61,28 +55,18 @@ then
 fi
 EOSH);
 ?></pre>
-<i>part of <code>hk-tui.bash</code></i>
+<i><?php $a($s->part_of_file) ?> <code>hk-tui.bash</code></i>
 <p>
-    The flaw was that windows are not designed to work
-    well when treated like this.
-    There were more than just bugs.
-    Windows play a more decorative role than anticipated.
+    <?php $a($s->but_windows_break_like_this) ?>
 </p>
 <h3>alk</h3>
 <p>
-    Shell scripts that take arguments corresponding
-    to hotkeys, and perform the actions.
-    The <code>al</code> executable displays
-    the <code>stdout</code> and <code>stderr</code>
-    in a terminal,
-    if it was called from an environment without
-    the <code>INTERACTIVE</code> variable set.
-    The shell function definitions of the <code>alk-*</code>
-    executables compile into the help message
-    which acts like a listing of key bindings.
-    While the code is weird, it's much closer to
-    how I write shell scripts today. Note that
-    it's POSIX compliant instead of Bash.
+    <?php $a($s->alk_is_scripts) ?>
+    <?php $a($s->the) ?> <code>al</code> <?php $a($s->shows) ?>
+    <code>stdout</code> <?php $EN("and"); $GR("και"); ?>
+    <code>stderr</code> <?php $a($s->in_term_if_env_wo) ?>
+    <code>INTERACTIVE</code> <?php $a($s->var_set_the_defs_of) ?>
+    <code>alk-*</code> <?php $a($s->compile_to_help_note_posix) ?>
 </p>
 <pre><?php
     $b(["set_interactive", "alk-router", "execute_al "],
@@ -99,28 +83,13 @@ execute_al_interactive() {
 }
 EOSH);
 ?></pre>
-<i>part of <code>al</code></i>
+<i><?php $a($s->part_of_file) ?> <code>al</code></i>
 <p>
-    Compared to the first approach, this one had
-    very verbose configuration files.
-    Also, it was never actually used in the terminal.
+    <?php $a($s->but_verbose_and_never_term) ?>
 </p>
 <h3>alsnip</h3>
 <p>
-    A code snippet generator, that can take multiple
-    user inputs to complete parts of a snippet,
-    and provides auto completion in the process.
-    The snippets could be shell scripts that
-    would run, and the completion could be started
-    by pressing a key binding.
-    Built in, the configuration expressed
-    which snippets were shell scripts (to be ran),
-    and of them, which were bound to keys,
-    and which needed terminal interactions
-    such as entering passwords.
-    It was almost ready to be published,
-    but it wasn't self-contained at all,
-    plus I abandoned it before publishing it.
+    <?php $a($s->snip_gen_w_compl_unpublished) ?>
 </p>
 <pre><?php
     $b(["powff", "script", "descr", "arg1"],
@@ -138,16 +107,15 @@ EOM
 }
 EOSH);
 ?></pre>
-<i>part of <code>example-config/reset.sh</code></i>
+<i>
+    <?php $a($s->part_of_file) ?>
+    <code>example-config/reset.sh</code>
+</i>
 <p>
-    I didn't ever use snippets, nor did I start using
-    snippets then. So it still was a hotkey system only.
-    It abused Robert C. Martin's insights too, making it
-    one of the most complicated pieces of software
-    I had made by then.
+    <?php $a($s->but_never_used_snips_and_martin_bloat) ?>
 </p>
 <h3>scmd</h3>
-<p>A single file.</p>
+<p><?php $a($s->a_single_file) ?></p>
 <pre><b>volume_set_8</b>() { pacmd set-sink-volume 0 48000; } <b>#m8</b>
 <b>volume_set_9</b>() { pacmd set-sink-volume 0 54000; } <b>#m9</b>
 <b>volume_set_custom</b>() { pacmd set-sink-volume 0 "$(:|dmenu)"; }
@@ -155,8 +123,7 @@ EOSH);
 <b>wallpaper_set_scale</b>() { bspc_float; feh --bg-scale "$(find ~/l/gwp/ -type f -print0 | xargs -0 sxiv -ot)"; }
 <b>wallpaper_set_fill</b>()  { bspc_float; feh --bg-fill  "$(find ~/l/gwp/ -type f -print0 | xargs -0 sxiv -ot)"; }</pre>
 <p>
-    Every line is either blank, a comment,
-    or an inline shell function definition.
+    <?php $a($s->line_types) ?>
 </p>
 <pre><?php
     $b(["scmd_run", "this_file", "scmd_with_bar_status", "#x"],
@@ -167,15 +134,7 @@ this_file() { echo ~/.config/scmd.sh; }
 EOSH);
 ?></pre>
 <p>
-    This is the product that I'm most proud of as of now, November 2023.
-    Nobody can understand why I'm proud of a single file
-    and if my past self saw it, he'd want to make it better by
-    ruining it. It doesn't matter, nothing matters, I'm here to
-    appreciate it as much as I deserve, and as much as my computer
-    deserves, because this work is impossible for a person to do alone,
-    this work is collaboration between a person and a computer
-    giving feedback over what software makes it feel healthy
-    and what software burdens it.
+    <?php $a($s->im_most_proud_and_nobody_understands) ?>
 </p>
 <pre><?php
     $b(["ls_keys", "sxhkd", "awk ", "awk1", "awk2", "this_file"],
