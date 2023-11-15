@@ -5,22 +5,21 @@
 <en>YouTube videos</en>
 <gr>βίντεο στην πλατφόρμα YouTube</gr>
 </videos>
-<using_tricks>
+<using><en>using</en><gr>χρησιμοποιώντας το εργαλείο</gr></using>
+<piping><en>piping</en><gr>περνώντας την έξοδο του</gr></piping>
+<to><en>to</en><gr>στο</gr></to>
+<to_share>
 <en>
-using ffmpeg,
-piping /dev/video0 to mpv
 for showing the webcam's output on the screen.
 The purpose of the YouTube channel is
 to share knowledge and life experiences.
 </en>
 <gr>
-χρησιμοποιώντας ffmpeg,
-περνώντας την έξοδο /dev/video0 στο mpv
 ώστε να προβάλλεται το υλικό της κάμερας στην οθόνη.
 Το κανάλι έχει στόχο την αξιοποίηση
 εμπειριών και γνώσεων.
 </gr>
-</using_tricks>
+</to_share>
 </all>
 <!--
     Copyright (c) 2023 Dimakopoulos Theodoros

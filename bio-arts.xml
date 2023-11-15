@@ -3,7 +3,7 @@
 <en>Illustration and the piano</en>
 <gr>Σκιτσογραφία και πιάνο</gr>
 </title>
-<quit>
+<quit_piano>
 <en>
 Quit the piano after 7/9 steps to the diploma,
 when the world view changed and didn't line up with
@@ -14,7 +14,7 @@ the typcial motivations for playing.
 όταν άλλαξε τρόπο σκέψης και τα μέχρι τότε κίνητρα
 για μελέτη δεν εφαρμόζονταν.
 </gr>
-</quit>
+</quit_piano>
 
 <drew_by>
 <en>Then started illustration, guided by</en>
@@ -54,19 +54,18 @@ and it drained a lot of time.
 </quit>
 <cultivated>
 <en>
-Arts cultivated me to respect
+Arts cultivated respect towards
 old means of achieving goals,
 old experienced people's advice,
 warming up before working
-and measuring the value of my work
+and measuring the value of work
 by looking at it as an outsider.
 </en>
 <gr>
-Μέσα από την ενασχόληση με την τέχνη
-έμαθα να σέβομαι παλιές μεθόδους, παλιά εργαλεία,
+Η τέχνη καλλιέργησε σεβασμό σε παλιές μεθόδους, παλιά εργαλεία,
 συμβουλές ηλικιωμένων εμπειρογνώμων,
 το ζέσταμα πριν τη δουλειά
-και την αποτίμηση της δουλειάς μου
+και την αποτίμηση της δουλειάς
 σκεπτόμενος απ' τη ματιά τρίτου.
 </gr>
 </cultivated>

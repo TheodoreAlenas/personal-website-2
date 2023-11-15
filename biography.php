@@ -112,7 +112,10 @@
     <?php $b($yt->recorded) ?>
     <a href="https://www.youtube.com/@theodorealenas3171"
     ><?php $b($yt->videos) ?></a>
-    <?php $b($yt->using_tricks) ?>
+    <?php $b($yt->using) ?> <code>ffmpeg</code>
+    <?php $b($yt->piping) ?> <code>/dev/video0</code>
+    <?php $b($yt->to) ?> <code>mpv</code>
+    <?php $b($yt->to_share) ?>
 </p>
 
 <?php
