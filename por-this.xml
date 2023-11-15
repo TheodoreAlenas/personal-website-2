@@ -3,7 +3,7 @@
 <title><en>This website</en><gr>Αυτός ο ιστοχώρος</gr></title>
 <body>
 <en>
-A pre-rendered site that's been reworked 3 times
+A pre-rendered site that's been through 3 major versions
 to be as simple and easy to maintain, by me, as possible.
 As of November 2023, it uses 2 layers of PHP
 and a layer of XML for the text,
@@ -17,15 +17,33 @@ It was hard to believe that the level of complexity
 of this site doesn't justify abstraction,
 but after multiple rewrites, it became obvious.
 </en>
+<gr>
+Pre-rendered ιστοχώρος. Επανασχεδιάστηκε 3 φορές με στόχο
+κάθε επανασχεδιασμού να γίνει εύκολα τροποποιήσιμος,
+από εμένα συγκεκριμένα, και να διατηρήσει απλή δομή.
+Τώρα, το Νοέμβριο του 2023, χρησιμοποιεί 2 επίπεδα PHP
+και ένα επίπεδο XML για το κείμενο,
+όπου το XML χρησιμοποιείται με ανάλογο τρόπο του Tailwind CSS,
+και η JavaScript εκθέτει συναρτήσεις με ανάλογο τρόπο, όπως και
+οι HTML ετικέτες της PHP επίσης χρησιμοποιούνται με ανάλογο τρόπο.
+Έτσι, κοιτώντας τον κώδικα PHP, μπορεί κανείς να μαντέψει
+των κώδικα των υπολοίπων γλωσσών που συμμετέχουν.
+Συνεπώς, χάνεται η έννοια της αφαιρετικότητας του κώδικα.
+Δύσκολα πείθεται κανείς ότι είναι σωστή αυτή η πρακτική,
+αλλά προέκυψε από επανασχεδιασμούς.
+</gr>
 </body>
 <its_on>
 <en>You may find the source code of this site on</en>
+<gr>Μπορείτε να βρείτε τον κώδικα του ιστοχώρου στο</gr>
 </its_on>
 <with>
 <en>as well as it's</en>
+<gr>καθώς και την</gr>
 </with>
 <v1>
 <en>first version</en>
+<gr>πρώτη του έκδοση</gr>
 </v1>
 </site>
 </all>
