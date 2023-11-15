@@ -45,6 +45,7 @@
 <i>
     <?php $a($s->part_of_file) ?>
     <code><a href="../hk-tui.bash">hk-tui.bash</a></code>
+    <?php $EN("(plain file)"); $GR("(Πηγαίος κώδηκας)"); ?>
 </i>
 <p><?php $a($s->but_windows_break_like_this) ?></p>
 <h3>alk</h3>
@@ -60,7 +61,7 @@
 <i>
     <?php $a($s->part_of_file) ?>
     <code><a href="https://github.com/TheodoreAlenas/alk/blob/main/al"
-    >https://github.com/TheodoreAlenas/alk/blob/main/al</a></code>
+    >al</a></code>
 </i>
 <p><?php $a($s->but_verbose_and_never_term) ?></p>
 <h3>alsnip</h3>
@@ -69,7 +70,7 @@
 <i>
     <?php $a($s->part_of_file) ?>
     <code><a href="https://github.com/TheodoreAlenas/alsnip/blob/main/example-config/reset.sh"
-    >https://github.com/TheodoreAlenas/alsnip/blob/main/example-config/reset.sh</a></code>
+    >example-config/reset.sh</a></code>
 </i>
 <p>
     <?php $a($s->but_never_used_snips_and_martin_bloat_find_on) ?>
@@ -84,7 +85,7 @@
 <p><?php $a($s->im_most_proud_and_nobody_understands) ?></p>
 <pre><?php $c("scmd sxhkd") ?></pre>
 <a href="https://github.com/TheodoreAlenas/dotfiles/blob/main/c/scmd.sh"
->https://github.com/TheodoreAlenas/dotfiles/blob/main/c/scmd.sh</a>.
+>scmd.sh</a>.
 <?php
     $unused_variable_for_holding_license =
         <<<EOF
