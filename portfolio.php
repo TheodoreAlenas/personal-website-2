@@ -11,7 +11,14 @@
         }
         echo $code;
     }
+    include_once("por-code.php");
+    function encode_and_surround_with_b_tag_code($key) {
+        global $POR_CODE;
+        $chosen = $POR_CODE[$key];
+        encode_and_surround_with_b_tag($chosen[0], $chosen[1]);
+    }
     $b = "encode_and_surround_with_b_tag";
+    $c = "encode_and_surround_with_b_tag_code";
 ?>
 
 
@@ -42,19 +49,7 @@
     <?php $a($s->working_together_and_key) ?><code>W</code>,
     <?php $a($s->often_does_nothing) ?>
 </p>
-<pre><?php
-    $b(["read", "next", '$REPLY', '$state'],
-    <<<EOSH
-read -n 1 -s -r
-next=$( awk "/^\$REPLY/ { print \\\$2 }" hk-states/\$state )
-
-if [ -z \$next ]
-then
-    next=ROOT
-    bspc node last --focus
-fi
-EOSH);
-?></pre>
+<pre><?php $c("hk-tui.bash") ?></pre>
 <i><?php $a($s->part_of_file) ?> <code>hk-tui.bash</code></i>
 <p>
     <?php $a($s->but_windows_break_like_this) ?>
@@ -68,21 +63,7 @@ EOSH);
     <code>INTERACTIVE</code> <?php $a($s->var_set_the_defs_of) ?>
     <code>alk-*</code> <?php $a($s->compile_to_help_note_posix) ?>
 </p>
-<pre><?php
-    $b(["set_interactive", "alk-router", "execute_al "],
-    <<<EOSH
-if [ "\$INTERACTIVE" = '' ]
-then set_interactive
-fi
-
-execute_al() {
-    alk-router "\$@"
-}
-execute_al_interactive() {
-    execute_al "\$@"
-}
-EOSH);
-?></pre>
+<pre><?php $c("al") ?></pre>
 <i><?php $a($s->part_of_file) ?> <code>al</code></i>
 <p>
     <?php $a($s->but_verbose_and_never_term) ?>
@@ -91,22 +72,7 @@ EOSH);
 <p>
     <?php $a($s->snip_gen_w_compl_unpublished) ?>
 </p>
-<pre><?php
-    $b(["powff", "script", "descr", "arg1"],
-    <<<EOSH
-fn=powff+key+is-e-q+key-term:"\$fn"
-fn_powff() {
-  case "\$act" in
-    script) printf 'sudo shutdown %s\\n' "\$1" ;;
-    descr) cat <<EOM
-systemd command,  poweroff  is an alias to  shutdown now
-EOM
-    ;;
-    arg1) printf "recommend\\nnow\\n+1\\n+5\\n+30\\n23:59\\n02:00\\n" ;;
-  esac
-}
-EOSH);
-?></pre>
+<pre><?php $c("example-config/reset.sh") ?></pre>
 <i>
     <?php $a($s->part_of_file) ?>
     <code>example-config/reset.sh</code>
@@ -116,36 +82,15 @@ EOSH);
 </p>
 <h3>scmd</h3>
 <p><?php $a($s->a_single_file) ?></p>
-<pre><b>volume_set_8</b>() { pacmd set-sink-volume 0 48000; } <b>#m8</b>
-<b>volume_set_9</b>() { pacmd set-sink-volume 0 54000; } <b>#m9</b>
-<b>volume_set_custom</b>() { pacmd set-sink-volume 0 "$(:|dmenu)"; }
-
-<b>wallpaper_set_scale</b>() { bspc_float; feh --bg-scale "$(find ~/l/gwp/ -type f -print0 | xargs -0 sxiv -ot)"; }
-<b>wallpaper_set_fill</b>()  { bspc_float; feh --bg-fill  "$(find ~/l/gwp/ -type f -print0 | xargs -0 sxiv -ot)"; }</pre>
+<pre><?php $c("scmd volume") ?></pre>
 <p>
     <?php $a($s->line_types) ?>
 </p>
-<pre><?php
-    $b(["scmd_run", "this_file", "scmd_with_bar_status", "#x"],
-    <<<EOSH
-scmd_run() { c="\$(dmenu < "\$(this_file)" | cut -d'(' -f1)"; test "\$c" && scmd_with_bar_status "\$c"; } #x
-  [...]
-this_file() { echo ~/.config/scmd.sh; }
-EOSH);
-?></pre>
+<pre><?php $c("scmd this_file") ?></pre>
 <p>
     <?php $a($s->im_most_proud_and_nobody_understands) ?>
 </p>
-<pre><?php
-    $b(["ls_keys", "sxhkd", "awk ", "awk1", "awk2", "this_file"],
-    <<<EOSH
-scmd_ls_keys() { sed -n 's/^\\([a-z0-9_]\\+\\)(.*#\\([^}]*\\)\$/\\2 \\1/p' "\$(this_file)"; }
-scmd_sxhkdrc_vim() { in_vim scmd_sxhkdrc; }
-scmd_sxhkdrc() { scmd_ls_keys | awk "{ \$(scmd_awk1) \$(scmd_awk2) }"; }
-scmd_awk1() { printf %s 's = \$1; gsub(/./, "; super + &", s); sub("; ", "", s); '; }
-scmd_awk2() { printf %s 'print(s); printf("\\t. %s && scmd_with_bar_status %s\\n\\n", "'"\$(this_file)"'", \$2);'; }
-EOSH);
-?></pre>
+<pre><?php $c("scmd sxhkd") ?></pre>
 
 <?php
     $unused_variable_for_holding_license =
