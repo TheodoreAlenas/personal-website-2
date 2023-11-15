@@ -1,0 +1,149 @@
+\documentclass[a4paper]{article}
+
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{fontspec}
+\usepackage[english]{babel}
+\usepackage{array}
+\usepackage{tikz}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{pagecolor}
+
+\pagestyle{empty}
+
+\newfontfamily\FA[Path=fonts/]{FontAwesome}
+\setmainfont[
+  Path = fonts/,
+  BoldFont = SourceSans3-Semibold,
+  ItalicFont = SourceSans3-LightIt,
+  SmallCapsFont = SourceSans3-Regular]{SourceSans3-Light}
+
+\newif\ifdark
+\darktrue
+\ifdark
+\definecolor{fgmain}{HTML}{c0caf5}
+\definecolor{fgaccent}{HTML}{e0af68}
+\definecolor{bgmain}{HTML}{1a1b26}
+\else
+\definecolor{fgmain}{HTML}{000000}
+\definecolor{fgaccent}{HTML}{000044}
+\definecolor{bgmain}{HTML}{ffffff}
+\fi
+
+\pagecolor{bgmain}
+\color{fgmain}
+
+\titleformat{\section}{\Large\raggedright\color{fgaccent}}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{2pt}{2pt}
+\titleformat{\subsection}{\bigskip\large\raggedright\bf\color{fgaccent}}{}{0em}{}[]
+
+\def\profilepic{
+  \begin{tikzpicture}%
+	\node[circle, text=white, minimum size=2.5cm,
+	  path picture={\node at (path picture bounding box.center){
+		  \includegraphics[width=2.5cm]{face.png}
+		};
+	}]{ };
+  \end{tikzpicture}
+}
+
+\newcommand{\on}[2]{\bigskip{\large\bf\color{fgaccent} #1} \par #2}
+\newcommand{\f}[1]{#1 \par}
+
+\def\timeline{
+  \on{2001}{
+    \f{Born in Patras, Greece, but lived in Amaliada of Greece.}
+    \f{Started out introverted and proud.}
+  }
+  \on{2010}{
+    \f{Got obsessed with Visual Basic.}
+  }
+  \on{2014}{
+    \f{Read a C++ book, but had no capable computer to experiment.}
+  }
+  \on{2016}{
+    \f{Went to the 2nd general high school of Amaliada, Greece.}
+  }
+  \on{2017}{
+    \f{Followed a short {\bf Python course}, though knew C++ by then.}
+    \f{Improvised Wolfenstein 3D style graphics in Python}
+    \f{(before learning about vectors)}
+  }
+  \on{2019}{
+    \f{Took part in {\bf E-Twinning} and visited a French school.}
+    \f{Graduated with 17325/20000 on the science track.}
+    \f{Entered the Department of Informatics of UoA.}
+  }
+  \on{2020}{
+    \f{Attempted contributing to {\bf ACM} Student Chapter's
+      compiler.}
+    \f{Attempted internship at {\bf Helvia} on and off,
+      saw web dev basics.}
+  }
+  \on{2021}{
+    \f{Got into illustration with the {\bf Draw A Box} community.}
+    \f{Quit the piano 7/9 steps to diploma realizing ill motivations.}
+    \f{Started using Linux Mint on and off.}
+    \f{Tagged personal images using improvised Python GUIs.}
+  }
+  \on{2022}{
+    \f{Got into Arch Linux using an improvised Which-Key terminal.}
+    \f{Quit drawing due to the massive dedication demands.}
+    \f{Used NeoVim in Arch Linux for all University projects.}
+    \f{Got obsessed with the manifesto for about 6 months.}
+    \f{Started a {\bf YouTube channel}, called TheodoreAlenas.}
+    \f{Made snippet completion/generation for hotkey shell scripts.}
+    \f{Used symbolic links to tag University project directories.}
+    \f{Tagged images with a binary tree of manual grouping decisions.}
+  }
+  \on{2023}{
+    \f{Started valuing people and extroverted, caring friendships.}
+    \f{Compiler project face to face,
+      {\bf 4 friends, 4/24, 4/7}, 3 months.}
+    \f{Collaborated with 3 damaging people on separate projects.}
+    \f{Understood the structure of web apps and tried 3 databases.}
+    \f{Flattened directory hierarchy,
+      able to {\bf justify exactly why}.}
+    \f{Flattened image hierarchy, able to justify exactly why.}
+    \f{System command palette as inline shell function definitions.}
+    \f{Tried 5am warm ups in C, persisted a few weeks.}
+    \f{Personal website, with a self made abstraction framework.}
+    \f{Got comfortable with Emacs, used it for all the coding.}
+    \f{Redid the website to favor {\bf simplicity over abstraction}.}
+  }
+}
+
+\def\languages{
+
+  \subsection{Comfortable with}
+  C, C++, Python, HTML and CSS, AWK, POSIX shell scripting
+
+  \subsection{Used before}
+  Rust, Lua, TypeScript, SQL, MIPS assembly, LaTeX,
+  BrainFuck, Bourne Shell scripting (bash for example)
+
+  \subsection{Tried}
+  J, NuShell, PowerShell, Emacs Lisp, Haskell, Prolog,
+  MongoDB queries, Graphviz Dot
+}
+
+\begin{document}
+
+\def\@mainwidth{7cm}
+
+\begin{minipage}[b]{\@mainwidth}
+  \begin{center}
+    \profilepic
+
+    \color{fgaccent}\Large\textsc{
+      Dimakopoulos Theodoros
+    }
+  \end{center}
+  \languages
+\end{minipage}
+\hspace{2em}
+\begin{minipage}{\dimexpr\linewidth-\@mainwidth-4em}
+  \timeline
+\end{minipage}
+
+\end{document}

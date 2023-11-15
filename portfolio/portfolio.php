@@ -9,7 +9,7 @@
 ?>
 
 
-<?php $s = simplexml_load_file("por-this.xml") ?>
+<?php $s = simplexml_load_file("portfolio/por-this.xml") ?>
 <h2><?php $a($s->title) ?></h2>
 <p><?php $a($s->body) ?></p>
 <pre><?php $c("php 1") ?></pre>
@@ -26,7 +26,7 @@
     <?php $a($s->on_gh) ?>.
 </p>
 
-<?php $s = simplexml_load_file("por-hotkeys.xml") ?>
+<?php $s = simplexml_load_file("portfolio/por-hotkeys.xml") ?>
 <h2><?php $a($s->title) ?></h2>
 <p>
     <?php $a($s->hk_sys_around) ?><code>sxhkd</code>,

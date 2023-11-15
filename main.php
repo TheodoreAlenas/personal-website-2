@@ -33,11 +33,11 @@
         <meta charset="UTF-8">
 
         <style>
-            <?php include("s.css") ?>
+            <?php include("main/s.css") ?>
         </style>
 
         <script>
-            <?php include("s.js") ?>
+            <?php include("main/s.js") ?>
         </script>
 
     </head>
@@ -45,17 +45,20 @@
         <header id="menu" style="position: sticky; top: 0;">
             <nav>
 
-                <?php include("header.php") ?>
+                <?php include("main/header.php") ?>
 
             </nav>
         </header>
         <main class="mxw1 m0a b2 p1 bg1 fg1">
             <?php
+                $b = "biography";
+                $p = "portfolio";
+                $h = "home";
                 switch (basename($ORIGIN_FILE)) {
-                    case "biography.html": include("biography.php"); break;
-                    case "portfolio.html": include("portfolio.php"); break;
-                    case "index.html": include("home.php"); break;
-                    default: echo "<big>Invalid origin file</big>"; break;
+                    case "$b.html": include("$b/$b.php"); break;
+                    case "$p.html": include("$p/$p.php"); break;
+                    case "index.html": include("$h/$h.php"); break;
+                    default: echo "<big>Invalid origin</big>"; break;
                 }
             ?>
         </main>

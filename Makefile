@@ -1,20 +1,35 @@
+P = serve-this
 E = serve-this/en/
 G = serve-this/gr/
 
 A = index.html portfolio.html biography.html
 
-all: $(addprefix $E,$A) $(addprefix $G,$A)
+all: $(addprefix $E,$A) $(addprefix $G,$A) $P/cv.pdf
 
 clean:
-	rm -vf $Tindex.html $Tbiography.html
+	rm -vfr $P/* cv/fonts/
 
-M = header.php s.css s.js
-
-%/index.html: main.php $M $(wildcard home*)
+%/index.html: main.php $(wildcard main/* home/*)
 	mkdir -p $E $G && FILE=$@ php $< > $@
 
-%/portfolio.html: main.php $M $(wildcard por*)
+%/portfolio.html: main.php $(wildcard main/* portfolio/*)
 	mkdir -p $E $G && FILE=$@ php $< > $@
 
-%/biography.html: main.php $M $(wildcard bio*)
+%/biography.html: main.php $(wildcard main/* biography/*)
 	mkdir -p $E $G && FILE=$@ php $< > $@
+
+$P/cv.pdf: cv/cv.tex cv/fonts/ $(wildcard cv/*)
+	cd cv && lualatex \\nonstopmode\\input cv.tex
+	mv cv/cv.pdf $P/
+
+FONT_URL = https://github.com/adobe-fonts/source-sans/releases/download/
+FONT_URL_DIR = 3.052R/
+FONT = OTF-source-sans-3.052R
+
+cv/fonts/:
+	cd cv && wget ${FONT_URL}${FONT_URL_DIR}${FONT}.zip
+	cd cv && unzip ${FONT}.zip
+	cd cv && rm ${FONT}.zip
+	cd cv && mv OTF fonts
+	cd cv && rm -rf __MACOSX
+	cd cv && cp FontAwesome.ttf fonts/

@@ -6,13 +6,13 @@
 ?>
 
 
-<?php $m = simplexml_load_file("bio-minimalism.xml") ?>
+<?php $m = simplexml_load_file("biography/bio-minimalism.xml") ?>
 <h2><?php $b($m->title) ?></h2>
 <p><?php $b($m->arch) ?></p>
 <p><?php $b($m->now_vi) ?></p>
 
 
-<?php $h = simplexml_load_file("bio-high-school.xml") ?>
+<?php $h = simplexml_load_file("biography/bio-high-school.xml") ?>
 <h2><?php $b($h->title) ?></h2>
 <p>
     <?php $b($h->graduated) ?>
@@ -51,7 +51,7 @@
 </p>
 
 
-<?php $l = simplexml_load_file("bio-languages.xml") ?>
+<?php $l = simplexml_load_file("biography/bio-languages.xml") ?>
 <h2><?php $b($l->title) ?></h2>
 
 <p>
@@ -70,7 +70,7 @@
 </p>
 
 
-<?php $ac = simplexml_load_file("bio-architecture.xml") ?>
+<?php $ac = simplexml_load_file("biography/bio-architecture.xml") ?>
 <h2><?php $b($ac->title) ?></h2>
 
 <p><?php $b($ac->os) ?></p>
@@ -81,7 +81,7 @@
 </p>
 
 
-<?php $f = simplexml_load_file("bio-friends.xml") ?>
+<?php $f = simplexml_load_file("biography/bio-friends.xml") ?>
 <h2><?php $b($f->title); ?></h2>
 
 <p><?php $b($f->psychotherapy) ?></p>
@@ -89,7 +89,7 @@
 <p><?php $b($f->jackasses)     ?></p>
 
 
-<?php $ar = simplexml_load_file("bio-arts.xml") ?>
+<?php $ar = simplexml_load_file("biography/bio-arts.xml") ?>
 <h2><?php $b($ar->title); ?></h2>
 
 <p><?php $b($ar->quit_piano); ?></p>
@@ -105,7 +105,7 @@
 <p><?php $b($ar->cultivated); ?></p>
 
 
-<?php $yt = simplexml_load_file("bio-youtube.xml") ?>
+<?php $yt = simplexml_load_file("biography/bio-youtube.xml") ?>
 <h2><?php $b($yt->title) ?></h2>
 
 <p>

@@ -57,6 +57,11 @@
         </a>
     </li>
     <li <?php $l() ?>>
+        <a <?php $a("../cv.pdf", "", $ORIGIN_FILE); ?>>
+            cv.pdf
+        </a>
+    </li>
+    <li <?php $l() ?>>
         <a <?php $a("portfolio.html", "", $ORIGIN_FILE); ?>>
             <?php $EN("Portfolio"); $GR("Χαρτοφυλάκιο"); ?>
         </a>
