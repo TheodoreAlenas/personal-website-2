@@ -9,6 +9,11 @@ all: $(addprefix $E,$A) $(addprefix $G,$A) $P/cv.pdf
 clean:
 	rm -vfr $P/* cv/fonts/
 
+push: $P
+	rsync --delete -vr $P/* root@theodoros-d-alenas.site:/srv
+
+.PHONY: all clean push
+
 %/index.html: main.php $(wildcard main/* home/*)
 	mkdir -p $E $G && FILE=$@ php $< > $@
 
