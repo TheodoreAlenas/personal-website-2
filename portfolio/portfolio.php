@@ -32,7 +32,7 @@
     <?php $a($s->hk_sys_around) ?><code>sxhkd</code>,
     <?php $a($s->w_4_vers) ?>:
 </p>
-<h3>alchain</h3>
+<h3><?php $EN("Version"); $GR("Έκδοση"); ?> 1: alchain</h3>
 <p>
     <?php $a($s->alchain_3_prog) ?>,
     <code>alchain</code>,
@@ -48,7 +48,7 @@
     <?php $EN("(plain file)"); $GR("(Πηγαίος κώδηκας)"); ?>
 </i>
 <p><?php $a($s->but_windows_break_like_this) ?></p>
-<h3>alk</h3>
+<h3><?php $EN("Version"); $GR("Έκδοση"); ?> 2: alk</h3>
 <p>
     <?php $a($s->alk_is_scripts) ?>
     <?php $a($s->the) ?> <code>al</code> <?php $a($s->shows) ?>
@@ -64,7 +64,7 @@
     >al</a></code>
 </i>
 <p><?php $a($s->but_verbose_and_never_term) ?></p>
-<h3>alsnip</h3>
+<h3><?php $EN("Version"); $GR("Έκδοση"); ?> 3: alsnip</h3>
 <p><?php $a($s->snip_gen_w_compl_unpublished) ?></p>
 <pre><?php $c("example-config/reset.sh") ?></pre>
 <i>
@@ -77,7 +77,7 @@
     <a href="https://github.com/TheodoreAlenas/alsnip">GitHub</a>.
 </p>
 
-<h3>scmd</h3>
+<h3><?php $EN("Version"); $GR("Έκδοση"); ?> 4: scmd</h3>
 <p><?php $a($s->a_single_file) ?></p>
 <pre><?php $c("scmd volume") ?></pre>
 <p><?php $a($s->line_types) ?></p>
