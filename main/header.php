@@ -25,14 +25,15 @@
 
 
 ?>
-<input id="hamburger-checkbox" type="checkbox" class="phone" />
+<input
+    id="hamburger-checkbox"
+    type="checkbox"
+    class="phone abs w1 h1 t-r-2 m0"
+    />
 <label
     for="hamburger-checkbox"
-    class="shadow p2 bg1 phone-grid gr-acol-a"
->
-    <span id="menu-label" class="gr-r1"><?php echo $TITLE ?></span>
-    <span class="gr-r1" style="text-align: end">☰</span>
-</label>
+    class="phone-block shadow p2 bg1"
+><?php echo $TITLE ?></label>
 <ul
     class="shadow flattened-list mxw2 m0a
     bg1 grid ali-c gr-tcol-a gr-acol-m"
