@@ -85,6 +85,7 @@ main a:hover::before {
 .ilbl { display: inline-block; }
 .abs { position: absolute; }
 .ls-none { list-style: none; }
+.trans1 { transition: all 0.2s; }
 
 #hamburger-checkbox::before,
 #hamburger-checkbox::after {
