@@ -71,26 +71,24 @@ main a:hover::before {
 .gr-acol-a { grid-auto-columns: auto; }
 .gr-acol-m { grid-auto-columns: max-content; }
 .gr-r1 { grid-row: 1; }
+.p0 { padding: 0; }
 .p1 { padding: 1.5em 1.5em; }
 .p2 { padding: 0.5em 1em; }
 .t-r-2 { top: 0.5em; right: 1em; }
 .pl3 { padding-left: 3em; }
 .pr3 { padding-right: 3em; }
-.m1 { margin: 0.5em; }
 .m0 { margin: 0; }
 .m0a { margin: 0 auto; }
+.m1 { margin: 0.5em; }
 .mxw2 { max-width: 60cm; }
 .ilbl { display: inline-block; }
 .abs { position: absolute; }
-
-.flattened-list { list-style: none; padding: 0; }
+.ls-none { list-style: none; }
 
 #hamburger-checkbox::before,
 #hamburger-checkbox::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 50%;
+    content: ""; position: absolute;
+    width: 100%; height: 50%;
     border-top-style: solid;
     border-bottom-style: solid;
     box-sizing: border-box;

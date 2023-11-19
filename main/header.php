@@ -35,7 +35,7 @@
     class="phone-block shadow p2 bg1"
 ><?php echo $TITLE ?></label>
 <ul
-    class="shadow flattened-list mxw2 m0a
+    class="shadow ls-none p0 mxw2 m0a
     bg1 grid ali-c gr-tcol-a gr-acol-m"
 >
     <li <?php $l() ?>>
