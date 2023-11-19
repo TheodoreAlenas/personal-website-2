@@ -37,14 +37,6 @@ function get_biography_html(string \$language) {
 
   return get_typical_layout(
     \$language,
-    "biography",
-    [],
-    "",
-    //get_bio_content(\$language)
-    extract_html_from_biography_xmls(\$language)
-  );
-
-}
 EOPHP],
 
 
