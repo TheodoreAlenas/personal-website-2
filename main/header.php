@@ -46,7 +46,7 @@
     <li <?php $l() ?>>
         <button
             onclick="switchColorScheme()"
-            class="ilbl p1 fn2 bg1 fg1 b1 br1 m1 hov-bg3"
+            class="ilbl p3 fn1 bg1 fg1 b1 br1 m1 hov-bg3"
         >
             <?php $EN("Colors"); $GR("Χρώμα"); ?>
         </button>

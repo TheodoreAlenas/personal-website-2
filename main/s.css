@@ -74,6 +74,7 @@ main a:hover::before {
 .p0 { padding: 0; }
 .p1 { padding: 1.5em 1.5em; }
 .p2 { padding: 0.5em 1em; }
+.p3 { padding: 1em 1em; }
 .t-r-2 { top: 0.5em; right: 1em; }
 .pl3 { padding-left: 3em; }
 .pr3 { padding-right: 3em; }
@@ -99,13 +100,11 @@ main a:hover::before {
     top: 50%; border-top-width: 1px; border-bottom-width: 2px; }
 
 .fn1 { font-family: system-ui; font-size: 0.5cm; }
-.fn2 { font-family: system-ui; font-size: 0.4cm; }
 .phone { display: none; }
 .phone-block { display: none; }
 
 @media screen and (max-width: 25cm) {
     .fn1 { font-size: 0.4cm; }
-    .fn2 { font-size: 0.3cm; }
 
     .desktop { display: none; }
     .phone { display: unset; }
