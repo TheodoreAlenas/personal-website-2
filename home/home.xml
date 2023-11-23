@@ -1,36 +1,43 @@
 <all>
 <teo><en>Theodore</en><gr>Θοδωρής</gr></teo>
 <dimak><en>Dimakopoulos</en><gr>Δημακόπουλος</gr></dimak>
-<i_trust_reworks>
+
+<caring_programmer>
 <en>
-Welcome people! I've failed and rebuilt myself so much by now
-that reworks are something I've come to trust.
+A caring undergraduate programmer with broad fundamental skills,
+that adapted to stay aware and conscious at the cost of suffering.
 </en>
 <gr>
-Χαίρετε! Χρειάστηκε να επανασχεδιάσω τη ζωή μου τόσο
-που πλέον εμπιστεύομαι τους επανασχεδιασμούς.
+Προπτυχιακός φοιτητής με ευρείες βασικές γνώσεις, που δέχεται να
+υποφέρει για διαύγεια, αυτοέλεγχο και κατανόηση των άλλων.
 </gr>
-</i_trust_reworks>
-<i_value_emotions>
-<en>
-Through this journey I've come to value observing emotions
-over avoiding shame, and simplifying requirements over analyzing.
-</en>
-<gr>
-Μέσα από αυτό το ταξίδι προτεραιοποίησα την κατανόηση συναισθημάτων
-αντί της ντροπής και την απλοποίηση απαιτήσεων έναντι της ανάλυσης.
-</gr>
-</i_value_emotions>
-<i_relax_coding>
-<en>
-Reworking my identity is draining, so I spend a lot of time
-programming to relax, since I always had a head start in it.
-</en>
-<gr>
-Η επανάχτιση του εαυτού μου είναι εξαντλητική, οπότε ξοδεύω
-πολύ χρόνο προγραμματίζοντας για ανακούφιση, επειδή εκεί έχω προβάδισμα.
-</gr>
-</i_relax_coding>
+</caring_programmer>
+
+<i_trust>
+<en>I trust 3 things:</en>
+<gr>Υπάρχουν τρία πράγματα που εμπιστεύομαι περισσότερο:</gr>
+</i_trust>
+<t1><en>working half-code,</en><gr>ελλιπή εκτελέσιμο κώδικα,</gr></t1>
+<t2><en>past experiments and</en><gr>περασμένα πειράματα και</gr></t2>
+<t3><en>well treated buddies.</en><gr>περιποιημένους διπλανούς.</gr></t3>
+
+<i_follow_the_rules>
+<en>Off of that, I follow 3 rules:</en>
+<gr>Βάσει αυτών, ακολουθώ τρεις κανόνες:</gr>
+</i_follow_the_rules>
+<r1>
+<en>When giving help, skill issue means hope, it's not a weapon.</en>
+<gr>Όσο βοηθώ, έλλειψη δεξιοτήτων είναι ελπιδοφόρα, θετική έννοια.</gr>
+</r1>
+<r2>
+<en>When giving help, everything is a skill issue.</en>
+<gr>Όσο βοηθώ, όλα είναι ελλείψεις δεξιοτήτων.</gr>
+</r2>
+<r3>
+<en>Protect and treat whoever proves crucial.</en>
+<gr>Να νοιάζομαι και να προστατεύω όποιον αποδεικνύεται κρίσιμος.</gr>
+</r3>
+
 <lets_go_out>
 <en>
 I keep this website mainly for people who think of hiring me.
@@ -52,17 +59,18 @@ and if you're not willing anyway, I understand that.
 Συντηρώ αυτό τον ιστοχώρο κυρίως για εργοδότες.
 Μέχρι στιγμής, το 2023, δεν έχω πρακτική εμπειρία στις
 διαδικτυακές εφαρμογές και ιστοχώρους εκτός από αυτόν εδώ.
-Έχω χριησιμοποιήσει μια μεγάλη ποικιλία εργαλείων και τεχνικών
-προγραμματισμού για το προσωπικό μου περιβάλλον,
-και, για προπτυχιακός γοιτητής,
-είμαι αρκετά άνετος στη διαχείριση πολυπλοκότητας.
-Αν δεν έχετε πρόβλημα θα χαιρόμουν να βγω με τους προγραμματιστές
+Έχω χριησιμοποιήσει μια μεγάλη ποικιλία εργαλείων και
+έχω προγραμματίσει με διάφροες τεχνικές,
+όσο φτιάχνω εργαλεία για το προσωπικό μου περιβάλλον.
+Για δεδομένα προπτυχιακού φοιτητή
+είμαι αρκετά άνετος με πολύπλοκα προβλήματα.
+Αν συμφωνείτε θα χαιρόμουν να βγω με τους προγραμματιστές
 και να συζητήσουμε ή να κάνουμε μαζί ασκήσεις ή προθέρμανση
 αν τους ενδιαφέρουν αυτά.
 Μετά μπορούμε να συμφωνήσουμε όλοι μαζί
 αν ταιριάζω στην εταιρία και πού.
-Εννοείται πως θα βοηθήσω στην κάλυψη από προβλήματα με ανώτερα στελέχη
-όπου μπορώ, και ούτε επιμένω στην όλη ιδέα.
+Εννοείται πως αν προκύψουν προβλήματα με ανώτερα στελέχη
+θα συμπαρασταθώ όπου μπορώ, και αν δε θέλετε το καταλαβαίνω.
 </gr>
 </lets_go_out>
 </all>
