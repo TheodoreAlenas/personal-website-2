@@ -16,6 +16,14 @@
     ><?php $a($h->and_i_got_yt) ?></a>.
 </p>
 <p><?php $a($h->lets_go_out) ?></p>
+<p>
+    <?php $a($h->my_email_is) ?>
+    <a href="mailto:dimakopt732@gmail.com"
+    >dimakopt732@gmail.com</a>
+    <?php $a($h->and_my_instagram) ?>
+    <a href="https://www.instagram.com/theodore_alenas/"
+    >theodore_alenas</a>.
+</p>
 
 <?php
     $unused_variable_for_holding_license =
