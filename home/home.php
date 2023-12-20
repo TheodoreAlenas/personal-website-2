@@ -9,6 +9,12 @@
 <?php $h = simplexml_load_file("home/home.xml") ?>
 <h1><?php $a($h->teo); echo ' '; $a($h->dimak); ?></h1>
 
+<p><?php $a($h->for_hr) ?></p>
+<p>
+    <?php $a($h->what_ive_done) ?>
+    <a href="https://www.youtube.com/@theodorealenas3171"
+    ><?php $a($h->and_i_got_yt) ?></a>.
+</p>
 <p><?php $a($h->lets_go_out) ?></p>
 
 <?php
