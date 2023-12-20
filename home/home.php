@@ -9,19 +9,6 @@
 <?php $h = simplexml_load_file("home/home.xml") ?>
 <h1><?php $a($h->teo); echo ' '; $a($h->dimak); ?></h1>
 
-<p><?php $a($h->caring_programmer) ?></p>
-<p><?php $a($h->i_trust) ?></p>
-<ul>
-    <li><?php $a($h->t1) ?></li>
-    <li><?php $a($h->t2) ?></li>
-    <li><?php $a($h->t3) ?></li>
-</ul>
-<p><?php $a($h->i_follow_the_rules) ?></p>
-<ul>
-    <li><?php $a($h->r1) ?></li>
-    <li><?php $a($h->r2) ?></li>
-    <li><?php $a($h->r3) ?></li>
-</ul>
 <p><?php $a($h->lets_go_out) ?></p>
 
 <?php
