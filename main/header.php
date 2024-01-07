@@ -1,13 +1,13 @@
 <!-- <?php echo basename(__FILE__); ?> -->
 <?php
     function menu_print_li_attributes() {
-        echo 'class="ilbl gr-r1"';
+        echo 'class="ilbl"';
     }
     $l = "menu_print_li_attributes";
 
     function menu_print_a_attributes($href, $extra_classes, $file) {
         echo 'href="' . $href . '" ';
-        echo 'class="ilbl p1 hov-bg3 trans1 ';
+        echo 'class="ilbl hov-bg3 trans1 ';
         echo $extra_classes . ' ';
         if ($href == basename($file)) {
             echo "bg3 ";
@@ -28,15 +28,14 @@
 <input
     id="hamburger-checkbox"
     type="checkbox"
-    class="phone abs w1 h1 t-r-2 m0"
+    class="phone abs w1 h1 t-r-2"
     />
 <label
     for="hamburger-checkbox"
-    class="phone-block shadow p2 bg1"
+    class="phone-block shadow bg1"
 ><?php echo $TITLE ?></label>
 <ul
-    class="shadow ls-none p0 mxw2 m0a
-    bg1 grid ali-c gr-tcol-a gr-acol-m"
+    class="shadow ls-none p0 mxw2 bg1"
 >
     <li <?php $l() ?>>
         <a <?php $a("index.html", "pl3 pr3", $ORIGIN_FILE); ?>>
@@ -46,7 +45,7 @@
     <li <?php $l() ?>>
         <button
             onclick="switchColorScheme()"
-            class="ilbl p3 fn1 bg1 fg1 b1 br1 m1 hov-bg3 trans1"
+            class="ilbl fn1 bg1 fg1 b1 br1 hov-bg3 trans1"
         >
             <?php $EN("Colors"); $GR("Χρώμα"); ?>
         </button>

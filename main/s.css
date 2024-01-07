@@ -65,22 +65,23 @@ main a:hover::before {
 .w1 { width: 1.7em; }
 .h1 { height: 1.7em; }
 .mxw1 { max-width: 30cm; }
-.grid { display: grid; }
-.ali-c { align-items: center; }
-.gr-tcol-a { grid-template-columns: auto; }
-.gr-acol-a { grid-auto-columns: auto; }
-.gr-acol-m { grid-auto-columns: max-content; }
-.gr-r1 { grid-row: 1; }
-.p0 { padding: 0; }
-.p1 { padding: 1.5em 1.5em; }
-.p2 { padding: 0.5em 1em; }
-.p3 { padding: 1em 1em; }
+header ul {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto;
+    grid-auto-columns: max-content;
+}
+header li {grid-row: 1}
+header ul {padding: 0}
+header a, main {padding: 1.5em 1.5em}
+header label {padding: 0.5em 1em}
+header button {padding: 1em 1em}
 .t-r-2 { top: 0.5em; right: 1em; }
 .pl3 { padding-left: 3em; }
 .pr3 { padding-right: 3em; }
-.m0 { margin: 0; }
-.m0a { margin: 0 auto; }
-.m1 { margin: 0.5em; }
+header input, body {margin: 0}
+header ul, main {margin: 0 auto}
+header button {margin: 0.5em}
 .mxw2 { max-width: 60cm; }
 .ilbl { display: inline-block; }
 .abs { position: absolute; }
