@@ -1,13 +1,8 @@
 <!-- <?php echo basename(__FILE__); ?> -->
 <?php
-    function menu_print_li_attributes() {
-        echo 'class="ilbl"';
-    }
-    $l = "menu_print_li_attributes";
-
     function menu_print_a_attributes($href, $extra_classes, $file) {
         echo 'href="' . $href . '" ';
-        echo 'class="ilbl hov-bg3 trans1 ';
+        echo 'class="ilbl hov-bg3 ';
         echo $extra_classes . ' ';
         if ($href == basename($file)) {
             echo "bg3 ";
@@ -28,45 +23,44 @@
 <input
     id="hamburger-checkbox"
     type="checkbox"
-    class="phone abs w1 h1 t-r-2"
     />
 <label
     for="hamburger-checkbox"
-    class="phone-block shadow bg1"
+    class="shadow bg1"
 ><?php echo $TITLE ?></label>
 <ul
-    class="shadow ls-none p0 mxw2 bg1"
+    class="shadow bg1"
 >
-    <li <?php $l() ?>>
+    <li>
         <a <?php $a("index.html", "pl3 pr3", $ORIGIN_FILE); ?>>
             <?php $EN("Home"); $GR("Αρχική"); ?>
         </a>
     </li>
-    <li <?php $l() ?>>
+    <li>
         <button
             onclick="switchColorScheme()"
-            class="ilbl fn1 bg1 fg1 b1 br1 hov-bg3 trans1"
+            class="ilbl bg1 fg1 hov-bg3"
         >
             <?php $EN("Colors"); $GR("Χρώμα"); ?>
         </button>
     </li>
     <script> setUpColorScheme(); </script>
-    <li <?php $l() ?>>
+    <li>
         <a <?php $a($menu_opposite_language, "", $ORIGIN_FILE); ?>>
             <?php $EN("Greek"); $GR("English"); ?>
         </a>
     </li>
-    <li <?php $l() ?>>
+    <li>
         <a <?php $a("../cv.pdf", "", $ORIGIN_FILE); ?>>
             cv.pdf
         </a>
     </li>
-    <li <?php $l() ?>>
+    <li>
         <a <?php $a("portfolio.html", "", $ORIGIN_FILE); ?>>
             <?php $EN("Portfolio"); $GR("Χαρτοφυλάκιο"); ?>
         </a>
     </li>
-    <li <?php $l() ?>>
+    <li>
         <a <?php $a("biography.html", "pr3", $ORIGIN_FILE); ?>>
             <?php $EN("Biography"); $GR("Βιογραφικό"); ?>
         </a>

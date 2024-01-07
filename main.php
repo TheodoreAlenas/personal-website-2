@@ -41,15 +41,15 @@
         </script>
 
     </head>
-    <body class="bg1 fg1 fn1 lnh1">
-        <header id="menu" style="position: sticky; top: 0;">
+    <body class="bg1 fg1">
+        <header id="menu">
             <nav>
 
                 <?php include("main/header.php") ?>
 
             </nav>
         </header>
-        <main class="mxw1 b2 bg1 fg1">
+        <main class="bg1 fg1">
             <?php
                 $b = "biography";
                 $p = "portfolio";

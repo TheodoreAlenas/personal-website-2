@@ -41,8 +41,8 @@ main a:hover::before {
 [scheme=light] *::selection,
 [scheme=light] a.bg3,
 [scheme=light] .bg3 { background-color: #111122; color: #c0caf5 }
-[scheme=light] .b1,
-[scheme=light] .b2 { border-color: #cccccc; }
+[scheme=light] header button,
+[scheme=light] main { border-color: #cccccc; }
 [scheme=light] pre { background-color: #eeeeee; }
 [scheme=light] .shadow { box-shadow: #cccccc 0 0 1rem 0; }
 
@@ -52,19 +52,19 @@ main a:hover::before {
 [scheme=dark] *::selection,
 [scheme=dark] a.bg3,
 [scheme=dark] .bg3 { background-color: #e0af68; color: #1d202f }
-[scheme=dark] .b1,
-[scheme=dark] .b2 { border-color: #1d202f; }
+[scheme=dark] header button,
+[scheme=dark] main { border-color: #1d202f; }
 [scheme=dark] pre { background-color: #1d202f; }
 [scheme=dark] .shadow { box-shadow: #1d202f 0 0 1rem 0; }
 
-.b1 { border-style: solid; border-width: 2px; }
-.b2 { border-left: 1px solid; border-right: 1px solid; }
-.br1 { border-radius: 3px; }
+main {border-left: 1px solid; border-right: 1px solid}
+header button {border-style: solid; border-width: 2px}
+header button {border-radius: 3px}
+header button {font-family: inherit; font-size: inherit}
 
-.lnh1 { line-height: 1.5em; }
-.w1 { width: 1.7em; }
-.h1 { height: 1.7em; }
-.mxw1 { max-width: 30cm; }
+body {line-height: 1.5em}
+header input {width: 1.7em; height: 1.7em}
+main {max-width: 30cm}
 header ul {
     display: grid;
     align-items: center;
@@ -73,20 +73,18 @@ header ul {
 }
 header li {grid-row: 1}
 header ul {padding: 0}
-header a, main {padding: 1.5em 1.5em}
+main, header a {padding: 1.5em 1.5em}
 header label {padding: 0.5em 1em}
-header button {padding: 1em 1em}
-.t-r-2 { top: 0.5em; right: 1em; }
-.pl3 { padding-left: 3em; }
-.pr3 { padding-right: 3em; }
-header input, body {margin: 0}
-header ul, main {margin: 0 auto}
-header button {margin: 0.5em}
-.mxw2 { max-width: 60cm; }
-.ilbl { display: inline-block; }
-.abs { position: absolute; }
-.ls-none { list-style: none; }
-.trans1 { transition: all 0.2s; }
+header button {padding: 1em 1em; margin: 0.5em}
+.pl3 {padding-left: 3em}
+.pr3 {padding-right: 3em}
+header {position: sticky; top: 0}
+header input {position: absolute; top: 0.5em; right: 1em}
+body, header input {margin: 0}
+main, header ul {margin: 0 auto}
+header ul {list-style: none; max-width: 60cm}
+header li, header a, header button {display: inline-block}
+header a, header button {transition: all 0.2s}
 
 #hamburger-checkbox::before,
 #hamburger-checkbox::after {
@@ -101,16 +99,13 @@ header button {margin: 0.5em}
 #hamburger-checkbox::after {
     top: 50%; border-top-width: 1px; border-bottom-width: 2px; }
 
-.fn1 { font-family: system-ui; font-size: 0.5cm; }
-.phone { display: none; }
-.phone-block { display: none; }
+body {font-family: system-ui; font-size: 0.5cm}
+header input, header label {display: none}
 
 @media screen and (max-width: 25cm) {
-    .fn1 { font-size: 0.4cm; }
-
-    .desktop { display: none; }
-    .phone { display: unset; }
-    .phone-block { display: block; }
+    body { font-size: 0.4cm; }
+    header input {display: unset}
+    header label {display: block}
 
     #hamburger-checkbox:not(:checked) + label + ul {
         display: none;
