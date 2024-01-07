@@ -30,7 +30,7 @@
 
 <button
     onclick="switchColorScheme()"
-    class="bg1 fg1 hov-bg3"
+    class="bg1 fg1"
 ><?php $EN("theme"); $GR("θέμα"); ?>
 </button>.
 </p>
