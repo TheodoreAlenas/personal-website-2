@@ -1,71 +1,39 @@
 <!-- <?php echo basename(__FILE__); ?> -->
 <?php
-    function menu_print_a_attributes($href, $extra_classes, $file) {
-        echo 'href="' . $href . '" ';
-        echo 'class="ilbl hov-bg3 ';
-        echo $extra_classes . ' ';
-        if ($href == basename($file)) {
-            echo "bg3 ";
-        }
-        echo '"';
-    }
-    $a = "menu_print_a_attributes";
-
     if ($LANG == "en") {
         $menu_opposite_language = "../gr/" . basename($ORIGIN_FILE);
     }
     else {
         $menu_opposite_language = "../en/" . basename($ORIGIN_FILE);
     }
-
-
 ?>
-<input
-    id="hamburger-checkbox"
-    type="checkbox"
-    />
-<label
-    for="hamburger-checkbox"
-    class="shadow bg1"
-><?php echo $TITLE ?></label>
-<ul
-    class="shadow bg1"
->
-    <li>
-        <a <?php $a("index.html", "pl3 pr3", $ORIGIN_FILE); ?>>
-            <?php $EN("Home"); $GR("Αρχική"); ?>
-        </a>
-    </li>
-    <li>
-        <button
-            onclick="switchColorScheme()"
-            class="ilbl bg1 fg1 hov-bg3"
-        >
-            <?php $EN("Colors"); $GR("Χρώμα"); ?>
-        </button>
-    </li>
-    <script> setUpColorScheme(); </script>
-    <li>
-        <a <?php $a($menu_opposite_language, "", $ORIGIN_FILE); ?>>
-            <?php $EN("Greek"); $GR("English"); ?>
-        </a>
-    </li>
-    <li>
-        <a <?php $a("../cv.pdf", "", $ORIGIN_FILE); ?>>
-            cv.pdf
-        </a>
-    </li>
-    <li>
-        <a <?php $a("portfolio.html", "", $ORIGIN_FILE); ?>>
-            <?php $EN("Portfolio"); $GR("Χαρτοφυλάκιο"); ?>
-        </a>
-    </li>
-    <li>
-        <a <?php $a("biography.html", "pr3", $ORIGIN_FILE); ?>>
-            <?php $EN("Biography"); $GR("Βιογραφικό"); ?>
-        </a>
-    </li>
-</ul>
+<h1><?php echo $TITLE ?></h1>
+<p>
+<?php $EN("Στηρίζεται και η"); ?>
+
+<a href="<?php echo($menu_opposite_language); ?>"
+><?php $EN("Ελληνική"); $GR("English"); ?></a>
+<?php
+    $EN("γλώσσα. Available are");
+    $GR("is also supported. Διατίθενται");
+?>
+
+<a href="index.html"
+><?php $EN("the home page"); $GR("η αρχική σελίδα"); ?></a>,
+<a href="portfolio.html"
+><?php $EN("portfolio"); $GR("χαρτοφυλάκιο"); ?></a>,
+<a href="biography.html"
+><?php $EN("biography"); $GR("βιογραφικό"); ?></a>,
+<a href="../cv.pdf"
+>cv.pdf</a>
+<?php $EN("and dark/light"); $GR("και ανοιχτό/σκούρο"); ?>
+
+<button
+    onclick="switchColorScheme()"
+    class="bg1 fg1 hov-bg3"
+><?php $EN("theme"); $GR("θέμα"); ?>
+</button>.
+</p>
 
 <?php
     /*

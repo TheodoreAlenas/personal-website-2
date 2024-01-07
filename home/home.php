@@ -7,7 +7,6 @@
 
 
 <?php $h = simplexml_load_file("home/home.xml") ?>
-<h1><?php $a($h->teo); echo ' '; $a($h->dimak); ?></h1>
 
 <p><?php $a($h->for_hr) ?></p>
 <p>

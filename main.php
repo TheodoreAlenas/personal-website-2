@@ -2,7 +2,7 @@
     function skip_region($t) {}
     function echo_region($t) {echo $t;}
     $FILE_END_TO_TITLE = array(
-        "index.html" => ["Home", "Αρχική"],
+        "index.html" => ["Theodoros Dimakopoulos", "Θοδωρής Δημακόπουλος"],
         "portfolio.html" => ["Portfolio", "Χαρτοφυλάκιο"],
         "biography.html" => ["Biography", "Βιογραφικό"],
         "contact.html" => ["Contact", "Επικοινωνία"]
@@ -42,26 +42,26 @@
 
     </head>
     <body class="bg1 fg1">
-        <header id="menu">
-            <nav>
-
-                <?php include("main/header.php") ?>
-
-            </nav>
-        </header>
-        <main class="bg1 fg1">
-            <?php
-                $b = "biography";
-                $p = "portfolio";
-                $h = "home";
-                switch (basename($ORIGIN_FILE)) {
-                    case "$b.html": include("$b/$b.php"); break;
-                    case "$p.html": include("$p/$p.php"); break;
-                    case "index.html": include("$h/$h.php"); break;
-                    default: echo "<big>Invalid origin</big>"; exit(1);
-                }
-            ?>
-        </main>
+        <div>
+            <header>
+                <nav>
+                    <?php include("main/header.php") ?>
+                </nav>
+            </header>
+            <main class="bg1 fg1">
+                <?php
+                    $b = "biography";
+                    $p = "portfolio";
+                    $h = "home";
+                    switch (basename($ORIGIN_FILE)) {
+                        case "$b.html": include("$b/$b.php"); break;
+                        case "$p.html": include("$p/$p.php"); break;
+                        case "index.html": include("$h/$h.php"); break;
+                        default: echo "<big>Invalid origin</big>"; exit(1);
+                    }
+                ?>
+            </main>
+        </div>
     </body>
 </html>
 

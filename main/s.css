@@ -1,12 +1,13 @@
 /* <?php echo basename(__FILE__);  // s.css as of now ?> */
 
 html { color-scheme: light; }
+h1 {text-align: center}
 h2 { margin-top: 3rem; margin-left: 2rem; }
 button { cursor: pointer; }
 pre { border-radius: 5px; padding-left: 1em; overflow: scroll; }
 a { text-underline-offset: 0.2em; }
-main a:hover { position: relative; z-index: 1; }
-main a:hover::before {
+a:hover { position: relative; z-index: 1; }
+a:hover::before {
     position: absolute; z-index: -1;
     display: inline-block; content: "";
     left: 0; right: 0; top: -0.2em; bottom: 0;
@@ -41,8 +42,9 @@ main a:hover::before {
 [scheme=light] *::selection,
 [scheme=light] a.bg3,
 [scheme=light] .bg3 { background-color: #111122; color: #c0caf5 }
-[scheme=light] #menu button,
-[scheme=light] main { border-color: #cccccc; }
+[scheme=light] button,
+[scheme=light] body > div { border-color: #cccccc; }
+[scheme=light] body > div > header,
 [scheme=light] pre { background-color: #eeeeee; }
 [scheme=light] .shadow { box-shadow: #cccccc 0 0 1rem 0; }
 
@@ -52,81 +54,24 @@ main a:hover::before {
 [scheme=dark] *::selection,
 [scheme=dark] a.bg3,
 [scheme=dark] .bg3 { background-color: #e0af68; color: #1d202f }
-[scheme=dark] #menu button,
-[scheme=dark] main { border-color: #1d202f; }
+[scheme=dark] button,
+[scheme=dark] body > div { border-color: #1d202f; }
+[scheme=dark] body > div > header,
 [scheme=dark] pre { background-color: #1d202f; }
 [scheme=dark] .shadow { box-shadow: #1d202f 0 0 1rem 0; }
 
-main {border-left: 1px solid; border-right: 1px solid}
-#menu button {border-style: solid; border-width: 2px}
-#menu button {border-radius: 3px}
-#menu button {font-family: inherit; font-size: inherit}
+body > div {border-left: 1px solid; border-right: 1px solid}
+button {border-style: solid; border-width: 2px}
+button {border-radius: 3px}
+button {font-family: inherit; font-size: inherit}
 
 body {line-height: 1.5em}
-#menu input {width: 1.7em; height: 1.7em}
-main {max-width: 30cm}
-#menu ul {
-    display: grid;
-    align-items: center;
-    grid-template-columns: auto;
-    grid-auto-columns: max-content;
-}
-#menu li {grid-row: 1}
-#menu ul {padding: 0}
-main, #menu a {padding: 1.5em 1.5em}
-#menu label {padding: 0.5em 1em}
-#menu button {padding: 1em 1em; margin: 0.5em}
-.pl3, #menu .pl3 {padding-left: 3em}
-.pr3, #menu .pr3 {padding-right: 3em}
-header {position: sticky; top: 0}
-#menu input {position: absolute; top: 0.5em; right: 1em}
-body, #menu input {margin: 0}
-main, #menu ul {margin: 0 auto}
-#menu ul {list-style: none; max-width: 60cm}
-#menu li, #menu a, #menu button {display: inline-block}
-#menu a, #menu button {transition: all 0.2s}
+body > div {max-width: 30cm}
 
-#hamburger-checkbox::before,
-#hamburger-checkbox::after {
-    content: ""; position: absolute;
-    width: 100%; height: 50%;
-    border-top-style: solid;
-    border-bottom-style: solid;
-    box-sizing: border-box;
-}
-#hamburger-checkbox::before {
-    top: 0; border-top-width: 2px; border-bottom-width: 1px; }
-#hamburger-checkbox::after {
-    top: 50%; border-top-width: 1px; border-bottom-width: 2px; }
-
+body > div > header, body > div > main {padding: 1.5em 1.5em}
+body {margin: 0}
+body > div {margin: 0 auto}
 body {font-family: system-ui; font-size: 0.5cm}
-#menu input, #menu label {display: none}
-
-@media screen and (max-width: 25cm) {
-    body { font-size: 0.4cm; }
-    #menu input {display: unset}
-    #menu label {display: block}
-
-    #hamburger-checkbox:not(:checked) + label + ul {
-        display: none;
-    }
-    #hamburger-checkbox:checked + label::before {
-        content: ""; position: absolute;
-        top: 0; left: 0; width: 100vw; height: 100vh;
-    }
-    #menu ul {
-        position: absolute;
-        top: 1em; right: 1em;
-        border-radius: 5px; overflow: hidden;
-        display: grid; grid-auto-rows: auto; align-items: center;
-    }
-    #menu li {
-        display: grid; grid-column: 1; grid-row: unset;
-    }
-    #menu li a {
-        padding: 1.5em 2em;
-    }
-}
 
 /* <?php echo "The original file had the MIT notice here";
 // Copyright (c) 2023 Dimakopoulos Theodoros
