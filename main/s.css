@@ -41,7 +41,7 @@ main a:hover::before {
 [scheme=light] *::selection,
 [scheme=light] a.bg3,
 [scheme=light] .bg3 { background-color: #111122; color: #c0caf5 }
-[scheme=light] header button,
+[scheme=light] #menu button,
 [scheme=light] main { border-color: #cccccc; }
 [scheme=light] pre { background-color: #eeeeee; }
 [scheme=light] .shadow { box-shadow: #cccccc 0 0 1rem 0; }
@@ -52,39 +52,39 @@ main a:hover::before {
 [scheme=dark] *::selection,
 [scheme=dark] a.bg3,
 [scheme=dark] .bg3 { background-color: #e0af68; color: #1d202f }
-[scheme=dark] header button,
+[scheme=dark] #menu button,
 [scheme=dark] main { border-color: #1d202f; }
 [scheme=dark] pre { background-color: #1d202f; }
 [scheme=dark] .shadow { box-shadow: #1d202f 0 0 1rem 0; }
 
 main {border-left: 1px solid; border-right: 1px solid}
-header button {border-style: solid; border-width: 2px}
-header button {border-radius: 3px}
-header button {font-family: inherit; font-size: inherit}
+#menu button {border-style: solid; border-width: 2px}
+#menu button {border-radius: 3px}
+#menu button {font-family: inherit; font-size: inherit}
 
 body {line-height: 1.5em}
-header input {width: 1.7em; height: 1.7em}
+#menu input {width: 1.7em; height: 1.7em}
 main {max-width: 30cm}
-header ul {
+#menu ul {
     display: grid;
     align-items: center;
     grid-template-columns: auto;
     grid-auto-columns: max-content;
 }
-header li {grid-row: 1}
-header ul {padding: 0}
-main, header a {padding: 1.5em 1.5em}
-header label {padding: 0.5em 1em}
-header button {padding: 1em 1em; margin: 0.5em}
-.pl3 {padding-left: 3em}
-.pr3 {padding-right: 3em}
+#menu li {grid-row: 1}
+#menu ul {padding: 0}
+main, #menu a {padding: 1.5em 1.5em}
+#menu label {padding: 0.5em 1em}
+#menu button {padding: 1em 1em; margin: 0.5em}
+.pl3, #menu .pl3 {padding-left: 3em}
+.pr3, #menu .pr3 {padding-right: 3em}
 header {position: sticky; top: 0}
-header input {position: absolute; top: 0.5em; right: 1em}
-body, header input {margin: 0}
-main, header ul {margin: 0 auto}
-header ul {list-style: none; max-width: 60cm}
-header li, header a, header button {display: inline-block}
-header a, header button {transition: all 0.2s}
+#menu input {position: absolute; top: 0.5em; right: 1em}
+body, #menu input {margin: 0}
+main, #menu ul {margin: 0 auto}
+#menu ul {list-style: none; max-width: 60cm}
+#menu li, #menu a, #menu button {display: inline-block}
+#menu a, #menu button {transition: all 0.2s}
 
 #hamburger-checkbox::before,
 #hamburger-checkbox::after {
@@ -100,12 +100,12 @@ header a, header button {transition: all 0.2s}
     top: 50%; border-top-width: 1px; border-bottom-width: 2px; }
 
 body {font-family: system-ui; font-size: 0.5cm}
-header input, header label {display: none}
+#menu input, #menu label {display: none}
 
 @media screen and (max-width: 25cm) {
     body { font-size: 0.4cm; }
-    header input {display: unset}
-    header label {display: block}
+    #menu input {display: unset}
+    #menu label {display: block}
 
     #hamburger-checkbox:not(:checked) + label + ul {
         display: none;
