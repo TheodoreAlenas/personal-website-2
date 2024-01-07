@@ -9,12 +9,12 @@
 <?php $h = simplexml_load_file("home/home.xml") ?>
 
 <p>
-    <?php $a($h->my_email_is) ?>
+    E-mail:
     <a href="mailto:dimakopt732@gmail.com"
-    >dimakopt732@gmail.com</a>
-    <?php $a($h->and_my_instagram) ?>
+    >dimakopt732@gmail.com</a>,
+    Instagram:
     <a href="https://www.instagram.com/theodore_alenas/"
-    >theodore_alenas</a>.
+    >theodore_alenas</a>
     <?php $a($h->and_my_youtube) ?>
     <a href="https://www.youtube.com/@theodorealenas3171"
     >Theodore Alenas</a>.
