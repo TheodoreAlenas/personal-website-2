@@ -29,7 +29,8 @@ a:hover::before {
 [scheme=dark] .fg1 { color: #c0caf5; }
 
 [scheme=light] a:hover,
-[scheme=light] main a:hover::before,
+[scheme=light] button:hover,
+[scheme=light] a:hover::before,
 [scheme=light] *::selection { background-color: #111122; color: #c0caf5 }
 [scheme=light] button,
 [scheme=light] body > div { border-color: #cccccc; }
@@ -38,7 +39,8 @@ a:hover::before {
 [scheme=light] .shadow { box-shadow: #cccccc 0 0 1rem 0; }
 
 [scheme=dark] a:hover,
-[scheme=dark] main a:hover::before,
+[scheme=dark] button:hover,
+[scheme=dark] a:hover::before,
 [scheme=dark] *::selection { background-color: #e0af68; color: #1d202f }
 [scheme=dark] button,
 [scheme=dark] body > div { border-color: #1d202f; }

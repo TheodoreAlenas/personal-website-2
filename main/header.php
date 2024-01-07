@@ -34,6 +34,7 @@
 ><?php $EN("theme"); $GR("θέμα"); ?>
 </button>.
 </p>
+<script> setUpColorScheme() </script>
 
 <?php
     /*

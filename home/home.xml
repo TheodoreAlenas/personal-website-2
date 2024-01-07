@@ -1,5 +1,41 @@
 <all>
 
+<my_email_is>
+<en>Feel free to send me an e-mail on</en>
+<gr>Το e-mail μου είναι</gr>
+</my_email_is>
+<and_my_instagram>
+<en>or you can message my Instagram profile,</en>
+<gr>και στο Instagram λέγομαι</gr>
+</and_my_instagram>
+<and_my_youtube>
+<en>I also have a YouTube channel as</en>
+<gr>Έχω επίσης κανάλι στο YouTube, με ψευδώνυμο</gr>
+</and_my_youtube>
+<hello>
+<en>
+Welcome, I'm a fan of iterative creative processes and minimalism.
+I've been through many phases, where I became obsessed with
+the agile manifesto and then got punished for trying to inspire
+teammates, or before that where I thought it's not necessary to
+communicate with people and then I became obsessed with
+face to face collaboration until people didn't want to follow,
+and there have been many smaller opinion changes too.
+I'm not fully shaped but I have started taking shape.
+</en>
+<gr>
+Γενικά συμπαθώ την σταδιακή πρόοδο, δηλαδή να φτιάχνω πράγματα
+στάδιο στάδιο αντί για κομμάτι κομμάτι, και είμαι μινιμαλιστής.
+Ελπίζω να φαίνεται ότι έχω περάσει από πολλά στάδια και σαν
+προσωπικότητα. Είχα πάθος με το agile manifesto για ένα διάστημα,
+επίσης από εσωστρεφής γύρισα στο άλλο άκρο να προσπαθώ απεγνωσμένα
+να συνεργαστώ πρόσωπο με πρόσωπο σε ενοχλητικό σημείο,
+έχω αλλάξει και μερικές απόψεις όσο αφορά λογισμικό,
+και κάθε φορά υπάρχει αυτή η έντονη αλλαγή από τη μία άποψη στην άλλη
+μέχρι που το περιβάλλον με βάζει σε μία σειρά.
+Έχω αρχίσει να σχηματίζομαι, αλλά έχω πολύ δρόμο ακόμα.
+</gr>
+</hello>
 <for_hr>
 <en>
 I keep this website mainly for people who think of hiring me.
@@ -16,23 +52,17 @@ I've used various tools and techniques
 for my personal environment,
 and I'm surprisingly comfortable handling complexity
 for an undergraduate.
-Also, I host
 </en>
 <gr>
 Μέχρι στιγμής, το 2023, δεν έχω πρακτική εμπειρία στις
 διαδικτυακές εφαρμογές και ιστοχώρους εκτός από αυτόν εδώ,
-αλλά έχω χριησιμοποιήσει μια μεγάλη ποικιλία εργαλείων και
+αλλά έχω χρησιμοποιήσει μια μεγάλη ποικιλία εργαλείων και
 έχω προγραμματίσει με διάφροες τεχνικές,
 όσο φτιάχνω εργαλεία για το προσωπικό μου περιβάλλον.
 Για τα δεδομένα προπτυχιακού φοιτητή
 είμαι αρκετά άνετος με πολύπλοκα προβλήματα.
-Επίσης, έχω
 </gr>
 </what_ive_done>
-<and_i_got_yt>
-<en>the Theodore Alenas YouTube channel</en>
-<gr>κανάλι στο YouTube, με ψευδώνυμο Theodore Alenas</gr>
-</and_i_got_yt>
 <lets_go_out>
 <en>
 If you're okay with it
@@ -53,14 +83,6 @@ and if you're not willing anyway, I understand that.
 θα συμπαρασταθώ όπου μπορώ, και αν δε θέλετε το καταλαβαίνω.
 </gr>
 </lets_go_out>
-<my_email_is>
-<en>Feel free to send me an e-mail on</en>
-<gr>Το e-mail μου είναι</gr>
-</my_email_is>
-<and_my_instagram>
-<en>or you can message my Instagram profile,</en>
-<gr>και στο Instagram λέγομαι</gr>
-</and_my_instagram>
 </all>
 <!--
     Copyright (c) 2023 Dimakopoulos Theodoros

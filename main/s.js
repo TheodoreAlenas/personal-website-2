@@ -10,11 +10,10 @@ function switchColorScheme() {
 }
 
 function setUpColorScheme() {
-    const definer = document.querySelector("[scheme]");
     let setTo = "dark";
     if (localStorage.getItem("lastTheme") === "light")
         setTo = "light";
-    definer.setAttribute("scheme", setTo);
+    document.querySelector("[scheme]").setAttribute("scheme", setTo);
 }
 
 

@@ -68,25 +68,25 @@ Shell scripts that take arguments corresponding
 to hotkeys, and perform the actions.
 </en>
 <gr>
-Shell scripts που δέχονται ορίσματα
-ανάλογα των αντίστοιχων συνδυασμών πλήκτρων,
-και ενεργούν.
+Shell scripts που τα ορίσματα που δέχονται
+αντικατοπτρίζουν συνδυασμούς πλήκτρων.
 </gr>
 </alk_is_scripts>
 <the><en>The</en><gr>Το εκτελέσιμο</gr></the>
 <shows><en>executable displays the</en><gr>προβάλλει τα</gr></shows>
 <in_term_if_env_wo>
 <en>
-in a terminal, if it was called from an environment without the
+in a terminal. That is, if it was called
+from an environment without the
 </en>
 <gr>
-σε ένα τερματικό, αν κλήθηκε από περιβάλλον που
-δε δίνει τιμή στη μεταβλητή
+σε ένα τερματικό. Αυτό όμως δεν είναι απαραίτητο,
+εξαρτάται από τη
 </gr>
 </in_term_if_env_wo>
 <var_set_the_defs_of>
 <en>variable set. The shell function definitions of the</en>
-<gr>Οι ορισμοί των shell functions των εκτελέσιμων</gr>
+<gr>μεταβλητή περιβάλλοντος. Οι ορισμοί των shell functions</gr>
 </var_set_the_defs_of>
 <compile_to_help_note_posix>
 <en>
@@ -97,10 +97,11 @@ how I write shell scripts today. Note that
 it's POSIX compliant instead of Bash.
 </en>
 <gr>
-μεταγλωττίζονται σε εγχειρίδιο χρήσης,
-το οποίο αναλαμβάνει και το ρόλο της λίστας συνδυασμού πλήκτρων.
-Αν και ο κώδικας είναι παράξενος, είναι πού πιο κοντά στο
-χαρακτήρα του σημερινού μου κώδικα shell scripts.
+είναι ειδικά γραμμένοι ώστε να παράγεται το εγχειρίδιο χρήσης
+με βάση αυτούς, και το εγχειρίδιο
+λειτουργεί και ως λίστα συνδυασμού πλήκτρων.
+Αν και ο κώδικας είναι παράξενος, είναι πού πιο κοντά σε
+χαρακτήρα στον σημερινό μου κώδικα shell scripts.
 Παρατηρήστε ότι είναι POSIX compliant αντί για Bash.
 </gr>
 </compile_to_help_note_posix>

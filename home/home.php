@@ -8,13 +8,6 @@
 
 <?php $h = simplexml_load_file("home/home.xml") ?>
 
-<p><?php $a($h->for_hr) ?></p>
-<p>
-    <?php $a($h->what_ive_done) ?>
-    <a href="https://www.youtube.com/@theodorealenas3171"
-    ><?php $a($h->and_i_got_yt) ?></a>.
-</p>
-<p><?php $a($h->lets_go_out) ?></p>
 <p>
     <?php $a($h->my_email_is) ?>
     <a href="mailto:dimakopt732@gmail.com"
@@ -22,7 +15,15 @@
     <?php $a($h->and_my_instagram) ?>
     <a href="https://www.instagram.com/theodore_alenas/"
     >theodore_alenas</a>.
+    <?php $a($h->and_my_youtube) ?>
+    <a href="https://www.youtube.com/@theodorealenas3171"
+    >Theodore Alenas</a>.
 </p>
+<p><?php $a($h->hello) ?></p>
+<img src="../face.jpg" style="width: 50%; margin-left: 25%; border-radius: 100cm" />
+<p><?php $a($h->for_hr) ?></p>
+<p><?php $a($h->what_ive_done) ?></p>
+<p><?php $a($h->lets_go_out) ?></p>
 
 <?php
     $unused_variable_for_holding_license =
