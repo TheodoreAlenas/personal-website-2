@@ -17,6 +17,11 @@
 <pre><?php $c("php 2") ?></pre>
 <i>V2</i>
 <p>
+    <?php $a($s->had_menus) ?>
+    <a href="old-biography.html"><?php $a($s->older_version) ?></a>
+    <?php $a($s->is_still_served) ?>
+</p>
+<p>
     <?php $a($s->find) ?>
     <a href="https://github.com/TheodoreAlenas/personal-home-page/"
     ><?php $a($s->v1) ?></a>

@@ -16,6 +16,28 @@ Pre-rendered ιστοχώρος. Επανασχεδιάστηκε με στόχ�
 ενώ η δεύτερη σε συντομογραφίες.
 </gr>
 </body>
+<had_menus>
+<en>
+Old versions of this site had typical menus at the top,
+which would turn into drop down menus on mobile view,
+or as they're called, hamburger menus.
+An
+</en>
+<gr>
+Σε παλιότερες εκδόσεις του ιστοχώρου, τα μενού στην κορυφή
+των σελίδων είχαν τη συνηθισμένη μορφοποίηση και σε μεγάλες
+και σε μικρές οθόνες. Για μια μικρή επίδειξη,
+σερβίρεται ακόμα μια
+</gr>
+</had_menus>
+<older_version>
+<en>older version</en>
+<gr>παλιότερη έκδοση</gr>
+</older_version>
+<is_still_served>
+<en>of the biography page is still served for demonstration.</en>
+<gr>της ιστοσελίδας του βιογραφικού.</gr>
+</is_still_served>
 <find>
 <en>You may find the</en>
 <gr>Μπορείτε να βρείτε και την</gr>
