@@ -20,7 +20,11 @@
     >Theodore Alenas</a>.
 </p>
 <p><?php $a($h->hello) ?></p>
-<img src="../face.jpg" style="width: 50%; margin-left: 25%; border-radius: 100cm" />
+<img
+    src="../face.jpg"
+    style="width: 50%; margin-left: 25%; border-radius: 100cm"
+    alt="male face with long hair"
+/>
 <p><?php $a($h->for_hr) ?></p>
 <p><?php $a($h->what_ive_done) ?></p>
 <p><?php $a($h->lets_go_out) ?></p>
