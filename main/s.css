@@ -50,7 +50,8 @@ a:hover::before {
 
 body {
     line-height: 1.5em; margin: 0;
-    font-family: system-ui; font-size: 0.5cm;
+    font-family: system-ui, sans-serif;
+    font-weight: normal; font-size: 0.5cm;
 }
 body > div {
     max-width: 30cm; margin: 0 auto;
