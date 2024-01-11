@@ -12,10 +12,6 @@
 <?php $s = simplexml_load_file("portfolio/por-this.xml") ?>
 <h2><?php $a($s->title) ?></h2>
 <p><?php $a($s->body) ?></p>
-<pre><?php $c("php 1") ?></pre>
-<i>V1</i>
-<pre><?php $c("php 2") ?></pre>
-<i>V2</i>
 <p>
     <?php $a($s->had_menus) ?>
     <a href="biography-typical-menu.html"
@@ -31,6 +27,10 @@
     ><?php $a($s->v2) ?></a>
     <?php $a($s->on_gh) ?>.
 </p>
+<pre><?php $c("php 1") ?></pre>
+<i>V1</i>
+<pre><?php $c("php 2") ?></pre>
+<i>V2</i>
 
 <?php $s = simplexml_load_file("portfolio/por-hotkeys.xml") ?>
 <h2><?php $a($s->title) ?></h2>
