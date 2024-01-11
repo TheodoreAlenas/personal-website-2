@@ -4,7 +4,7 @@ G = serve-this/gr/
 
 A = index.html portfolio.html biography.html
 
-C = $(wildcard cp-to-serve-this/*)
+C = $(shell find cp-to-serve-this -type f)
 
 all: $(addprefix $E,$A) $(addprefix $G,$A) $P/cv.pdf $(C:cp-to-%=%)
 

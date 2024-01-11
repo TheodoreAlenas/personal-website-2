@@ -1,0 +1,363 @@
+<!DOCTYPE HTML>
+<html scheme="dark">
+    <head>
+        <title>Biography</title>
+
+        <meta name="author" content="Dimakopoulos Theodoros">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+
+        <style>
+            /* s.css */
+
+html { color-scheme: light; }
+h1 {text-align: center}
+h2 { margin-top: 3rem; margin-left: 2rem; }
+button { cursor: pointer; }
+pre { border-radius: 5px; padding-left: 1em; overflow: scroll; }
+a { text-underline-offset: 0.2em; }
+a:hover { position: relative; z-index: 1; }
+a:hover::before {
+    position: absolute; z-index: -1;
+    display: inline-block; content: "";
+    left: 0; right: 0; top: -0.2em; bottom: 0;
+}
+
+/* Improvised bright color scheme and TokyoNight color scheme */
+[scheme=light] pre { border-color: #111111; }
+[scheme=light] pre b,
+[scheme=light] a { color: #000066; }
+[scheme=light] a:visited { color: #660044; }
+[scheme=light] .bg1 { background-color: #ffffff; }
+[scheme=light] .fg1 { color: #111111; }
+
+[scheme=dark] pre { color: #7dcfff; }
+[scheme=dark] pre b,
+[scheme=dark] a { color: #7aa2f7; }
+[scheme=dark] a:visited { color: #bb9af7; }
+[scheme=dark] .bg1 { background-color: #24283b; }
+[scheme=dark] .fg1 { color: #c0caf5; }
+
+[scheme=light] a:hover,
+[scheme=light] button:hover,
+[scheme=light] a:hover::before,
+[scheme=light] *::selection { background-color: #111122; color: #c0caf5 }
+[scheme=light] button,
+[scheme=light] body > div { border-color: #cccccc; }
+[scheme=light] body > div > header,
+[scheme=light] pre { background-color: #eeeeee; }
+[scheme=light] .shadow { box-shadow: #cccccc 0 0 1rem 0; }
+
+[scheme=dark] a:hover,
+[scheme=dark] button:hover,
+[scheme=dark] a:hover::before,
+[scheme=dark] *::selection { background-color: #e0af68; color: #1d202f }
+[scheme=dark] button,
+[scheme=dark] body > div { border-color: #1d202f; }
+[scheme=dark] body > div > header,
+[scheme=dark] pre { background-color: #1d202f; }
+[scheme=dark] .shadow { box-shadow: #1d202f 0 0 1rem 0; }
+
+body {
+    line-height: 1.5em; margin: 0;
+    font-family: system-ui; font-size: 0.5cm;
+}
+body > div {
+    max-width: 30cm; margin: 0 auto;
+    border-left: 1px solid; border-right: 1px solid;
+}
+body > div > header, body > div > main {
+    padding: 1em 1em;
+}
+button {
+    border-style: solid; border-width: 2px; border-radius: 3px;
+    font-family: inherit; font-size: inherit
+}
+
+/* The original file had the MIT notice here */
+        </style>
+
+        <script>
+            /* s.js */
+
+function switchColorScheme() {
+    const definer = document.querySelector("[scheme]");
+    let setTo = "light";
+    if (definer.getAttribute("scheme") === "light")
+        setTo = "dark";
+    definer.setAttribute("scheme", setTo);
+    localStorage.setItem("lastTheme", setTo);
+}
+
+function setUpColorScheme() {
+    let setTo = "dark";
+    if (localStorage.getItem("lastTheme") === "light")
+        setTo = "light";
+    document.querySelector("[scheme]").setAttribute("scheme", setTo);
+}
+
+
+/* The original file had the MIT notice here */
+        </script>
+
+    </head>
+    <body class="bg1 fg1">
+        <div>
+            <header>
+                <nav>
+                    <!-- header.php -->
+<h1>Biography</h1>
+<p>
+Στηρίζεται και η
+<a href="../gr/biography.html"
+>Ελληνική</a>
+γλώσσα. Available are
+<a href="index.html"
+>the home page</a>,
+<a href="portfolio.html"
+>portfolio</a>,
+<a href="biography.html"
+>biography</a>,
+<a href="../cv.pdf"
+>cv.pdf</a>
+and dark/light
+<button
+    onclick="switchColorScheme()"
+    class="bg1 fg1"
+>theme</button>.
+</p>
+<script> setUpColorScheme() </script>
+
+                </nav>
+            </header>
+            <main class="bg1 fg1">
+                
+
+<h2>Minimalism</h2>
+<p>
+Studied exclusively on a 30GB Arch Linux partition with
+260 BK/s maximum and unstable internet speed,
+to do University projects using mostly NeoVim, for 2 years.
+</p>
+<p>
+By autumn 2023,
+using Vi without terminal multiplexing is comfortable,
+and tmux, emacs, zsh bash and even dash,
+therefore any POSIX compliant shell,
+are all decently comfortable
+to use for extensive periods of time.
+</p>
+
+
+<h2>High school</h2>
+<p>
+    Graduated    <a href="http://2lyk-amaliad.ilei.sch.gr/wordpress17/"
+    >high school</a>
+    
+with a 17325/20000 score on 2019.
+The final exams included algebra, physics,
+the hardest chemistry exam in a long time,
+and essay reading and writing.
+Went to France with the program
+    <a href="https://school-education.ec.europa.eu/en/etwinning"
+    >E-Twinning</a>.
+</p>
+<p>
+    
+Improvised a proof for the volume of a cone,
+math for Wolfenstein 3D - style graphics
+without being taught vectors yet,
+and watched plenty from the YouTube channels
+    <a href="https://www.youtube.com/@3blue1brown">3blue1brown</a>,
+    <a href="https://www.youtube.com/@Mathologer">Mathologer</a>,
+    <a href="https://www.youtube.com/@numberphile">Numberphile</a>,
+    <a href="https://www.youtube.com/@Computerphile">Computerphile</a>
+    and    <a href="https://www.youtube.com/@standupmaths">Matt Parker</a>.
+</p>
+<p>
+    In the University got interest in    <a href="https://www.youtube.com/@ThePrimeagen">ThePrimeagen</a>,
+    <a href="https://www.youtube.com/@HealthyGamerGG">Healthy Gamer GG</a>
+    and    <a href="https://www.youtube.com/@RamseyDewey">Ramsey Dewey</a>.
+</p>
+<p>
+    
+Went to the
+National and Kapodistrian University of Athens (UoA),
+to the
+    <a href="https://www.di.uoa.gr"
+    >Department of Informatics (DI)</a>.
+    Participated with effort and enthousiasm in the    <a href="https://github.com/ACM-UoA-Student-Chapter/dil"
+    >the open source compiler project of ACM's student chapter</a>,
+    
+though the knowledge gap didn't allow to contribute much.
+As of now, Autumn 2023, hasn't worked.
+Had a tiny internship with
+    <a href="https://helvia.io">Helvia</a>
+    that introduced web development basics.</p>
+
+
+<h2>Languages</h2>
+
+<p>
+    
+Did 5am morning warm-ups for a span of about 3 weeks in Autumn 2023,
+and afternoon exercises
+on and off using mostly C, but sometimes also
+Python, Haskell and Matlab (GNU Octave to be exact)
+The algorithms were about parallelism,
+data structures and data manipulation,
+using
+    <a href="https://www.youtube.com/watch?v=kScFczWbwRM">TDD</a>,
+    <a href="https://youtu.be/tnO2Mos0RjU?si=OhTk8fUdI0FPTWT6">TCR</a>
+    or neither, often in Vi (not referring to Vim).</p>
+<p>
+    
+Outside deliberate pracrice and unfortunately
+as a painkiller for loneliness,
+I've got some touch with
+Rust, Graphviz Dot, AWK, GNU Make, BF,    <a href="https://code.jsoftware.com/wiki/Studio/TasteofJPart1">J</a>
+    
+slightly, lisp and Typescript.
+Indeed everything surrounding Typescript
+is emotionally painful except the syntax.
+</p>
+<p>
+    
+Both for myself and for the University,
+familiarized with
+C++, Python, PHP, LaTeX, HTML CSS and Javascript,
+Java, Bourne and POSIX shell scripting (bash let's say).
+The aforementioned warm-ups were also done
+in languages for the University.
+</p>
+
+
+<h2>Architecture</h2>
+
+<p>
+Reworked the operating system's
+key binding framework, home directory structure and image tagging
+systems about 5 times each,
+following my needs and addressing inabilities,
+in a natural and slow pace over the span of 2 years.
+The approaches were radical to me,
+
+images placed in a binary tree
+of manual binary grouping decisions,
+
+coding projects getting tagged
+by language using symlinks,
+
+a snippet completion and generation system
+providing shell scripts for key bindings,
+
+and a lot more.
+Ended up with technically elegant solutions.
+</p>
+<p>
+    
+Through this journey I got to value
+prototyping,
+thinking in tradeoffs,
+technical simplicity from high to low levels,
+and the
+    <a href="http://agilemanifesto.org/"
+    >Manifesto for Agile Software Development</a>.
+</p>
+
+
+<h2>Friends</h2>
+
+<p>
+Lived lonely and proud until the age of 21, unable to understand
+why people talk about people who talk,
+but eventually humbled and started making friends
+despite the struggles of staying behind.
+</p>
+<p>
+Collaborated with various people.
+On one project we willingly worked next to each other
+4 hours a day 4 days a week for 2 months,
+rounding the numbers below the theoretical maximum.
+That's 6 per 4 for 3.
+That was the absolute best experience.
+The worst project experiences came from
+resistance to collaborate.
+</p>
+<p>
+Worked with 2 traumatizing people on separate projects,
+most things were amazing with
+the kind hearted random one,
+most things were distgusting with
+the tough love daddy commercial product culture one,
+I still want to burn his house down.
+I showed an amount of resistense that
+burnt me out for good, but
+he'd freeze until he'd forget everything wrong
+and tranform into a motorbike politician again.
+</p>
+
+
+<h2>Illustration and the piano</h2>
+
+<p>
+Quit the piano after 7/9 steps to the diploma,
+when the world view changed and didn't line up with
+the typcial motivations for playing.
+</p>
+<p>
+    Then started illustration, guided by    <a href="https://drawabox.com"
+    >theDraw A Box community and lessons</a>,
+    as well as videos from    <a href="https://www.proko.com"
+    >Stanislav Prokopenko</a>.
+    </p>
+<p>
+Arts cultivated respect towards
+old means of achieving goals,
+old experienced people's advice,
+warming up before working
+and measuring the value of work
+by looking at it as an outsider.
+</p>
+
+
+<h2>YouTube</h2>
+
+<p>
+    Recorded    <a href="https://www.youtube.com/@theodorealenas3171"
+    >YouTube videos</a>
+    using <code>ffmpeg</code>
+    piping <code>/dev/video0</code>
+    to <code>mpv</code>
+    
+for showing the webcam's output on the screen.
+The purpose of the YouTube channel is
+to share knowledge and life experiences.
+</p>
+
+            </main>
+        </div>
+    </body>
+</html>
+
+<!--
+     Copyright (c) 2023 Dimakopoulos Theodoros
+
+     Permission is hereby granted, free of charge, to any person obtaining a copy
+     of this software and associated documentation files (the "Software"), to deal
+     in the Software without restriction, including without limitation the rights
+     to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+     copies of the Software, and to permit persons to whom the Software is
+     furnished to do so, subject to the following conditions:
+
+     The above copyright notice and this permission notice shall be included in all
+     copies or substantial portions of the Software.
+
+     THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+     IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+     FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+     AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+     LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+     SOFTWARE.
+-->

@@ -18,7 +18,8 @@
 <i>V2</i>
 <p>
     <?php $a($s->had_menus) ?>
-    <a href="old-biography.html"><?php $a($s->older_version) ?></a>
+    <a href="biography-typical-menu.html"
+    ><?php $a($s->older_version) ?></a>
     <?php $a($s->is_still_served) ?>
 </p>
 <p>
