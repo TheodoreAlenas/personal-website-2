@@ -52,17 +52,6 @@ body {
     line-height: 1.5em; margin: 0;
     font-family: system-ui, sans-serif;
     font-weight: normal; font-size: 0.5cm;
-    --opacity: 2%;
-    background-image: repeating-radial-gradient(
-        circle at 40cm -40cm,
-        rgba(0, 0, 0, var(--opacity)),
-        rgba(100, 100, 100, var(--opacity)) 5%,
-        rgba(0, 0, 0, var(--opacity)) 5%,
-        rgba(100, 100, 100, var(--opacity)) 6%,
-        rgba(0, 0, 0, var(--opacity)) 7%,
-        rgba(100, 100, 100, var(--opacity)) 8%,
-        rgba(0, 0, 0, var(--opacity)) 10%
-    );
 }
 body > div {
     max-width: 30cm; margin: 0 auto;
