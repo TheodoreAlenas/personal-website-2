@@ -48,7 +48,7 @@
                     <?php include("main/header.php") ?>
                 </nav>
             </header>
-            <main class="bg1">
+            <main>
                 <?php
                     $b = "biography";
                     $p = "portfolio";
