@@ -16,13 +16,22 @@ push: $P
 
 .PHONY: all clean push
 
-%/index.html: main.php $(wildcard main/* home/*)
+$P/en/index.html: main.php $(wildcard main/* home/*)
 	mkdir -p $E $G && FILE=$@ php $< > $@
 
-%/portfolio.html: main.php $(wildcard main/* portfolio/*)
+$P/gr/index.html: main.php $(wildcard main/* home/*)
 	mkdir -p $E $G && FILE=$@ php $< > $@
 
-%/biography.html: main.php $(wildcard main/* biography/*)
+$P/en/portfolio.html: main.php $(wildcard main/* portfolio/*)
+	mkdir -p $E $G && FILE=$@ php $< > $@
+
+$P/gr/portfolio.html: main.php $(wildcard main/* portfolio/*)
+	mkdir -p $E $G && FILE=$@ php $< > $@
+
+$P/en/biography.html: main.php $(wildcard main/* biography/*)
+	mkdir -p $E $G && FILE=$@ php $< > $@
+
+$P/gr/biography.html: main.php $(wildcard main/* biography/*)
 	mkdir -p $E $G && FILE=$@ php $< > $@
 
 $P/cv.pdf: cv/cv.tex cv/fonts/ $(wildcard cv/*)
