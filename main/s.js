@@ -10,12 +10,18 @@ function switchColorScheme() {
 }
 
 function setUpColorScheme() {
-    let setTo = "dark";
-    if (localStorage.getItem("lastTheme") === "light")
+    let setTo = "light";
+    const storedTheme = localStorage.getItem("lastTheme");
+    if (storedTheme === null) {
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            setTo = "dark";
+        }
+    }
+    else if (storedTheme === "light") {
         setTo = "light";
+    }
     document.querySelector("[scheme]").setAttribute("scheme", setTo);
 }
-
 
 /* <?php echo "The original file had the MIT notice here";
 // Copyright (c) 2023 Dimakopoulos Theodoros
