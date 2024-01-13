@@ -52,15 +52,16 @@ body {
     line-height: 1.5em; margin: 0;
     font-family: system-ui, sans-serif;
     font-weight: normal; font-size: 0.5cm;
-    --opacity: 100%;
-    background-image: radial-gradient(
-        circle at 70% 70%,
+    --opacity: 2%;
+    background-image: repeating-radial-gradient(
+        circle at 40cm -40cm,
         rgba(0, 0, 0, var(--opacity)),
-        rgba(80, 100, 80, var(--opacity)) 60%,
-        rgba(100, 127, 140, var(--opacity)) 60%,
-        rgba(60, 60, 100, var(--opacity)) 62%,
-        rgba(7, 7, 15, var(--opacity)) 80%,
-        rgba(0, 0, 0, var(--opacity))
+        rgba(100, 100, 100, var(--opacity)) 5%,
+        rgba(0, 0, 0, var(--opacity)) 5%,
+        rgba(100, 100, 100, var(--opacity)) 6%,
+        rgba(0, 0, 0, var(--opacity)) 7%,
+        rgba(100, 100, 100, var(--opacity)) 8%,
+        rgba(0, 0, 0, var(--opacity)) 10%
     );
 }
 body > div {
