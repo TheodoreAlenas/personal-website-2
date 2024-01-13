@@ -17,8 +17,8 @@ function setUpColorScheme() {
             setTo = "dark";
         }
     }
-    else if (storedTheme === "light") {
-        setTo = "light";
+    else if (storedTheme === "dark") {
+        setTo = "dark";
     }
     document.querySelector("[scheme]").setAttribute("scheme", setTo);
 }
