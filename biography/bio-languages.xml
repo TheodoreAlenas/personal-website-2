@@ -2,21 +2,26 @@
 <title><en>Languages</en><gr>Γλώσσες</gr></title>
 <warm_ups>
 <en>
-Did 5am morning warm-ups for a span of about 3 weeks in Autumn 2023,
-and afternoon exercises
-on and off using mostly C, but sometimes also
-Python, Haskell and Matlab (GNU Octave to be exact).
+There was a span of about 3 weeks in Autumn 2023 with
+wake ups at 4 or 5 in the morning and warm up exercises.
+It didn't last very long, as with many experimentations,
+but it was a feat to be proud of. In those warm ups
+and in some afternoon exercises,
+used mostly C, but sometimes also
+Python, Haskell and Matlab or GNU Octave to be exact.
 The algorithms were about parallelism,
 data structures and data manipulation,
 using
 </en>
 <gr>
-Ξεκινούσε τη μέρα με ζέσταμα στις 5
-για περίπου 3 εβδωμάδες το Φθινόπωρο του 2023,
-και απογευματινές ασκήσεις,
-κυρίως σε C αλλά κάποιες φορές και σε
-Python, Haskell και Matlab (GNU Octave για την ακρίβεια).
-Οι αλγόριθμοι αφορούν παραλληλία,
+Υπήρξε ένα διάστημα περίπου τριών εβδομάδων το Φθινόπωρο του 2023
+με πρωινό ξύπνημα στις 4 ή 5 το πρωί και ασκήσεις ζεστάματος.
+Δε διήρκεσε πολύ, όπως και άλλοι αντίστοιχοι πειραματισμοί δεν
+διήρκεσαν, αλλά ήταν ένα κατόρθωμα. Σε αυτά τα ζεστάματα,
+καθώς και σε απογευματινές ασκήσεις,
+χρησιμοποιήθηκε κυρίως C αλλά κάποιες φορές και
+Python, Haskell και Matlab ή GNU Octave για την ακρίβεια.
+Οι αλγόριθμοι αφορούσαν παραλληλία,
 δομές δεδομένων και διαχείριση δεδομένων, με
 </gr>
 </warm_ups>
@@ -44,21 +49,20 @@ I've got some touch with
 <slightly_and_ts>
 <en>
 slightly, lisp and Typescript.
-Indeed everything surrounding Typescript
-is emotionally painful except the syntax.
+Isn't opinionated about Typescript but indeed something is off.
 </en>
 <gr>
 ελαφρώς, lisp και Typescript.
-Πράγματι οτιδήποτε σχετίζεται με Typescript
-είναι οδυνηρό, εκτός απ' το συντακτικό.
+Δεν έχει έντονη άποψη για την Typescript
+αλλά κάτι δεν πάει καλά πράγματι.
 </gr>
 </slightly_and_ts>
 <for_uni>
 <en>
-Both for myself and for the University,
+Both from personal motivation and for the University,
 familiarized with
 C++, Python, PHP, LaTeX, HTML CSS and Javascript,
-Java, Bourne and POSIX shell scripting (bash let's say).
+Java, Bourne and POSIX shell scripting which is similar to bash.
 The aforementioned warm-ups were also done
 in languages for the University.
 </en>
@@ -66,7 +70,7 @@ in languages for the University.
 Τόσο για το Πανεπιστήμιο όσο και για προσωπικούς λόγους,
 εξοικειώθηκε με
 C++, Python, PHP, LaTeX, HTML CSS και Javascript,
-Java, Bourne και POSIX shell scripting (bash έστω).
+Java, Bourne και POSIX shell scripting που είναι παρόμοιο με bash.
 Τα ζεστάματα που αναφέρθηκαν γίνονταν επίσης σε γλώσσες
 που χρησιμοποιούνταν στο Πανεπιστήμιο.
 </gr>

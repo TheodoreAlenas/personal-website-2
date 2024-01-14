@@ -2,6 +2,7 @@
 <title><en>Architecture</en><gr>Αρχιτεκτονική</gr></title>
 <os>
 <en>
+Architecture may not be the best term, but it seems relevant.
 Reworked the operating system's
 key binding framework, home directory structure and image tagging
 systems about 5 times each,
@@ -20,8 +21,11 @@ providing shell scripts for key bindings,
 
 and a lot more.
 Ended up with technically elegant solutions.
+Not these.
 </en>
 <gr>
+Ίσως αρχιτεκτονική να μην είναι ο πιο εύστοχος όρος,
+αλλά μάλλον σχετίζεται.
 Επανασχεδίασε 5 φορές τα τμήματα του λειτουργικού του συστήματος
 που αφορούν τους συνδυασμούς πλήκτρων, τη κύρια δομή αρχείων
 και την ταξινόμηση εικόνων.
@@ -29,7 +33,7 @@ Ended up with technically elegant solutions.
 με αργό και σταθερό ρυθμό επί 2 χρόνια.
 Οι τεχνικές έδιναν μια αίσθηση των άκρων,
 
-με εικόνες τοποθετημένες σε δυαδικό δέντρο
+υπήρχαν εικόνες τοποθετημένες σε δυαδικό δέντρο
 από χειροκίνητες αποφάσεις ομαδοποίησης,
 
 πρότζεκτ με κώδικα να ταξινομούνται χρησιμοποιώντας symlinks,
@@ -39,6 +43,7 @@ Ended up with technically elegant solutions.
 
 και πολλά ακόμα.
 Κατέληξε με τεχνικά κομψές λύσεις.
+Όχι αυτές. Άλλες.
 </gr>
 </os>
 <values>
