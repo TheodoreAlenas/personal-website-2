@@ -28,14 +28,21 @@ The first version of my website used PHP functions to
 concatenate strings into HTML.
 Near the end, the localization was handled using custom XML files.
 
-This version was meant to be served almost as-is,
+This version used to be served almost as-is,
 with custom 'def-macro' DOM elements expanding using JavaScript,
 and span elements with both languages such that half would be
 hidden. However Emacs' 'EWW' can't client side render.
 
-The most noticable advantage compared to the first version
-is the simplicity, and the separation of PHP that prepares text
-from PHP that templates HTML.
+Currently, there's simple XML that names chunks of text
+both in Greek and in English, and there's PHP that
+places the chunks of text inside of DOM elements.
+This is as close to raw HTML as possible,
+while avoiding most duplicate code.
+
+Also the latest updates as of updating this README
+replaced the menu at the top with plain text that has links.
+That reduces the code massively, especially because
+it's trivial to make it accessible and support mobile view.
 
 ** Message
 
