@@ -84,9 +84,9 @@
 <?php $f = simplexml_load_file("biography/bio-friends.xml") ?>
 <h2><?php $b($f->title); ?></h2>
 
-<p><?php $b($f->psychotherapy) ?></p>
-<p><?php $b($f->collabs)       ?></p>
-<p><?php $b($f->jackasses)     ?></p>
+<p><?php $b($f->psychotherapy)     ?></p>
+<p><?php $b($f->collabs)           ?></p>
+<p><?php $b($f->everyone_hates_me) ?></p>
 
 
 <?php $ar = simplexml_load_file("biography/bio-arts.xml") ?>
