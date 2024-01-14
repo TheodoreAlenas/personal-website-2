@@ -51,6 +51,42 @@ An
 <en>first version</en>
 <gr>πρώτη του έκδοση</gr>
 </v1>
+<many_phases>
+<en>
+As said, this website was rewritten numerous times,
+first abstract with components that choose their identity from a buffee,
+then client-side rendered with macros and served almost as-is,
+then fully progressively enhanced for Emacs' browser,
+then it lost its menus which got replaced with plain text.
+That's a linear story going from a complex to a simple design,
+while keeping as many positives as possible.
+The final design trivialises mobile support, old browser support,
+accessibility, localization, theme switching and navigation.
+The fascinating part is that it looks neither better nor worse,
+it's just different. Spectacularly different for that matter.
+It gives off a feeling like a late night show or a poem.
+It has very different values, it can't impress and it's
+awkwardly unfamiliar, but ultimately this is how I am.
+</en>
+<gr>
+Η πρώτη φάση του ιστοχώρου βασιζόταν σε επίπεδα αφαίρεσης όπου
+τα στοιχεία που εμφανίζονται επιλέγουν τις ιδιότητές τους
+μέσα από ένα μπουφέ επιλογών. Η επόμενη φάση ήταν να σερβίρονται οι
+ιστοσελίδες ως έχουν, χρησιμοποιώντας έναν αυτοσχέδιο μηχανισμό macros,
+έπειτα χρησιμοποιήθηκε progressive enhancement για να στηρίζεται ο
+περιηγητής του Emacs, έπειτα αντικαταστάθηκαν τα μενού στην κορυφή
+από απλό κείμενο. Αυτές οι αλλαγές οδηγούν σταδιακά από περίπλοκους
+σε απλούς σχεδιασμούς, διατηρώντας όσο το δυνατόν περισσότερα θετικά.
+Η τελική μορφή του ιστοχώρου απλοποιεί την υποστήριξη μικρών οθωνών,
+την υποστήριξη παλιών ή απλών περιηγητών, την προσβασιμότητα,
+την εναλλαγή γλωσσών, την εναλλαγή ανοιχτού/σκούρου θέματος
+και την πλοήγηση.
+Ενδιαφέρον είναι ότι η εμφάνιση ούτε βελτιώθηκε ούτε χειροτέρευσε.
+Άλλαξε δραματικά βέβαια, από πιασάρικη σε ομιλιτική.
+Πλέον δεν μπορεί να εντυπωσιάσει και δίνει μια άβολη αίσθηση του
+αγνώστου, αλλά έτσι ακριβώς είμαι και εγώ.
+</gr>
+</many_phases>
 </all>
 <!--
     Copyright (c) 2023 Dimakopoulos Theodoros

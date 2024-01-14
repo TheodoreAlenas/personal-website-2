@@ -31,6 +31,7 @@
 <i>V1</i>
 <pre><?php $c("php 2") ?></pre>
 <i>V2</i>
+<p><?php $a($s->many_phases) ?></p>
 
 <?php $s = simplexml_load_file("portfolio/por-hotkeys.xml") ?>
 <h2><?php $a($s->title) ?></h2>
