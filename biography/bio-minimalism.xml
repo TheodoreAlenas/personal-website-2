@@ -5,40 +5,38 @@
 </title>
 <arch>
 <en>
-Got attracted to minimal tools while exploring possibilities.
-Started with Visual Studio Code and Windows 10, as it's usual,
+Got attracted to minimal tools, in a movement of exploration.
+Started with Visual Studio Code and Windows 10,
 and gradually made it to using Arch Linux on a 30GB partition,
-with NeoVim and a suboptimal internet speed of about 260 BK/s.
-That was actually the development environment for the
-University projects the third and fourth year and it went
-better at times and worse other times.
+with NeoVim and a suboptimal internet speed of about 4Mbps,
+for University projects since the third year.
+It went better at times and worse other times
+but there was acceptance.
 </en>
 <gr>
-Έδειξε μια τάση προς μινιμαλιστικά εργαλεία, σε ένα ευρύτερο κίνημα.
-Ξεκίνησε από τα τυπικά εργαλεία, Visual Studio Code
-και Windows 10, και σταδιακά κατέληξε με Arch Linux σε partition
-των 30GB με NeoVim και κάπως άβολη σύνδεση στο διαδίκτυο στα
-260 KB/s περίπου. Αυτό ήταν το περιβάλλον εργασίας για εργασίες
-της σχολής στη διάρκεια του τρίτου και τέταρτου έτους.
-Άλλοτε πήγαινε καλύτερα και άλλοτε χειρότερα.
+Μέσα σε ένα ευρύτερο πλαίσιο πειραματισμών και περιέργειας,
+απέκτησε μια τάση προς μινιμαλιστικά εργαλεία.
+Ξεκίνησε με Visual Studio Code και Windows 10,
+και σταδιακά κατέληξε να κάνει τις εργασίες
+του τρίτου έτους της σχολής και μετά σε
+30 GB Arch Linux, NeoVim
+και 4Mbps περίπου σύνδεση στο διαδίκτυο.
+Δεν βόλευε πάντα αλλά υπήρχε μια αίσθηση αποδοχής.
 </gr>
 </arch>
 <now_vi>
 <en>
-Since autumn 2023, there were numerous level ups.
-It's comfortable to use Vi without terminal multiplexing,
-and it's also comfortable to use server tools,
-or just old tools in the style of Unix, such as
-tmux, emacs, zsh bash and dash, which is a POSIX compliant shell.
-They can be used for prolonged periods of time comfortably.
+Since autumn 2023,
+using tools in the style of Unix is comfortable and relaxing.
+Some of these tools are commonly found in servers even today,
+such as Vi, tmux, emacs, zsh bash
+and dash, which is a POSIX compliant shell.
 </en>
 <gr>
-Από το Φθινόπωρο του 2023, υπήρξαν μερικές αναβαθμίσεις.
-Πλέον είναι άνετη η χρήση παλιών εργαλείων στιλ Unix,
-κάποια από τα οποία ακόμα βρίσκονται σε servers,
-όπως Vi χωρίς terminal multiplexing,
-tmux, emacs, zsh bash και dash που είναι POSIX compliant shell.
-Μπορούν να χρησιμοποιηθούν για εκτεταμένα διαστήματα με άνεση.
+Από το Φθινόπωρο του 2023,
+η χρήση παλιών εργαλείων στιλ Unix είναι άνετη και ξεκούραστη.
+Κάποια από τα εργαλεία βρίσκονται σε servers και σήμερα,
+όπως Vi, tmux, emacs, zsh bash και dash που είναι POSIX compliant shell.
 </gr>
 </now_vi>
 </all>
