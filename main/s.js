@@ -1,30 +1,37 @@
-/* <?php echo basename(__FILE__);  // scheme-lang.js as of now ?> */
+/* <?php echo basename(__FILE__);  // s.js as of now ?> */
+
+function setUpColorScheme() {
+    const html = document.querySelector("html");
+    const stored = localStorage.getItem("lastTheme");
+    setDefinersOfScheme(html, getThisOrPreferedScheme(stored));
+}
 
 function switchColorScheme() {
     const html = document.querySelector("html");
-    let setTo = "light";
-    if (html.getAttribute("scheme") === "light")
-        setTo = "dark";
-    html.setAttribute("scheme", setTo);
-    html.style.colorScheme = setTo;
-    localStorage.setItem("lastTheme", setTo);
+    const opposite = getOppositeSchemeThanSet(html);
+    setDefinersOfScheme(html, opposite);
+    localStorage.setItem("lastTheme", opposite);
 }
 
-function setUpColorScheme() {
-    let setTo = "light";
-    const storedTheme = localStorage.getItem("lastTheme");
-    if (storedTheme === null) {
-        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            setTo = "dark";
-        }
-    }
-    else if (storedTheme === "dark") {
-        setTo = "dark";
-    }
-    const html = document.querySelector("html");
-    html.setAttribute("scheme", setTo);
-    html.style.colorScheme = setTo;
+function setDefinersOfScheme(html, newScheme) {
+    html.setAttribute("scheme", newScheme);
+    html.style.colorScheme = newScheme;
 }
+
+function getThisOrPreferedScheme(stored) {
+    if (stored === "dark" || stored === "light")
+        return stored;
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches)
+        return "dark";
+    return "light";
+}
+
+function getOppositeSchemeThanSet(html) {
+    if (html.getAttribute("scheme") === "light")
+        return "dark";
+    return "light";
+}
+
 
 /* <?php echo "The original file had the MIT notice here";
 // Copyright (c) 2023 Dimakopoulos Theodoros
