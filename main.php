@@ -24,7 +24,7 @@
 
 ?>
 <!DOCTYPE HTML>
-<html scheme="light">
+<html>
     <head>
         <title><?php echo $TITLE ?></title>
 

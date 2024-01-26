@@ -1,7 +1,6 @@
 /* <?php echo basename(__FILE__);  // s.css as of now ?> */
 
-html { color-scheme: light; }
-h1 {text-align: center}
+h1 { text-align: center; }
 h2 { margin-top: 3rem; margin-left: 2rem; }
 button { cursor: pointer; }
 pre { border-radius: 5px; padding-left: 1em; overflow: scroll; }

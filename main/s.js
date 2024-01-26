@@ -1,11 +1,12 @@
 /* <?php echo basename(__FILE__);  // scheme-lang.js as of now ?> */
 
 function switchColorScheme() {
-    const definer = document.querySelector("[scheme]");
+    const html = document.querySelector("html");
     let setTo = "light";
-    if (definer.getAttribute("scheme") === "light")
+    if (html.getAttribute("scheme") === "light")
         setTo = "dark";
-    definer.setAttribute("scheme", setTo);
+    html.setAttribute("scheme", setTo);
+    html.style.colorScheme = setTo;
     localStorage.setItem("lastTheme", setTo);
 }
 
@@ -20,7 +21,9 @@ function setUpColorScheme() {
     else if (storedTheme === "dark") {
         setTo = "dark";
     }
-    document.querySelector("[scheme]").setAttribute("scheme", setTo);
+    const html = document.querySelector("html");
+    html.setAttribute("scheme", setTo);
+    html.style.colorScheme = setTo;
 }
 
 /* <?php echo "The original file had the MIT notice here";
