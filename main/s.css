@@ -51,7 +51,6 @@ a:hover::before {
 [scheme=light] body > div { border-color: #cccccc; }
 [scheme=light] body > div > header,
 [scheme=light] pre { background-color: #eeeeee; }
-[scheme=light] .shadow { box-shadow: #cccccc 0 0 1rem 0; }
 
 [scheme=dark] a:hover,
 [scheme=dark] button:hover,
@@ -64,9 +63,8 @@ a:hover::before {
 [scheme=dark] pre {
     background-image: linear-gradient(-3deg, #1d202f, #202438 10%, #1d2032 20%, #1d202f);
 }
-[scheme=dark] body,
 [scheme=dark] pre,
-[scheme=dark] body > div > * { box-shadow: inset 0 3px 5px 0 rgba(0,0,0, 20%); }
+[scheme=dark] body > div > main { box-shadow: inset 0 3px 5px 0 #1a1c26; }
 
 /* <?php echo "The original file had the MIT notice here";
 // Copyright (c) 2023 Dimakopoulos Theodoros
