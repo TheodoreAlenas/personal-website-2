@@ -41,7 +41,7 @@
         </script>
 
     </head>
-    <body class="bg1 fg1">
+    <body class="fg1">
         <div>
             <header>
                 <nav>

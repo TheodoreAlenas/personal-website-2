@@ -1,8 +1,23 @@
 /* <?php echo basename(__FILE__);  // s.css as of now ?> */
 
+body {
+    line-height: 1.5em; margin: 0;
+    font-family: system-ui, sans-serif;
+    font-weight: normal; font-size: 0.5cm;
+}
+body > div {
+    max-width: 30cm; margin: 0 auto;
+}
+body > div > header, body > div > main {
+    padding: 1em 1em;
+}
+button {
+    border-style: solid; border-width: 1px; border-radius: 3px;
+    font-family: inherit; font-size: inherit;
+    cursor: pointer;
+}
 h1 { text-align: center; }
 h2 { margin-top: 3rem; margin-left: 2rem; }
-button { cursor: pointer; }
 pre { border-radius: 5px; padding-left: 1em; overflow: scroll; }
 a { text-underline-offset: 0.2em; }
 a:hover { position: relative; z-index: 1; }
@@ -17,15 +32,16 @@ a:hover::before {
 [scheme=light] pre b,
 [scheme=light] a { color: #000066; }
 [scheme=light] a:visited { color: #660044; }
-[scheme=light] .bg1 { background-color: #ffffff; }
-[scheme=light] .fg1 { color: #111111; }
+[scheme=light] body,
+[scheme=light] button { color: #111111; background-color: #ffffff; }
+[scheme=light] body > div { border-left: 1px solid; border-right: 1px solid; }
 
 [scheme=dark] pre { color: #7dcfff; }
 [scheme=dark] pre b,
 [scheme=dark] a { color: #7aa2f7; }
 [scheme=dark] a:visited { color: #bb9af7; }
-[scheme=dark] .bg1 { background-color: #24283b; }
-[scheme=dark] .fg1 { color: #c0caf5; }
+[scheme=dark] body > div,
+[scheme=dark] button { color: #c0caf5; border-color: #c0caf5; background-color: #24283b; }
 
 [scheme=light] a:hover,
 [scheme=light] button:hover,
@@ -41,28 +57,16 @@ a:hover::before {
 [scheme=dark] button:hover,
 [scheme=dark] a:hover::before,
 [scheme=dark] *::selection { background-color: #e0af68; color: #1d202f }
-[scheme=dark] button,
-[scheme=dark] body > div { border-color: #1d202f; }
+[scheme=dark] body {
+    background-image: linear-gradient(-3deg, #222538, #202340 10%, #1d2032 20%, #222538);
+}
 [scheme=dark] body > div > header,
-[scheme=dark] pre { background-color: #1d202f; }
-[scheme=dark] .shadow { box-shadow: #1d202f 0 0 1rem 0; }
-
-body {
-    line-height: 1.5em; margin: 0;
-    font-family: system-ui, sans-serif;
-    font-weight: normal; font-size: 0.5cm;
+[scheme=dark] pre {
+    background-image: linear-gradient(-3deg, #1d202f, #202438 10%, #1d2032 20%, #1d202f);
 }
-body > div {
-    max-width: 30cm; margin: 0 auto;
-    border-left: 1px solid; border-right: 1px solid;
-}
-body > div > header, body > div > main {
-    padding: 1em 1em;
-}
-button {
-    border-style: solid; border-width: 2px; border-radius: 3px;
-    font-family: inherit; font-size: inherit
-}
+[scheme=dark] body,
+[scheme=dark] pre,
+[scheme=dark] body > div > * { box-shadow: inset 0 3px 5px 0 rgba(0,0,0, 20%); }
 
 /* <?php echo "The original file had the MIT notice here";
 // Copyright (c) 2023 Dimakopoulos Theodoros
