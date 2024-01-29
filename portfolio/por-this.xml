@@ -3,14 +3,12 @@
 <body>
 <en>
 A pre-rendered site.
-There have been numerous iterations and redesigns.
 The first major version abstracted while the secord abbreviated.
 </en>
 <gr>
 Pre-rendered ιστοχώρος.
-Πέρασε από πολλούς επανασχεδιασμούς.
-Η πρώτη κύρια έκδοση βασιζόταν σε αφαίρεση,
-ενώ η δεύτερη σε συντομογραφίες.
+Η πρώτη κύρια έκδοση είχε αφαιρετικό κώδικα,
+ενώ η δεύτερη συντόμευε μεγάλα κομμάτια κώδικα σαν συντομογραφίες.
 </gr>
 </body>
 <had_menus>
@@ -18,7 +16,7 @@ Pre-rendered ιστοχώρος.
 Old versions of this site had typical menus at the top,
 which would turn into drop down menus on mobile view,
 or as they're called, hamburger menus.
-An
+A questionable
 </en>
 <gr>
 Σε παλιότερες εκδόσεις του ιστοχώρου, τα μενού στην κορυφή
@@ -29,11 +27,11 @@ An
 </had_menus>
 <older_version>
 <en>older version</en>
-<gr>παλιότερη έκδοση</gr>
+<gr>πεπαλαιωμένη έκδοση</gr>
 </older_version>
 <is_still_served>
 <en>of the biography page is still served for demonstration.</en>
-<gr>της ιστοσελίδας του βιογραφικού.</gr>
+<gr>του βιογραφικού. Το κείμενο ήταν σημαντικά χειρότερο τότε.</gr>
 </is_still_served>
 <find>
 <en>You may find the</en>
@@ -53,20 +51,20 @@ An
 </v1>
 <many_phases>
 <en>
-As said, this website was rewritten numerous times,
-first abstract with components that choose their identity from a buffee,
-then client-side rendered with macros and served almost as-is,
+At first, the site was based on abstraction layers
+and components that choose their identity from a buffee,
+then the site became client-side rendered
+with macros and served almost as-is,
 then fully progressively enhanced for Emacs' browser,
 then it lost its menus which got replaced with plain text.
-That's a linear story going from a complex to a simple design,
-while keeping as many positives as possible.
+The site got a simpler design over time
+while preserving or enhancing various values.
 The final design trivialises mobile support, old browser support,
 accessibility, localization, theme switching and navigation.
-The fascinating part is that it looks neither better nor worse,
-it's just different. Spectacularly different for that matter.
-It gives off a feeling like a late night show or a poem.
-It has very different values, it can't impress and it's
-awkwardly unfamiliar, but ultimately this is how I am.
+It's fascinating that it looks neither better nor worse.
+While it can't impress at first sight,
+it gives the impression that it's going to be predictable
+and it won't cause the user trouble.
 </en>
 <gr>
 Η πρώτη φάση του ιστοχώρου βασιζόταν σε επίπεδα αφαίρεσης όπου
@@ -74,17 +72,22 @@ awkwardly unfamiliar, but ultimately this is how I am.
 μέσα από ένα μπουφέ επιλογών. Η επόμενη φάση ήταν να σερβίρονται οι
 ιστοσελίδες ως έχουν, χρησιμοποιώντας έναν αυτοσχέδιο μηχανισμό macros,
 έπειτα χρησιμοποιήθηκε progressive enhancement για να στηρίζεται ο
-περιηγητής του Emacs, έπειτα αντικαταστάθηκαν τα μενού στην κορυφή
-από απλό κείμενο. Αυτές οι αλλαγές οδηγούν σταδιακά από περίπλοκους
-σε απλούς σχεδιασμούς, διατηρώντας όσο το δυνατόν περισσότερα θετικά.
-Η τελική μορφή του ιστοχώρου απλοποιεί την υποστήριξη μικρών οθωνών,
-την υποστήριξη παλιών ή απλών περιηγητών, την προσβασιμότητα,
-την εναλλαγή γλωσσών, την εναλλαγή ανοιχτού/σκούρου θέματος
-και την πλοήγηση.
-Ενδιαφέρον είναι ότι η εμφάνιση ούτε βελτιώθηκε ούτε χειροτέρευσε.
-Άλλαξε δραματικά βέβαια, από πιασάρικη σε ομιλιτική.
-Πλέον δεν μπορεί να εντυπωσιάσει και δίνει μια άβολη αίσθηση του
-αγνώστου, αλλά έτσι ακριβώς είμαι και εγώ.
+περιηγητής του Emacs,
+έπειτα αντικαταστάθηκαν τα μενού στην κορυφή από απλό κείμενο.
+Απλοποιήθηκε δηλαδή ο σχεδιασμός του ιστοχώρου σταδιακά,
+διατηρώντας όσο το δυνατόν περισσότερα θετικά.
+Στην τελική του μορφή, απλοποιούνται σημαντικά κάποια ζητήματα όπως
+η εμφάνιση σε μικρές οθώνες,
+η υποστήριξη παλιών περιηγητών ή σύγχρωνων απλών περιηγητών,
+η προσβασιμότητα από άτομα με ειδικές ανάγκες,
+η εναλλαγή μεταξύ Ελληνικής και Αγγλικής γλώσσας,
+η εναλλαγή μεταξύ  ανοιχτού και σκούρου θέματος
+και η πλοήγηση μεταξύ των σελίδων.
+Ενδιαφέρον είναι ότι η εμφάνιση άλλαξε έντονα
+αλλά ούτε βελτιώθηκε ούτε χειροτέρευσε.
+Δεν είναι εντυπωσιακή από πρώτη όψη,
+αλλά δίνει την αίσθηση ότι είναι προβλέψιμη
+και δε θα δημιουργήσει προβλήματα.
 </gr>
 </many_phases>
 </all>
