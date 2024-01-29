@@ -2,18 +2,18 @@
 <title><en>Architecture</en><gr>Αρχιτεκτονική</gr></title>
 <os>
 <en>
-Hasn't worked on a large enough system to experience
-the impact of architectural decisions,
-but there have been some noteworthy moments.
-Because the operating system relied so much on the user,
-any rewrites were done on a fundamental level,
-experimenting with significantly varied ways of organizing complexity.
-The directory structure holding projects and images,
-the image tagging system
-and the key bindings framework and command palette
-were all reworked roughly speaking 5 times each.
+Architecture may not be the best term since there is no
+experience with large systems.
+There have been however experiences of
+creations that were used for a long time, with changing requirements.
+The directory structure that holds projects and images
+was reorganized five times,
+similar to the image tagging system
+and the key bindings framework and command palette.
 At one point, images were placed in a binary tree of directories,
-following manual decisions in the style of is it or is it not.
+where the user would traverse the directories asking questions
+in the style of is it or is it not,
+in order to find or insert a new image.
 There was also a point where projects were categorized using symlinks,
 and the key bindings system used to also play the role of
 a code snippet system, which also allowed the user to manipulate
@@ -22,24 +22,17 @@ Before that, the image tagging was done by
 prepending letters to file names which acted like flags,
 also the directory structure had chains of shell scripts
 that lead from an outside directory deeper and deeper into the tree.
-The experimentations give a sense of
-what ideas are worth more attention. Generally speaking,
-flatter hierarchies are better,
-and one would rather exhaust all the technically simple solutions
-before attempting a technically complicated one.
+Generally, flatter hierarchies proved to be the most effective approach.
 </en>
 <gr>
-Παρότι δεν έχει χειριστεί κάποιο αρκετά περίπλοκο σύστημα
-ώστε να γίνει αισθητή η επιρροή των αρχιτεκτονικών αποφάσεων,
-υπάρχουν ορισμένες αξιοσημείωτες ανακαλύψεις και εμπειρίες.
-Ένας λόγος πίσω από αυτό είναι ότι το λειτουργικό σύστημα
-βασίζεται σε μεγάλο βαθμό στο χρήστη, οπότε οι
-πειραματισμοί και οι επανασχεδιασμοί
-γίνονταν σε όσο το δυνατό πιο χαμηλό επίπεδο.
-Η δομή των φακέλων των πρότζεκτ και των εικόνων,
-το σύστημα κατηγοριοποίησης εικόνων
-και το σύστημα συνδυασμού πλήκτρων
-επανασχεδιάστηκαν περίπου 5 φορές το καθένα.
+Αρχιτεκτονική ίσως να μην είναι ο πιο σωστός όρος,
+αφού δεν έχει υπάρξει εμπειρία με μεγάλα συστήματα.
+Υπάρχει όμως η αίσθηση ότι μία κατασκευή χρησιμοποιείται
+για πολύ καιρό και οι απαιτήσεις της αλλάζουν.
+Η δομή των φακέλων με πρότζεκτ και εικόνες
+επανασχεδιάστηκε περίπου πέντε φορές,
+όπως και το σύστημα κατηγοριοποίησης εικόνων
+και το σύστημα συνδυασμού πλήκτρων.
 Για ένα διάστημα, οι εικόνες κατηγοριοποιούνταν μέσα σε ένα
 δυαδικό δέντρο φακέλων. Ο χρήστης έκανε επιλογές τύπου
 είναι ή δεν είναι, ώστε να διασχίσει τους φακέλους και να βρει
@@ -49,29 +42,35 @@ before attempting a technically complicated one.
 και το σύστημα συνδυασμού πλήκτρων αποθήκευε
 τμήματα κώδικα παντός χρήσης, με τη δυνατότητα να τα επεξεργαστεί
 πρωτού τα επικολλήσει ή τα εκτελέσει.
-Πρωτύτερα, οι εικόνες κατηγοριοποιούνταν χρησιμοποιώντας
+Άλλοτε οι εικόνες κατηγοριοποιούνταν χρησιμοποιώντας
 γράμματα στην αρχή του ονόματός τους
-και υπήρχαν αλυσίδες από shell scripts που ξεκινούσαν από εξωτερικούς
-φακέλους πρότζεκτ και κατέληγαν σε εσωτερικούς.
-Τελικά, οι πιο επίπεδες ιεραρχίες είναι οι καλύτερες σε γενικές γραμμές,
-και είναι πιο αποδοτικό να ψάχνει κανείς μεταξύ των τεχνικά απλών
-λύσεων μέχρι να τις εξαντλήσει, πρωτού λάβει υπόψη τις πολυπλοκότερες.
+και για τα πρότζεκτ υπήρχαν αλυσίδες από shell scripts
+που ξεκινούσαν από εξωτερικούς φακέλους και κατέληγαν σε εσωτερικούς.
+Τελικά αποδείχτηκε ότι οι πιο επίπεδες ιεραρχίες είναι οι καλύτερες.
 </gr>
 </os>
 <values>
 <en>
-Through this journey, some ideas that proved to be valuable are
-prototyping,
-thinking in tradeoffs,
-technical simplicity from high to low levels,
-and the
+These relatively simple experiences proved prototyping to be valuable,
+and they highlighted some positive and negative sides of
+trees, hierarchies and multi purpose tools.
+There were also many experimentations with abstract code
+and code with tiny functions, and because some programs were very slow,
+there were one or two painful experiments wich caching.
+Since these programs were used constantly,
+over time they revealed the messages behind the
 </en>
 <gr>
-Μέσα από αυτά τα κινήματα, αποδείχτηκε χρήσιμα
-τα προτότυπα,
-η αίσθηση των υπέρ και κατά μιας ιδέας,
-η τεχνική απλότητα και σε υψηλό και σε χαμηλό επίπεδο,
-και το
+Αυτές οι σχετικά απλές εμπειρίες ανέδειξαν την αξία
+της προτοτυποποίησης,
+και έκαναν φανερά κάποια πλεονεκτήματα και μειονεκτήματα
+των δένδρων, των ιεραρχιών και των εργαλείων πολλαπλής χρήσης.
+Υπήρξαν διάφοροι πειραματισμοί και με αφαιρετικό κώδικα
+και με πολύ μικρές συναρτήσεις,
+και επειδή ορισμένα προγράμματα ήταν πολύ αργά,
+υπήρξαν ένας ή δύο οδυνηροί πειραματισμοί με caching.
+Επειδή αυτά τα προγράμματα χρησιμοποιούνταν,
+γίνονταν όλο και πιο φανερά τα μηνύματα του
 </gr>
 </values>
 <manifesto>
