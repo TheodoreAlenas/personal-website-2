@@ -1,5 +1,7 @@
 * Second take on my website
 
+As of January 2024, and some months earlier, [[http://theodoros-d-alenas.site]].
+
 ** Goals
 
 - Aesthetics that align with me
@@ -24,7 +26,7 @@ and general experiences programming.
 
 ** Upgrade
 
-The first version of my website used PHP functions to
+The [[https://github.com/TheodoreAlenas/personal-home-page][first version of my website]] used PHP functions to
 concatenate strings into HTML.
 Near the end, the localization was handled using custom XML files.
 
