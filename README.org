@@ -1,6 +1,6 @@
 * Second take on my website
 
-As of January 2024, and some months earlier, [[http://theodoros-d-alenas.site]].
+As of January 2024, and some months earlier, [[https://theodoros-d-alenas.site]].
 
 ** Goals
 
