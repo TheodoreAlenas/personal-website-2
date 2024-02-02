@@ -14,7 +14,10 @@
     >dimakopt732@gmail.com</a>,
     Instagram:
     <a href="https://www.instagram.com/theodore_alenas/"
-    >theodore_alenas</a>
+    >theodore_alenas</a>,
+    GitHub:
+    <a href="https://https://github.com/TheodoreAlenas/"
+    >TheodoreAlenas</a>
     <?php $a($h->and_my_youtube) ?>
     <a href="https://www.youtube.com/@theodorealenas3171"
     >Theodore Alenas</a>.
