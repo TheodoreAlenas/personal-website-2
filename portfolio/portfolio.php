@@ -91,7 +91,7 @@
 <pre><?php $c("scmd this_file") ?></pre>
 <p><?php $a($s->im_most_proud_and_nobody_understands) ?></p>
 <pre><?php $c("scmd sxhkd") ?></pre>
-<a href="https://github.com/TheodoreAlenas/dotfiles/blob/main/c/scmd.sh"
+<a href="https://github.com/TheodoreAlenas/dotfiles/blob/main/scmd.sh"
 >scmd.sh</a>.
 <?php
     $unused_variable_for_holding_license =
