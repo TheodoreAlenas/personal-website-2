@@ -41,7 +41,7 @@ EOPHP],
 
 
         "php 2" => [
-             ['$EN', '$GR', "title", "graduated", "high_school"],
+             ["xml", "title", "graduated", "high_school"],
              <<<EOPHP
 <?php
     function biography_array_to_en_gr(\$array) {
