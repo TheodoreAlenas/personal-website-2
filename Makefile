@@ -12,7 +12,7 @@ clean:
 	rm -vfr $P/* cv/fonts/
 
 push: $P
-	rsync --delete -vr $P/* root@theodoros-d-alenas.site:/srv
+	rsync --delete -vr $P/* srv@theodoros-d-alenas.site:/srv
 
 .PHONY: all clean push
 
