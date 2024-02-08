@@ -15,16 +15,21 @@
         style="width: 204px; height: 188px; background-color: #d3cbca"
     />
     <p>
-        <?php $a($h->find_me_on) ?>
-        E-mail:
-        <a href="mailto:dimakopt732@gmail.com"
-        >dimakopt732@gmail.com</a>,
-        Instagram:
-        <a href="https://www.instagram.com/theodore_alenas/"
-        >theodore_alenas</a>,
-        GitHub:
-        <a href="https://https://github.com/TheodoreAlenas/"
-        >TheodoreAlenas</a>
+        <span style="display: inline-block">
+            E-mail:
+            <a href="mailto:dimakopt732@gmail.com"
+            >dimakopt732@gmail.com</a>,
+        </span>
+        <span style="display: inline-block">
+            Instagram:
+            <a href="https://www.instagram.com/theodore_alenas/"
+            >theodore_alenas</a>,
+        </span>
+        <span style="display: inline-block">
+            GitHub:
+            <a href="https://https://github.com/TheodoreAlenas/"
+            >TheodoreAlenas</a>
+        </span>
         <?php $a($h->and_my_youtube) ?>
         <a href="https://www.youtube.com/@theodorealenas3171"
         >Theodore Alenas</a>.
