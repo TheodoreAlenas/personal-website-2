@@ -6,10 +6,10 @@ A = index.html portfolio.html biography.html
 
 C = $(shell find cp-to-serve-this -type f)
 
-all: $(addprefix $E,$A) $(addprefix $G,$A) $P/cv.pdf $(C:cp-to-%=%)
+all: $(addprefix $E,$A) $(addprefix $G,$A) $P/cv.pdf $(C:cp-to-%=%) serve-this/face.png
 
 clean:
-	rm -vfr $P/* cv/fonts/
+	rm -vfr $P/* cv/fonts/ cv/face.png
 
 push: $P
 	rsync --delete -vr $P/* srv@theodoros-d-alenas.site:/srv
@@ -34,9 +34,12 @@ $P/en/biography.html: main.php $(wildcard main/* biography/*)
 $P/gr/biography.html: main.php $(wildcard main/* biography/*)
 	mkdir -p $E $G && FILE=$@ php $< > $@
 
-$P/cv.pdf: cv/cv.tex cv/fonts/ $(wildcard cv/*)
+$P/cv.pdf: cv/face.png cv/cv.tex cv/fonts/ $(wildcard cv/*)
 	cd cv && lualatex \\nonstopmode\\input cv.tex
 	mv cv/cv.pdf $P/
+
+cv/face.png:
+	cd cv && wget theodoros-d-alenas.site/face.png
 
 FONT_URL = https://github.com/adobe-fonts/source-sans/releases/download/
 FONT_URL_DIR = 3.052R/
@@ -53,3 +56,6 @@ cv/fonts/:
 $P/%: cp-to-serve-this/%
 	-test -f $@ && rm -rf $@
 	cp -r $< $@
+
+cp-to-serve-this/face.png: cv/face.png
+	cp $< $@
