@@ -73,10 +73,11 @@ over time they revealed the messages behind the
 γίνονταν όλο και πιο φανερά τα μηνύματα του
 </gr>
 </values>
-<manifesto>
-<en>Manifesto for Agile Software Development</en>
-<gr>Manifesto for Agile Software Development</gr>
-</manifesto>
+<manifesto><en>Manifesto</en><gr>Manifesto</gr></manifesto>
+<for_agile>
+<en>for Agile Software Development.</en>
+<gr>for Agile Software Development.</gr>
+</for_agile>
 </all>
 <!--
     Copyright (c) 2023 Dimakopoulos Theodoros

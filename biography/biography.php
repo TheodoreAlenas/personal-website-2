@@ -44,7 +44,7 @@
     ><?php $b($h->di) ?></a>.
     <?php $b($h->participated_in) ?>
     <a href="https://github.com/ACM-UoA-Student-Chapter/dil"
-    ><?php $b($h->acm) ?></a>,
+    ><?php $b($h->acm) ?></a>
     <?php $b($h->but_noob_then_helvia) ?>
     <a href="https://helvia.io">Helvia</a>
     <?php $b($h->saw_web_dev) ?>
@@ -77,7 +77,8 @@
 <p>
     <?php $b($ac->values) ?>
     <a href="http://agilemanifesto.org/"
-    ><?php $b($ac->manifesto) ?></a>.
+    ><?php $b($ac->manifesto) ?></a>
+    <?php $b($ac->for_agile) ?>
 </p>
 
 
@@ -96,7 +97,7 @@
 <p>
     <?php $b($ar->drew_by); ?>
     <a href="https://drawabox.com"
-    ><?php $b($ar->drawabox) ?></a>,
+    ><?php $b($ar->drawabox) ?></a>
     <?php $b($ar->and_with); ?>
     <a href="https://www.proko.com"
     ><?php $b($ar->proko) ?></a>.

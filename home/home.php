@@ -8,25 +8,29 @@
 
 <?php $h = simplexml_load_file("home/home.xml") ?>
 
-<p>
-    E-mail:
-    <a href="mailto:dimakopt732@gmail.com"
-    >dimakopt732@gmail.com</a>,
-    Instagram:
-    <a href="https://www.instagram.com/theodore_alenas/"
-    >theodore_alenas</a>,
-    GitHub:
-    <a href="https://https://github.com/TheodoreAlenas/"
-    >TheodoreAlenas</a>
-    <?php $a($h->and_my_youtube) ?>
-    <a href="https://www.youtube.com/@theodorealenas3171"
-    >Theodore Alenas</a>.
-</p>
-<img
-    src="../face.jpg"
-    style="width: 50%; margin-left: 25%; border-radius: 100cm"
-    alt="male face with long hair"
-/>
+<div class="image-and-text">
+    <img
+        src="../face.png"
+        alt="white male face with long hair starring at viewer"
+        style="width: 204px; height: 188px;"
+    />
+    <p>
+        <?php $a($h->find_me_on) ?>
+        E-mail:
+        <a href="mailto:dimakopt732@gmail.com"
+        >dimakopt732@gmail.com</a>,
+        Instagram:
+        <a href="https://www.instagram.com/theodore_alenas/"
+        >theodore_alenas</a>,
+        GitHub:
+        <a href="https://https://github.com/TheodoreAlenas/"
+        >TheodoreAlenas</a>
+        <?php $a($h->and_my_youtube) ?>
+        <a href="https://www.youtube.com/@theodorealenas3171"
+        >Theodore Alenas</a>.
+        <?php $a($h->alenas_is_greek) ?>
+    </p>
+</div>
 <p><?php $a($h->hello) ?></p>
 <p><?php $a($h->for_hr) ?></p>
 <p><?php $a($h->what_ive_done) ?></p>
