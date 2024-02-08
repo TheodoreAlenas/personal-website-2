@@ -1,27 +1,21 @@
 /* <?php echo basename(__FILE__);  // s.css as of now ?> */
 
 body {
-    line-height: 1.5em; margin: 0;
+    line-height: 1.5em;
+    margin: 0;
     font-family: system-ui, sans-serif;
-    font-weight: normal; font-size: 0.5cm;
+    font-weight: normal;
+    font-size: 0.5cm;
     background-color: #cde;
     background-image: url(../blue-mountains.svg);
     background-attachment: fixed;
     background-size: cover;
 }
-body > div {
-    max-width: 30cm; margin: 0 auto;
-}
-body > div > header, body > div > main {
-    padding: 1em 1em;
-}
-.image-and-text {
-    display: grid; grid-auto-flow: column; align-items: center;
-}
-@media (max-width: 20cm) { .image-and-text { display: block } }
-img {
-    margin: 1cm 2cm; border-radius: 100vw;
-}
+body > div { max-width: 30cm; margin: 0 auto; }
+body > div > * { padding: 1em 1em; }
+.img-and-p { display: flex; flex-direction: row; align-items: center; }
+@media (max-width: 20cm) { .img-and-p { flex-direction: column; } }
+img {margin: 1cm 2cm; border-radius: 100vw;}
 h1 { text-align: center; }
 h2 { margin-top: 3rem; margin-left: 2rem; }
 pre { border-radius: 5px; padding-left: 1em; overflow: scroll; }
@@ -44,40 +38,40 @@ button {
     padding: 0.5em 0.5em;
 }
 
-/* Improvised bright color scheme and TokyoNight color scheme */
 [scheme=light] a { color: #036; }
 [scheme=light] a:visited { color: #604; }
-[scheme=light] body > div { background-color: #ffffffe0; }
-[scheme=light] body,
-[scheme=light] button { color: #111111; background-color: #ffffff; }
-
-[scheme=dark] a { color: #7aa2f7; }
-[scheme=dark] a:visited { color: #bb9af7; }
-[scheme=dark] body > div,
-[scheme=dark] button { color: #c0caf5; border-color: #c0caf5; background-color: #245; }
-[scheme=dark] body > div > header,
-[scheme=dark] pre { background-color: #134; }
-
-[scheme=light] a:hover,
 [scheme=light] button:hover,
 [scheme=light] a:hover::before,
-[scheme=light] *::selection { background-color: #111122; color: #c0caf5 }
+[scheme=light] a:hover,
+[scheme=light] *::selection { background-color: #112; color: #cdf; }
+[scheme=light] body,
+[scheme=light] button { color: #111; background-color: #fff; }
 [scheme=light] button,
 [scheme=light] pre { box-sizing: border-box; border: #888c 1px solid; }
+[scheme=light] body > div { background-color: #fffd; }
 [scheme=light] pre,
 [scheme=light] body > div > header { background-color: #0088ff0e; }
 [scheme=light] body > div > header { position: relative; }
 [scheme=light] body > div > header::after {
-    content: ""; position: absolute; bottom: 0; left: 1em; right: 1em; height: 1px;
+    content: ""; position: absolute;
+    bottom: 0; left: 1em; right: 1em; height: 1px;
     background-color: #888c;
 }
 
+[scheme=dark] a { color: #7aa2f7; }
+[scheme=dark] a:visited { color: #bb9af7; }
 [scheme=dark] a:hover,
 [scheme=dark] button:hover,
 [scheme=dark] a:hover::before,
 [scheme=dark] *::selection { background-color: #cf6; color: #000; }
-[scheme=dark] pre,
-[scheme=dark] body > div > header { box-shadow: inset 0 3px 5px 0 #0003; }
+[scheme=dark] body > div > header,
+[scheme=dark] pre {
+    background-color: #134; box-shadow: inset 0 3px 5px 0 #0003;
+}
+[scheme=dark] body > div,
+[scheme=dark] button {
+    color: #c0caf5; border-color: #c0caf5; background-color: #245;
+}
 
 /* <?php echo "The original file had the MIT notice here";
 // Copyright (c) 2023 Dimakopoulos Theodoros

@@ -8,7 +8,7 @@
 
 <?php $h = simplexml_load_file("home/home.xml") ?>
 
-<div class="image-and-text">
+<div class="img-and-p">
     <img
         src="../face.png"
         alt="white male face with long hair starring at viewer"
