@@ -5,8 +5,9 @@ G = serve-this/gr/
 A = index.html portfolio.html biography.html
 
 C = $(shell find cp-to-serve-this -type f)
+S = serve-this/face.png serve-this/SourceCodePro-Light.otf
 
-all: $(addprefix $E,$A) $(addprefix $G,$A) $P/cv.pdf $(C:cp-to-%=%) serve-this/face.png
+all: $(addprefix $E,$A) $(addprefix $G,$A) $P/cv.pdf $(C:cp-to-%=%) $S
 
 clean:
 	rm -vfr $P/* cv/fonts/ cv/face.png
@@ -59,3 +60,6 @@ $P/%: cp-to-serve-this/%
 
 cp-to-serve-this/face.png: cv/face.png
 	cp $< $@
+
+cp-to-serve-this/SourceCodePro-Light.otf:
+	cd cp-to-serve-this && wget theodoros-d-alenas.site/SourceCodePro-Light.otf

@@ -12,7 +12,7 @@
     <img
         src="../face.png"
         alt="white male face with long hair starring at viewer"
-        style="width: 204px; height: 188px;"
+        style="width: 204px; height: 188px; background-color: #d3cbca"
     />
     <p>
         <?php $a($h->find_me_on) ?>

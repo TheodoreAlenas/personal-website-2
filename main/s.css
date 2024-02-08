@@ -18,7 +18,10 @@ body > div > * { padding: 1em 1em; }
 img {margin: 1cm 2cm; border-radius: 100vw;}
 h1 { text-align: center; }
 h2 { margin-top: 3rem; margin-left: 2rem; }
-pre { border-radius: 5px; padding-left: 1em; overflow: scroll; }
+pre {
+    border-radius: 5px; padding-left: 1em; overflow: scroll;
+    font-family: 'Source Code Pro Light', monospace;
+}
 a {
     text-underline-offset: 0.2em;
     display: inline-block; position: relative; z-index: 1;
@@ -45,7 +48,8 @@ button {
 [scheme=light] a:hover,
 [scheme=light] *::selection { background-color: #112; color: #cdf; }
 [scheme=light] body,
-[scheme=light] button { color: #111; background-color: #fff; }
+[scheme=light] button { color: #111; }
+[scheme=light] button { background-color: #fff; }
 [scheme=light] button,
 [scheme=light] pre { box-sizing: border-box; border: #888c 1px solid; }
 [scheme=light] body > div { background-color: #fffd; }
@@ -68,9 +72,10 @@ button {
 [scheme=dark] pre {
     background-color: #134; box-shadow: inset 0 3px 5px 0 #0003;
 }
+[scheme=dark] pre b { color: #ccd; }
 [scheme=dark] body > div,
 [scheme=dark] button {
-    color: #c0caf5; border-color: #c0caf5; background-color: #245;
+    color: #bde; border-color: #bde; background-color: #245;
 }
 
 /* <?php echo "The original file had the MIT notice here";
