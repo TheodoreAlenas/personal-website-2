@@ -9,11 +9,15 @@
 <?php $h = simplexml_load_file("home/home.xml") ?>
 
 <div class="img-and-p">
-    <img
-        src="../face.png"
-        alt="white male face with long hair staring at viewer"
-        style="width: 204px; height: 188px; background-color: #d3cbca"
-    />
+    <div
+     class="img-container"
+     style="height: 188px; background-color: #d3cbca">
+        <img
+         src="../face.png"
+         alt="white male face with long hair staring at viewer"
+         style="width: 204px; height: 188px"
+        />
+    </div>
     <p>
         <span style="display: inline-block">
             E-mail:
