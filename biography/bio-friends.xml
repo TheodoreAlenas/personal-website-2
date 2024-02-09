@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <all>
-<title><en>Friends</en><gr>Φίλοι</gr></title>
-<psychotherapy>
+<s n="title"><en>Friends</en><gr>Φίλοι</gr></s>
+<s n="psychotherapy">
 <en>
 Lived lonely and proud until the age of 21,
 but eventually humbled and started
@@ -12,8 +13,8 @@ and gradually made some basic friendships.
 αλλά τελικά άλλαξε στάση και
 παρά τις δυσκολίες, άρχισε να σχηματίζει παρέες.
 </gr>
-</psychotherapy>
-<collabs>
+</s>
+<s n="collabs">
 <en>
 Collaborated with various people.
 On one project we willingly worked next to each other
@@ -34,8 +35,8 @@ resistance to collaborate.
 Οι πιο δυσάρεστες εμπειρίες συνεργασίας σε εργασίες της σχολής
 προέρχονταν από αντίσταση στη συνεργασία.
 </gr>
-</collabs>
-<everyone_hates_me>
+</s>
+<s n="everyone-hates-me">
 <en>
 The truth is that with most of the teams
 I've collaborated with in the University, we don't talk anymore.
@@ -62,7 +63,7 @@ which they'll hopefully perceive as a solution to a problem.
 Για να εκλάβει κάποια επιρροή ως λύση σε πρόβλημα
 χρειάζεται λεπτεπίλεπτη μεταχείριση.
 </gr>
-</everyone_hates_me>
+</s>
 </all>
 <!--
     Copyright (c) 2023 Dimakopoulos Theodoros <dimakopt732@gmail.com>

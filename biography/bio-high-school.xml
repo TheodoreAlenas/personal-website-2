@@ -1,8 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <all>
-<title><en>High school</en><gr>Λύκειο</gr></title>
-<graduated><en>Graduated</en><gr>Απολύθηκε από</gr></graduated>
-<high_school><en>high school</en><gr>το λύκειο</gr></high_school>
-<went_to_france_with>
+<s n="title"><en>High school</en><gr>Λύκειο</gr></s>
+<s n="graduated"><en>Graduated</en><gr>Απολύθηκε από</gr></s>
+<s n="high-school"><en>high school</en><gr>το λύκειο</gr></s>
+<s n="went-to-france-with">
 <en>
 with a 17325/20000 score on 2019.
 The final exams included algebra, physics,
@@ -15,8 +16,8 @@ Went to France with the program
 με κατεύθυνση Θετικές επιστήμες.
 Πήγε Γαλλία με το πρόγραμμα
 </gr>
-</went_to_france_with>
-<crafted_and_watched>
+</s>
+<s n="crafted-and-watched">
 <en>
 Improvised a proof for the volume of a cone,
 math for Wolfenstein 3D - style graphics
@@ -29,12 +30,12 @@ and watched plenty from the YouTube channels
 Wolfenstein 3D χωρίς να γνωρίζει από διανύσματα,
 και παρακολούθησε αρκετό από το περιεχόμενο των καναλιών
 </gr>
-</crafted_and_watched>
-<in_uni_also>
+</s>
+<s n="in-uni-also">
 <en>In the University got interest in</en>
 <gr>Στο πανεπιστήμιο παρακολούθησε</gr>
-</in_uni_also>
-<went_to_uoa_to>
+</s>
+<s n="went-to-uoa-to">
 <en>
 Went to the
 National and Kapodistrian University of Athens (UoA),
@@ -44,20 +45,20 @@ to the
 Σπούδασε στο Εθνικό και Καπποδιστριακό Πανεπιστήμιο Αθηνών
 (ΕΚΠΑ) στο
 </gr>
-</went_to_uoa_to>
-<di>
+</s>
+<s n="di">
 <en>Department of Informatics (DI)</en>
 <gr>Τμήμα Πληροφορικής και Τηλεπικοινωνιών</gr>
-</di>
-<participated_in>
+</s>
+<s n="participated-in">
 <en>Participated with effort and enthousiasm in thethe open source</en>
 <gr>Συμμετείχε με ενθουσιασμό στο πρότζεκτ open source</gr>
-</participated_in>
-<acm>
+</s>
+<s n="acm">
 <en>compiler</en>
 <gr>μεταγλωττιστή</gr>
-</acm>
-<but_noob_then_helvia>
+</s>
+<s n="but-noob-then-helvia">
 <en>
 project of ACM's student chapter,
 though the knowledge gap didn't allow to contribute much.
@@ -70,12 +71,12 @@ Had a tiny internship with
 Ως τώρα, το Φθινόπωρο του 2023, δεν έχει εργαστεί.
 Έκανε ελάχιστη πρακτική εργασία με την εταιρεία
 </gr>
-</but_noob_then_helvia>
+</s>
 
-<saw_web_dev>
+<s n="saw-web-dev">
 <en>that introduced web development basics.</en>
 <gr>με την οποία είδε βασικές αρχές του web development.</gr>
-</saw_web_dev>
+</s>
 </all>
 <!--
     Copyright (c) 2023 Dimakopoulos Theodoros <dimakopt732@gmail.com>

@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <all>
-<title>
+<s n="title">
 <en>Illustration and the piano</en>
 <gr>Σκιτσογραφία και πιάνο</gr>
-</title>
-<quit_piano>
+</s>
+<s n="quit-piano">
 <en>
 Quit the piano after 7/9 steps to the diploma,
 when the world view changed and didn't line up with
@@ -14,9 +15,9 @@ the typcial motivations for playing.
 όταν άλλαξε τρόπο σκέψης και τα μέχρι τότε κίνητρα
 για μελέτη δεν εφαρμόζονταν.
 </gr>
-</quit_piano>
+</s>
 
-<drew_by>
+<s n="drew-by">
 <en>
 Then started illustration, guided by the
 </en>
@@ -24,20 +25,20 @@ Then started illustration, guided by the
 Έπειτα καταπιάστηκε με τη σκιτισογραφία, μέσα απ' την
 κοινότητα και σειρά μαθημάτων
 </gr>
-</drew_by>
-<drawabox>
+</s>
+<s n="drawabox">
 <en>Draw A Box</en>
 <gr>Draw A Box</gr>
-</drawabox>
-<and_with>
+</s>
+<s n="and-with">
 <en>community and lessons, as well as videos from</en>
 <gr>καθώς και μέσα από βίντεο του</gr>
-</and_with>
-<proko>
+</s>
+<s n="proko">
 <en>Stanislav Prokopenko</en>
 <gr>Stanislav Prokopenko</gr>
-</proko>
-<quit>
+</s>
+<s n="quit">
 <en>
 Quit after being able to draw pleasant looking
 places figures and faces with some difficulty.
@@ -56,8 +57,8 @@ and it drained a lot of time.
 αν και κυρίως επειδή η σκιτσογραφία δε συνδυαζόταν
 καλά με την πληροφορική και απαιτούσε μεγάλη αφοσίωση.
 </gr>
-</quit>
-<cultivated>
+</s>
+<s n="cultivated">
 <en>
 Arts cultivated respect towards
 old means of achieving goals,
@@ -71,7 +72,7 @@ and judging work with a fresh pair of eyes.
 στο ζέσταμα
 και στην αντικειμενική κριτική μετά από λίγη απόσταση.
 </gr>
-</cultivated>
+</s>
 </all>
 <!--
     Copyright (c) 2023 Dimakopoulos Theodoros <dimakopt732@gmail.com>

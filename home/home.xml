@@ -1,22 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <all>
 
-<find_me_on>
+<s n="find-me-on">
 <en>You may find me on</en>
 <gr>Για περισσότερα,</gr>
-</find_me_on>
-<youtube>
+</s>
+<s n="youtube">
 <en>YouTube as Theodore Alenas or</en>
 <gr>στο YouTube ονομάζομαι Theodore Alenas και</gr>
-</youtube>
-<github>
+</s>
+<s n="github">
 <en>GitHub also as TheodoreAlenas,</en>
 <gr>στο GitHub TheodoreAlenas.</gr>
-</github>
-<email>
+</s>
+<s n="email">
 <en>or email me at dimakopt732@gmail.com.</en>
 <gr>Το e-mail μου είναι dimakopt732@gmail.com.</gr>
-</email>
-<active_on_youtube>
+</s>
+<s n="active-on-youtube">
 <en>
 I produce about weekly content on YouTube
 but I'm inactive on social media otherwise.
@@ -25,12 +26,12 @@ but I'm inactive on social media otherwise.
 Ανεβάζω βίντεο στο YouTube περίπου κάθε εβδομάδα,
 αλλά κρατάω μια απόσταση από άλλα μέσα δικτύωσης.
 </gr>
-</active_on_youtube>
-<alenas_is_greek>
+</s>
+<s n="alenas-is-greek">
 <en>Alenas is what the word Greek sounds like in Greek.</en>
 <gr>Alenas σημαίνει Έλληνας, όπως alien, ale.</gr>
-</alenas_is_greek>
-<hello>
+</s>
+<s n="hello">
 <en>
 So, welcome! I'm a University student,
 started on 2019, and I love programming.
@@ -51,8 +52,8 @@ mathematicians, system administrators, low level programmers and so on.
 μια ιστορία που αφορά προγραμματιστές συγκεκριμένης κουλτούρας
 όπως μαθηματικοί, system administrators, χαμηλού επιπέδου και λοιπά.
 </gr>
-</hello>
-<im_minimalist>
+</s>
+<s n="im-minimalist">
 <en>
 I love minimalism and I move iteratively,
 so that there is always something to demonstrate.
@@ -77,16 +78,16 @@ to keep in mind that I perform well among like minded people.
 Φυσικά έχει διπλή όψη αυτό το νόμισμα και προτιμώ να συνεργάζομαι
 με άτομα που έχουμε κοινό τρόπο σκέψης.
 </gr>
-</im_minimalist>
-<for_hr>
+</s>
+<s n="for-hr">
 <en>
 I keep this website mainly for people who think of hiring me.
 </en>
 <gr>
 Έφτιαξα αυτό τον ιστοχώρο κυρίως για εργοδότες.
 </gr>
-</for_hr>
-<what_ive_done>
+</s>
+<s n="what-ive-done">
 <en>
 As of 2023, I don't have hands-on experience developing
 websites and web apps except this site.
@@ -104,8 +105,8 @@ for an undergraduate.
 Για τα δεδομένα προπτυχιακού φοιτητή
 είμαι αρκετά άνετος με πολύπλοκα προβλήματα.
 </gr>
-</what_ive_done>
-<lets_go_out>
+</s>
+<s n="lets-go-out">
 <en>
 If you don't mind,
 I'd like to go outside with the developers
@@ -118,7 +119,7 @@ I'll cover for backlash from higher ups.
 και να το πάμε βλέποντας, να δούμε αν ταιριάζω και πού.
 Αν προκύψουν προβλήματα με ανώτερα στελέχη σας καλύπτω.
 </gr>
-</lets_go_out>
+</s>
 </all>
 <!--
     Copyright (c) 2023 Dimakopoulos Theodoros <dimakopt732@gmail.com>

@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <all>
-<title><en>Languages</en><gr>Γλώσσες</gr></title>
-<warm_ups>
+<s n="title"><en>Languages</en><gr>Γλώσσες</gr></s>
+<s n="warm-ups">
 <en>
 There was a span of about 3 weeks in Autumn 2023 with
 wake ups at 4 or 5 in the morning and warm up exercises.
@@ -24,12 +25,12 @@ Python, Haskell και Matlab ή GNU Octave για την ακρίβεια.
 Οι αλγόριθμοι αφορούσαν παραλληλία,
 δομές δεδομένων και διαχείριση δεδομένων, με
 </gr>
-</warm_ups>
-<often_in_vi>
+</s>
+<s n="often-in-vi">
 <en>or neither, often in Vi (not referring to Vim).</en>
 <gr>ή κανένα από τα δύο, συχνά σε Vi (όχι Vim).</gr>
-</often_in_vi>
-<touched>
+</s>
+<s n="touched">
 <en>
 Outside deliberate pracrice and unfortunately
 as a painkiller for loneliness,
@@ -40,13 +41,13 @@ I've got some touch with
 με κίνητρο εσωτερικά κενά δυστυχώς,
 πήρε μία πρώτη ιδέα και από τις γλώσσες
 </gr>
-</touched>
-<rust_awk>
+</s>
+<s n="rust-awk">
 <en>Rust, Graphviz Dot, AWK, GNU Make, BF,</en>
 <gr>Rust, Graphviz Dot, AWK, GNU Make, BF,</gr>
-</rust_awk>
+</s>
 <!-- GNU Make, BF, J slightly, lisp -->
-<slightly_and_ts>
+<s n="slightly-and-ts">
 <en>
 slightly, lisp and Typescript.
 Isn't opinionated about Typescript but indeed something is off.
@@ -56,8 +57,8 @@ Isn't opinionated about Typescript but indeed something is off.
 Δεν έχει έντονη άποψη για την Typescript
 αλλά κάτι δεν πάει καλά πράγματι.
 </gr>
-</slightly_and_ts>
-<for_uni>
+</s>
+<s n="for-uni">
 <en>
 Both from personal motivation and for the University,
 familiarized with
@@ -74,7 +75,7 @@ Java, Bourne και POSIX shell scripting που είναι παρόμοιο μ�
 Τα ζεστάματα που αναφέρθηκαν γίνονταν επίσης σε γλώσσες
 που χρησιμοποιούνταν στο Πανεπιστήμιο.
 </gr>
-</for_uni>
+</s>
 </all>
 <!--
     Copyright (c) 2023 Dimakopoulos Theodoros <dimakopt732@gmail.com>

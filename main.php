@@ -1,27 +1,38 @@
 <?php
-    function skip_region($t) {}
-    function echo_region($t) {echo $t;}
-    $FILE_END_TO_TITLE = array(
+    $ORIGIN_FILE = getenv("FILE");
+    if (str_contains($ORIGIN_FILE, "/gr/"))
+        $LANG = "gr";
+    else
+        $LANG = "en";
+
+    $TITLE = array(
         "index.html" => ["Theodoros Dimakopoulos", "Θοδωρής Δημακόπουλος"],
         "portfolio.html" => ["Portfolio", "Χαρτοφυλάκιο"],
         "biography.html" => ["Biography", "Βιογραφικό"],
         "contact.html" => ["Contact", "Επικοινωνία"]
-    );
+    )[basename($ORIGIN_FILE)][array("en" => 0, "gr" => 1)[$LANG]];
 
-    $ORIGIN_FILE = getenv("FILE");
-    if (str_contains($ORIGIN_FILE, "/gr/")) {
-        $GR = "echo_region";
-        $EN = "skip_region";
-        $LANG = "gr";
-        $TITLE = $FILE_END_TO_TITLE[basename($ORIGIN_FILE)][1];
+    function echo_localized($en, $gr) {
+        global $LANG;
+        if ($LANG === "gr")
+            echo $en;
+        else
+            echo $gr;
     }
-    else {
-        $GR = "skip_region";
-        $EN = "echo_region";
-        $LANG = "en";
-        $TITLE = $FILE_END_TO_TITLE[basename($ORIGIN_FILE)][0];
+    function echo_localized_from_xml($match) {
+        global $LANG;
+        global $XML_WITH_STRINGS;
+        foreach ($XML_WITH_STRINGS->s as $s) {
+            if ($s->attributes()["n"] == $match) {
+                if ($LANG === "gr")
+                    echo $s->gr;
+                else
+                    echo $s->en;
+                return;
+            }
+        }
+        error_log("string not found: '" . $match . "'");
     }
-
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -45,12 +56,6 @@
         <div>
             <header>
                 <nav>
-                    <a href="#main-content" class="skip-link">
-                        <?php
-                            $EN("Skip to content");
-                            $GR("Μετάβαση στο περιεχόμενο");
-                        ?>
-                    </a>
                     <?php include("main/header.php") ?>
                 </nav>
             </header>

@@ -1,39 +1,35 @@
 <?php
-    function home_array_to_en_gr($array) {
-        global $EN, $GR; $EN($array->en); $GR($array->gr);
-    }
-    $a = "home_array_to_en_gr";
+    $XML_WITH_STRINGS = simplexml_load_file("home/home.xml");
+    $a = "echo_localized_from_xml";
 ?>
 
 
-<?php $h = simplexml_load_file("home/home.xml") ?>
-
 <div class="img-and-p">
     <div
-     class="img-container"
-     style="height: 188px; background-color: #d3cbca">
+        class="img-container"
+        style="height: 188px; background-color: #d3cbca">
         <img
-         src="../face.png"
-         alt="white male face with long hair staring at viewer"
-         style="width: 204px; height: 188px"
+            src="../face.png"
+            alt="white male face with long hair staring at viewer"
+            style="width: 204px; height: 188px"
         />
     </div>
     <p>
-        <?php $a($h->find_me_on) ?>
+        <?php $a("find-me-on") ?>
         <a href="https://www.youtube.com/@theodorealenas3171"
-        ><?php $a($h->youtube) ?></a>
+        ><?php $a("youtube") ?></a>
         <a href="https://https://github.com/TheodoreAlenas/"
-        ><?php $a($h->github) ?></a>
+        ><?php $a("github") ?></a>
         <a href="mailto:dimakopt732@gmail.com"
-        ><?php $a($h->email) ?></a>
-        <?php $a($h->active_on_youtube); $a($h->alenas_is_greek) ?>
+        ><?php $a("email") ?></a>
+        <?php $a("active-on-youtube"); $a("alenas-is-greek") ?>
     </p>
 </div>
-<p><?php $a($h->hello) ?></p>
-<p><?php $a($h->im_minimalist) ?></p>
-<p><?php $a($h->for_hr) ?></p>
-<p><?php $a($h->what_ive_done) ?></p>
-<p><?php $a($h->lets_go_out) ?></p>
+<p><?php $a("hello") ?></p>
+<p><?php $a("im-minimalist") ?></p>
+<p><?php $a("for-hr") ?></p>
+<p><?php $a("what-ive-done") ?></p>
+<p><?php $a("lets-go-out") ?></p>
 
 <?php
     $unused_variable_for_holding_license =

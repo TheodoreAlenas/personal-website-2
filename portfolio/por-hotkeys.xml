@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <all>
-<title><en>System's hotkey system</en><gr>Συνδυασμοί πλήκτρων του ΛΣ</gr></title>
-<hk_sys_around>
+<s n="title"><en>System's hotkey system</en><gr>Συνδυασμοί πλήκτρων του ΛΣ</gr></s>
+<s n="hk-sys-around">
 <en>
 A system to provide a listing of key bindings and optional
 input box to key bindings, built around
@@ -9,17 +10,17 @@ input box to key bindings, built around
 Σύστημα που απεικονίζει επόμενους επιτρεπτούς συνδυασμούς πλήκτρων
 και πεδία συμπλήρωης για ορισμένους συνδυασμούς, χτισμένο πάνω από το
 </gr>
-</hk_sys_around>
-<w_4_vers>
+</s>
+<s n="w-4-vers">
 <en>with 4 major versions</en>
 <gr>με 4 κύριες εκδόσεις</gr>
 <gr></gr>
-</w_4_vers>
-<alchain_3_prog>
+</s>
+<s n="alchain-3-prog">
 <en>3 programs</en>
 <gr>3 προγράμματα</gr>
-</alchain_3_prog>
-<working_together_and_key>
+</s>
+<s n="working-together-and-key">
 <en>
 working together so that when pressing the Windows key
 a terminal appears at the bottom of the screen,
@@ -35,8 +36,8 @@ and pressing another key in the terminal such as
 Αφότου πατηθεί το Windows και εμφανιστεί το τερματικό,
 και μέσα στο τερματικό πατηθεί ακόμη ένα πλήκτρο όπως για παράδειγμα
 </gr>
-</working_together_and_key>
-<often_does_nothing>
+</s>
+<s n="often-does-nothing">
 <en>
 often nothing would have happened yet and the terminal
 would be showing next possible key presses.
@@ -45,9 +46,9 @@ would be showing next possible key presses.
 σε πολλές περιπτώσεις δε συνέβαινε τίποτα και το τερματικό
 πρόβαλλε τα επιτρεπτά πλήκτρα που ακολουθούν μετά από το πρώτο.
 </gr>
-</often_does_nothing>
-<part_of_file><en>part of</en><gr>απόσπασμα του</gr></part_of_file>
-<but_windows_break_like_this>
+</s>
+<s n="part-of-file"><en>part of</en><gr>απόσπασμα του</gr></s>
+<s n="but-windows-break-like-this">
 <en>
 The flaw was that windows are not designed to work
 well when treated like this.
@@ -61,8 +62,8 @@ Most of the code is lost today.
 αποδείχτηκε ότι τα παράθυρα είναι πιο διακοσμητικά απ' ότι υπέθεσα.
 Ο περισσότερος απ' τον κώδικα του συστήματος έχει χαθεί σήμερα.
 </gr>
-</but_windows_break_like_this>
-<alk_is_scripts>
+</s>
+<s n="alk-is-scripts">
 <en>
 Shell scripts that take arguments corresponding
 to hotkeys, and perform the actions.
@@ -71,10 +72,10 @@ to hotkeys, and perform the actions.
 Shell scripts που τα ορίσματα που δέχονται
 αντικατοπτρίζουν συνδυασμούς πλήκτρων.
 </gr>
-</alk_is_scripts>
-<the><en>The</en><gr>Το εκτελέσιμο</gr></the>
-<shows><en>executable displays the</en><gr>προβάλλει τα</gr></shows>
-<in_term_if_env_wo>
+</s>
+<s n="the"><en>The</en><gr>Το εκτελέσιμο</gr></s>
+<s n="shows"><en>executable displays the</en><gr>προβάλλει τα</gr></s>
+<s n="in-term-if-env-wo">
 <en>
 in a terminal. That is, if it was called
 from an environment without the
@@ -83,12 +84,12 @@ from an environment without the
 σε ένα τερματικό. Αυτό όμως δεν είναι απαραίτητο,
 εξαρτάται από τη
 </gr>
-</in_term_if_env_wo>
-<var_set_the_defs_of>
+</s>
+<s n="var-set-the-defs-of">
 <en>variable set. The shell function definitions of the</en>
 <gr>μεταβλητή περιβάλλοντος. Οι ορισμοί των shell functions</gr>
-</var_set_the_defs_of>
-<compile_to_help_note_posix>
+</s>
+<s n="compile-to-help-note-posix">
 <en>
 executables compile into the help message
 which acts like a listing of key bindings.
@@ -104,8 +105,8 @@ it's POSIX compliant instead of Bash.
 χαρακτήρα στον σημερινό μου κώδικα shell scripts.
 Παρατηρήστε ότι είναι POSIX compliant αντί για Bash.
 </gr>
-</compile_to_help_note_posix>
-<but_verbose_and_never_term>
+</s>
+<s n="but-verbose-and-never-term">
 <en>
 Compared to the first approach, this one had
 very verbose configuration files.
@@ -116,8 +117,8 @@ Also, it was never actually used in the terminal.
 πολύ μεγαλύτερα αρχεία ρυθμίσεων.
 Επίσης δε χρησιμοποιήθηκε σχεδόν ποτέ εντός τερματικού.
 </gr>
-</but_verbose_and_never_term>
-<snip_gen_w_compl_unpublished>
+</s>
+<s n="snip-gen-w-compl-unpublished">
 <en>
 A code snippet generator, that can take multiple
 user inputs to complete parts of a snippet,
@@ -149,8 +150,8 @@ plus I abandoned it before publishing it.
 Ήταν έτοιμο για έκδοση, αλλά είχε πολλές εξαρτήσεις από το σύστημά μου,
 και επίσης το παράτησα πριν αποφασίσω να το εκδόσω.
 </gr>
-</snip_gen_w_compl_unpublished>
-<but_never_used_snips_and_martin_bloat_find_on>
+</s>
+<s n="but-never-used-snips-and-martin-bloat-find-on">
 <en>
 I didn't ever use snippets, nor did I start using
 snippets then. So it still was a hotkey system only.
@@ -166,12 +167,12 @@ I had made by then. I uploaded the project once I made this site, on
 έκανε το σύστημα περίπλοκο σε κάθε κλίμακα για τον έως τότε κώδικά μου.
 Φτιάχνοντας αυτό τον ιστοχώρο, το δημοσίευσα στο
 </gr>
-</but_never_used_snips_and_martin_bloat_find_on>
-<a_single_file>
+</s>
+<s n="a-single-file">
 <en>A single file.</en>
 <gr>Ένα αρχείο.</gr>
-</a_single_file>
-<line_types>
+</s>
+<s n="line-types">
 <en>
 It acts as a command palette
 where the lines of code become items of a list,
@@ -188,8 +189,8 @@ or an inline shell function definition.
 Κάθε γραμμή είναι είτε κενή, είναι σχόλιο,
 είτε ορισμός συνάρτησης shell.
 </gr>
-</line_types>
-<im_most_proud_and_nobody_understands>
+</s>
+<s n="im-most-proud-and-nobody-understands">
 <en>
 This is my best product because it didn't order the computer
 as much as it asked the computer what it's good at,
@@ -206,7 +207,7 @@ makes two people understand each other.
 που δένει δύο άτομα και τα βοηθάει να καταλάβουν
 το ένα το άλλο.
 </gr>
-</im_most_proud_and_nobody_understands>
+</s>
 </all>
 <!--
     Copyright (c) 2023 Dimakopoulos Theodoros <dimakopt732@gmail.com>

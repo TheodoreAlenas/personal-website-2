@@ -1,14 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <all>
-<title><en>YouTube</en><gr>YouTube</gr></title>
-<recorded><en>Recorded</en><gr>Δημιούργησε</gr></recorded>
-<videos>
+<s n="title"><en>YouTube</en><gr>YouTube</gr></s>
+<s n="recorded"><en>Recorded</en><gr>Δημιούργησε</gr></s>
+<s n="videos">
 <en>YouTube videos</en>
 <gr>βίντεο στην πλατφόρμα YouTube</gr>
-</videos>
-<using><en>using</en><gr>χρησιμοποιώντας το εργαλείο</gr></using>
-<piping><en>piping</en><gr>περνώντας την έξοδο του</gr></piping>
-<to><en>to</en><gr>στο</gr></to>
-<to_share>
+</s>
+<s n="using"><en>using</en><gr>χρησιμοποιώντας το εργαλείο</gr></s>
+<s n="piping"><en>piping</en><gr>περνώντας την έξοδο του</gr></s>
+<s n="to"><en>to</en><gr>στο</gr></s>
+<s n="to-share">
 <en>
 for showing the webcam's output on the screen.
 The purpose of the YouTube channel is
@@ -28,7 +29,7 @@ or to how the unintended audience felt.
 Δεν είναι προφανές αν επωφελήθηκαν οι επιθυμητοί θεατές,
 ούτε είναι προφανής η αντίδραση των κατά λάθος θεατών.
 </gr>
-</to_share>
+</s>
 </all>
 <!--
     Copyright (c) 2023 Dimakopoulos Theodoros <dimakopt732@gmail.com>

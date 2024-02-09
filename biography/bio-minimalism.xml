@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <all>
-<title>
+<s n="title">
 <en>Minimalism</en>
 <gr>Μινιμαλισμός</gr>
-</title>
-<arch>
+</s>
+<s n="arch">
 <en>
 Got attracted to minimal tools, in a movement of exploration.
 Started with Visual Studio Code and Windows 10,
@@ -23,8 +24,8 @@ but there was acceptance.
 και 4Mbps περίπου σύνδεση στο διαδίκτυο.
 Δεν βόλευε πάντα αλλά υπήρχε μια αίσθηση αποδοχής.
 </gr>
-</arch>
-<now_vi>
+</s>
+<s n="now-vi">
 <en>
 Since autumn 2023,
 using tools in the style of Unix is comfortable and relaxing.
@@ -38,7 +39,7 @@ and dash, which is a POSIX compliant shell.
 Κάποια από τα εργαλεία βρίσκονται σε servers και σήμερα,
 όπως Vi, tmux, emacs, zsh bash και dash που είναι POSIX compliant shell.
 </gr>
-</now_vi>
+</s>
 </all>
 <!--
     Copyright (c) 2023 Dimakopoulos Theodoros <dimakopt732@gmail.com>

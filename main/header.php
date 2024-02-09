@@ -6,30 +6,32 @@
     else {
         $menu_opposite_language = "../en/" . basename($ORIGIN_FILE);
     }
+    $l = "echo_localized";
 ?>
+<a href="#main-content" class="skip-link">
+    <?php $l("Μετάβαση στο περιεχόμενο", "Skip to content") ?>
+</a>
 <h1><?php echo $TITLE ?></h1>
 <p>
 
 <a href="<?php echo($menu_opposite_language); ?>"
-><?php $EN("Greek"); $GR("English"); ?></a>
-<?php
-    $EN("is also supported. Available are");
-    $GR("is also supported. Διατίθενται");
-?>
+><?php $l("Greek", "English") ?></a>
+<?php $l("is also supported. Available are",
+         "is also supported. Διατίθενται"); ?>
 
 <a href="index.html"
-><?php $EN("the home page"); $GR("η αρχική σελίδα"); ?>,</a>
+><?php $l("the home page", "η αρχική σελίδα"); ?>,</a>
 <a href="portfolio.html"
-><?php $EN("portfolio"); $GR("χαρτοφυλάκιο"); ?>,</a>
+><?php $l("portfolio", "χαρτοφυλάκιο"); ?>,</a>
 <a href="biography.html"
-><?php $EN("biography"); $GR("βιογραφικό"); ?>,</a>
+><?php $l("biography", "βιογραφικό"); ?>,</a>
 <a href="../cv.pdf"
->cv.pdf <?php $EN("and"); $GR("και"); ?></a>
+>cv.pdf <?php $l("and", "και"); ?></a>
 
 <button
     onclick="switchColorScheme()"
     class="bg1 fg1"
-><?php $EN("dark/light theme."); $GR("ανοιχτό/σκούρο θέμα."); ?>
+><?php $l("dark/light theme.", "ανοιχτό/σκούρο θέμα."); ?>
 </button>
 </p>
 <script> setUpColorScheme() </script>

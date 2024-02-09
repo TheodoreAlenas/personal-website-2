@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <all>
-<title><en>Architecture</en><gr>Αρχιτεκτονική</gr></title>
-<os>
+<s n="title"><en>Architecture</en><gr>Αρχιτεκτονική</gr></s>
+<s n="os">
 <en>
 Architecture may not be the best term since there is no
 experience with large systems.
@@ -48,8 +49,8 @@ Generally, flatter hierarchies proved to be the most effective approach.
 που ξεκινούσαν από εξωτερικούς φακέλους και κατέληγαν σε εσωτερικούς.
 Τελικά αποδείχτηκε ότι οι πιο επίπεδες ιεραρχίες είναι οι καλύτερες.
 </gr>
-</os>
-<values>
+</s>
+<s n="values">
 <en>
 These relatively simple experiences proved prototyping to be valuable,
 and they highlighted some positive and negative sides of
@@ -72,12 +73,12 @@ over time they revealed the messages behind the
 Επειδή αυτά τα προγράμματα χρησιμοποιούνταν,
 γίνονταν όλο και πιο φανερά τα μηνύματα του
 </gr>
-</values>
-<manifesto><en>Manifesto</en><gr>Manifesto</gr></manifesto>
-<for_agile>
+</s>
+<s n="manifesto"><en>Manifesto</en><gr>Manifesto</gr></s>
+<s n="for-agile">
 <en>for Agile Software Development.</en>
 <gr>for Agile Software Development.</gr>
-</for_agile>
+</s>
 </all>
 <!--
     Copyright (c) 2023 Dimakopoulos Theodoros <dimakopt732@gmail.com>

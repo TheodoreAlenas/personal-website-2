@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <all>
-<title><en>This website</en><gr>Αυτός ο ιστοχώρος</gr></title>
-<body>
+<s n="title"><en>This website</en><gr>Αυτός ο ιστοχώρος</gr></s>
+<s n="body">
 <en>
 A pre-rendered site.
 The first major version abstracted while the second abbreviated.
@@ -10,8 +11,8 @@ Pre-rendered ιστοχώρος.
 Η πρώτη κύρια έκδοση είχε αφαιρετικό κώδικα,
 ενώ η δεύτερη συντόμευε μεγάλα κομμάτια κώδικα σαν συντομογραφίες.
 </gr>
-</body>
-<had_menus>
+</s>
+<s n="had-menus">
 <en>
 Old versions of this site had typical menus at the top,
 which would turn into drop down menus on mobile view,
@@ -24,32 +25,32 @@ A questionable
 και σε μικρές οθόνες. Για μια μικρή επίδειξη,
 σερβίρεται ακόμα μια
 </gr>
-</had_menus>
-<older_version>
+</s>
+<s n="older-version">
 <en>older version</en>
 <gr>πεπαλαιωμένη έκδοση</gr>
-</older_version>
-<is_still_served>
+</s>
+<s n="is-still-served">
 <en>of the biography page is still served for demonstration.</en>
 <gr>του βιογραφικού. Το κείμενο ήταν σημαντικά χειρότερο τότε.</gr>
-</is_still_served>
-<find>
+</s>
+<s n="find">
 <en>You may find the</en>
 <gr>Μπορείτε να βρείτε και την</gr>
-</find>
-<v1><en>first</en><gr>πρώτη</gr></v1>
-<and><en>and</en><gr>και τη</gr></and>
-<v2><en>second</en><gr>δεύτερη</gr></v2>
-<on_gh><en>version on GitHub</en><gr>έκδοση στο GitHub</gr></on_gh>
-<with>
+</s>
+<s n="v1"><en>first</en><gr>πρώτη</gr></s>
+<s n="and"><en>and</en><gr>και τη</gr></s>
+<s n="v2"><en>second</en><gr>δεύτερη</gr></s>
+<s n="on-gh"><en>version on GitHub</en><gr>έκδοση στο GitHub</gr></s>
+<s n="with">
 <en>as well as it's</en>
 <gr>καθώς και την</gr>
-</with>
-<v1>
+</s>
+<s n="v1">
 <en>first version</en>
 <gr>πρώτη του έκδοση</gr>
-</v1>
-<many_phases>
+</s>
+<s n="many-phases">
 <en>
 At first, the site was based on abstraction layers
 and components that choose their identity from a buffee,
@@ -89,7 +90,7 @@ and it won't cause the user trouble.
 αλλά δίνει την αίσθηση ότι είναι προβλέψιμη
 και δε θα δημιουργήσει προβλήματα.
 </gr>
-</many_phases>
+</s>
 </all>
 <!--
     Copyright (c) 2023 Dimakopoulos Theodoros <dimakopt732@gmail.com>
