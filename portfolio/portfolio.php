@@ -1,95 +1,92 @@
 <?php
-    function portfolio_array_to_en_gr($array) {
-        global $EN, $GR; $EN($array->en); $GR($array->gr);
-    }
-    $a = "portfolio_array_to_en_gr";
-
+    $l = "echo_localized";
+    $a = "echo_localized_from_xml";
     include_once("por-code.php");
     $c = "encode_and_surround_with_b_tag_code";
 ?>
 
 
-<?php $s = simplexml_load_file("portfolio/por-this.xml") ?>
-<h2><?php $a($s->title) ?></h2>
-<p><?php $a($s->body) ?></p>
+<?php $STR_XML = simplexml_load_file("portfolio/por-this.xml") ?>
+<h2><?php $a("title") ?></h2>
+<p><?php $a("body") ?></p>
 <p>
-    <?php $a($s->had_menus) ?>
+    <?php $a("had-menus") ?>
     <a href="biography-typical-menu.html"
-    ><?php $a($s->older_version) ?></a>
-    <?php $a($s->is_still_served) ?>
+    ><?php $a("older-version") ?></a>
+    <?php $a("is-still-served") ?>
 </p>
 <p>
-    <?php $a($s->find) ?>
+    <?php $a("find") ?>
     <a href="https://github.com/TheodoreAlenas/personal-home-page/"
-    ><?php $a($s->v1) ?></a>
-    <?php $a($s->and) ?>
+    ><?php $a("v1") ?></a>
+    <?php $a("and") ?>
     <a href="https://github.com/TheodoreAlenas/personal-website-2/"
-    ><?php $a($s->v2) ?></a>
-    <?php $a($s->on_gh) ?>.
+    ><?php $a("v2") ?></a>
+    <?php $a("on-gh") ?>.
 </p>
 <pre><?php $c("php 1") ?></pre>
 <i>V1</i>
 <pre><?php $c("php 2") ?></pre>
 <i>V2</i>
-<p><?php $a($s->many_phases) ?></p>
+<p><?php $a("many-phases") ?></p>
 
-<?php $s = simplexml_load_file("portfolio/por-hotkeys.xml") ?>
-<h2><?php $a($s->title) ?></h2>
+<?php $STR_XML = simplexml_load_file("portfolio/por-hotkeys.xml") ?>
+<h2><?php $a("title") ?></h2>
 <p>
-    <?php $a($s->hk_sys_around) ?><code>sxhkd</code>,
-    <?php $a($s->w_4_vers) ?>:
+    <?php $a("hk-sys-around") ?><code>sxhkd</code>,
+    <?php $a("w-4-vers") ?>:
 </p>
-<h3><?php $EN("Version"); $GR("Έκδοση"); ?> 1: alchain</h3>
+<h3><?php $l("Version", "Έκδοση"); ?> 1: alchain</h3>
 <p>
-    <?php $a($s->alchain_3_prog) ?>,
+    <?php $a("alchain-3-prog") ?>,
     <code>alchain</code>,
-    <code>alpopup</code> <?php $EN("and"); $GR("και"); ?>
+    <code>alpopup</code> <?php $l("and", "και"); ?>
     <code>hk-tui.bash</code>,
-    <?php $a($s->working_together_and_key) ?><code>W</code>,
-    <?php $a($s->often_does_nothing) ?>
+    <?php $a("working-together-and-key") ?><code>W</code>,
+    <?php $a("often-does-nothing") ?>
 </p>
 <pre><?php $c("hk-tui.bash") ?></pre>
 <i>
-    <?php $a($s->part_of_file) ?>
+    <?php $a("part-of-file") ?>
     <code><a href="../hk-tui.bash">hk-tui.bash</a></code>
-    <?php $EN("(plain file)"); $GR("(Πηγαίος κώδηκας)"); ?>
+    <?php $l("(plain file)", "(Πηγαίος κώδηκας)"); ?>
 </i>
-<p><?php $a($s->but_windows_break_like_this) ?></p>
-<h3><?php $EN("Version"); $GR("Έκδοση"); ?> 2: alk</h3>
+<p><?php $a("but-windows-break-like-this") ?></p>
+<h3><?php $l("Version", "Έκδοση"); ?> 2: alk</h3>
 <p>
-    <?php $a($s->alk_is_scripts) ?>
-    <?php $a($s->the) ?> <code>al</code> <?php $a($s->shows) ?>
-    <code>stdout</code> <?php $EN("and"); $GR("και"); ?>
-    <code>stderr</code> <?php $a($s->in_term_if_env_wo) ?>
-    <code>INTERACTIVE</code> <?php $a($s->var_set_the_defs_of) ?>
-    <code>alk-*</code> <?php $a($s->compile_to_help_note_posix) ?>
+    <?php $a("alk-is-scripts") ?>
+    <?php $a("the") ?> <code>al</code> <?php $a("shows") ?>
+    <code>stdout</code> <?php $l("and", "και"); ?>
+    <code>stderr</code> <?php $a("in-term-if-env-wo") ?>
+    <code>INTERACTIVE</code> <?php $a("var-set-the-defs-of") ?>
+    <code>alk-*</code> <?php $a("compile-to-help-note-posix") ?>
 </p>
 <pre><?php $c("al") ?></pre>
 <i>
-    <?php $a($s->part_of_file) ?>
+    <?php $a("part-of-file") ?>
     <code><a href="https://github.com/TheodoreAlenas/alk/blob/main/al"
     >al</a></code>
 </i>
-<p><?php $a($s->but_verbose_and_never_term) ?></p>
-<h3><?php $EN("Version"); $GR("Έκδοση"); ?> 3: alsnip</h3>
-<p><?php $a($s->snip_gen_w_compl_unpublished) ?></p>
+<p><?php $a("but-verbose-and-never-term") ?></p>
+<h3><?php $l("Version", "Έκδοση"); ?> 3: alsnip</h3>
+<p><?php $a("snip-gen-w-compl-unpublished") ?></p>
 <pre><?php $c("example-config/reset.sh") ?></pre>
 <i>
-    <?php $a($s->part_of_file) ?>
+    <?php $a("part-of-file") ?>
     <code><a href="https://github.com/TheodoreAlenas/alsnip/blob/main/example-config/reset.sh"
     >example-config/reset.sh</a></code>
 </i>
 <p>
-    <?php $a($s->but_never_used_snips_and_martin_bloat_find_on) ?>
+    <?php $a("but-never-used-snips-and-martin-bloat-find-on") ?>
     <a href="https://github.com/TheodoreAlenas/alsnip">GitHub</a>.
 </p>
 
-<h3><?php $EN("Version"); $GR("Έκδοση"); ?> 4: scmd</h3>
-<p><?php $a($s->a_single_file) ?></p>
+<h3><?php $l("Version", "Έκδοση"); ?> 4: scmd</h3>
+<p><?php $a("a-single-file") ?></p>
 <pre><?php $c("scmd volume") ?></pre>
-<p><?php $a($s->line_types) ?></p>
+<p><?php $a("line-types") ?></p>
 <pre><?php $c("scmd this_file") ?></pre>
-<p><?php $a($s->im_most_proud_and_nobody_understands) ?></p>
+<p><?php $a("im-most-proud-and-nobody-understands") ?></p>
 <pre><?php $c("scmd sxhkd") ?></pre>
 <a href="https://github.com/TheodoreAlenas/dotfiles/blob/main/scmd.sh"
 >scmd.sh</a>.

@@ -1,122 +1,119 @@
 <?php
-    function biography_array_to_en_gr($array) {
-        global $EN, $GR; $EN($array->en); $GR($array->gr);
-    }
-    $b = "biography_array_to_en_gr";
+    $b = "echo_localized_from_xml";
 ?>
 
 
-<?php $m = simplexml_load_file("biography/bio-minimalism.xml") ?>
-<h2><?php $b($m->title) ?></h2>
-<p><?php $b($m->arch) ?></p>
-<p><?php $b($m->now_vi) ?></p>
+<?php $STR_XML = simplexml_load_file("biography/bio-minimalism.xml") ?>
+<h2><?php $b("title") ?></h2>
+<p><?php $b("arch") ?></p>
+<p><?php $b("now-vi") ?></p>
 
 
-<?php $h = simplexml_load_file("biography/bio-high-school.xml") ?>
-<h2><?php $b($h->title) ?></h2>
+<?php $STR_XML = simplexml_load_file("biography/bio-high-school.xml") ?>
+<h2><?php $b("title") ?></h2>
 <p>
-    <?php $b($h->graduated) ?>
+    <?php $b("graduated") ?>
     <a href="http://2lyk-amaliad.ilei.sch.gr/wordpress17/"
-    ><?php $b($h->high_school) ?></a>
-    <?php $b($h->went_to_france_with) ?>
+    ><?php $b("high-school") ?></a>
+    <?php $b("went-to-france-with") ?>
     <a href="https://school-education.ec.europa.eu/en/etwinning"
     >E-Twinning</a>.
 </p>
 <p>
-    <?php $b($h->crafted_and_watched) ?>
+    <?php $b("crafted-and-watched") ?>
     <a href="https://www.youtube.com/@3blue1brown">3blue1brown</a>,
     <a href="https://www.youtube.com/@Mathologer">Mathologer</a>,
     <a href="https://www.youtube.com/@numberphile">Numberphile</a>,
     <a href="https://www.youtube.com/@Computerphile">Computerphile</a>
-    <?php $EN("and"); $GR("και"); ?>
+    <?php echo_localized("and", "και"); ?>
     <a href="https://www.youtube.com/@standupmaths">Matt Parker</a>.
 </p>
 <p>
-    <?php $b($h->in_uni_also) ?>
+    <?php $b("in-uni-also") ?>
     <a href="https://www.youtube.com/@ThePrimeagen">ThePrimeagen</a>,
     <a href="https://www.youtube.com/@HealthyGamerGG">Healthy Gamer GG</a>
-    <?php $EN("and"); $GR("και"); ?>
+    <?php echo_localized("and", "και"); ?>
     <a href="https://www.youtube.com/@RamseyDewey">Ramsey Dewey</a>.
 </p>
 <p>
-    <?php $b($h->went_to_uoa_to) ?>
+    <?php $b("went-to-uoa-to") ?>
     <a href="https://www.di.uoa.gr"
-    ><?php $b($h->di) ?></a>.
-    <?php $b($h->participated_in) ?>
+    ><?php $b("di") ?></a>.
+    <?php $b("participated-in") ?>
     <a href="https://github.com/ACM-UoA-Student-Chapter/dil"
-    ><?php $b($h->acm) ?></a>
-    <?php $b($h->but_noob_then_helvia) ?>
+    ><?php $b("acm") ?></a>
+    <?php $b("but-noob-then-helvia") ?>
     <a href="https://helvia.io">Helvia</a>
-    <?php $b($h->saw_web_dev) ?>
+    <?php $b("saw-web-dev") ?>
 </p>
 
 
-<?php $l = simplexml_load_file("biography/bio-languages.xml") ?>
-<h2><?php $b($l->title) ?></h2>
+<?php $STR_XML = simplexml_load_file("biography/bio-languages.xml") ?>
+<h2><?php $b("title") ?></h2>
 
 <p>
-    <?php $b($l->warm_ups) ?>
+    <?php $b("warm-ups") ?>
     <a href="https://www.youtube.com/watch?v=kScFczWbwRM">TDD</a>,
     <a href="https://youtu.be/tnO2Mos0RjU?si=OhTk8fUdI0FPTWT6">TCR</a>
-    <?php $b($l->often_in_vi) ?>
+    <?php $b("often-in-vi") ?>
 </p>
 <p>
-    <?php $b($l->touched); $b($l->rust_awk); ?>
+    <?php $b("touched"); $b("rust-awk"); ?>
     <a href="https://code.jsoftware.com/wiki/Studio/TasteofJPart1">J</a>
-    <?php $b($l->slightly_and_ts) ?>
+    <?php $b("slightly-and-ts") ?>
 </p>
 <p>
-    <?php $b($l->for_uni) ?>
+    <?php $b("for-uni") ?>
 </p>
 
 
-<?php $ac = simplexml_load_file("biography/bio-architecture.xml") ?>
-<h2><?php $b($ac->title) ?></h2>
+<?php $STR_XML = simplexml_load_file("biography/bio-architecture.xml") ?>
+<h2><?php $b("title") ?></h2>
 
-<p><?php $b($ac->os) ?></p>
+<p><?php $b("os") ?></p>
 <p>
-    <?php $b($ac->values) ?>
+    <?php $b("values") ?>
     <a href="http://agilemanifesto.org/"
-    ><?php $b($ac->manifesto) ?></a>
-    <?php $b($ac->for_agile) ?>
+    ><?php $b("manifesto") ?></a>
+    <?php $b("for-agile") ?>
 </p>
 
 
-<?php $f = simplexml_load_file("biography/bio-friends.xml") ?>
-<h2><?php $b($f->title); ?></h2>
+<?php $STR_XML = simplexml_load_file("biography/bio-friends.xml") ?>
+<h2><?php $b("title"); ?></h2>
 
-<p><?php $b($f->psychotherapy)     ?></p>
-<p><?php $b($f->collabs)           ?></p>
-<p><?php $b($f->everyone_hates_me) ?></p>
+<p><?php $b("psychotherapy")     ?></p>
+<p><?php $b("collabs")           ?></p>
+<p><?php $b("everyone-hates-me") ?></p>
 
 
-<?php $ar = simplexml_load_file("biography/bio-arts.xml") ?>
-<h2><?php $b($ar->title); ?></h2>
+<?php $STR_XML = simplexml_load_file("biography/bio-arts.xml") ?>
+<h2><?php $b("title"); ?></h2>
 
-<p><?php $b($ar->quit_piano); ?></p>
+<p><?php $b("quit-piano"); ?></p>
 <p>
-    <?php $b($ar->drew_by); ?>
+    <?php $b("drew-by"); ?>
     <a href="https://drawabox.com"
-    ><?php $b($ar->drawabox) ?></a>
-    <?php $b($ar->and_with); ?>
+    ><?php $b("drawabox") ?></a>
+    <?php $b("and-with"); ?>
     <a href="https://www.proko.com"
-    ><?php $b($ar->proko) ?></a>.
-    <?php $b($ar->quit_drawing); ?>
+    ><?php $b("proko") ?></a>.
+    <?php $b("quit-drawing"); ?>
 </p>
-<p><?php $b($ar->cultivated); ?></p>
+<p><?php $b("cultivated"); ?></p>
 
 
-<?php $yt = simplexml_load_file("biography/bio-youtube.xml") ?>
-<h2><?php $b($yt->title) ?></h2>
+<?php $STR_XML = simplexml_load_file("biography/bio-youtube.xml") ?>
+<h2><?php $b("title") ?></h2>
 
 <p>
-    <?php $b($yt->recorded) ?>
+    <?php $b("recorded") ?>
     <a href="https://www.youtube.com/@theodorealenas3171"
-    ><?php $b($yt->videos) ?></a>
-    <?php $b($yt->using) ?> <code>ffmpeg</code>
-    <?php $b($yt->piping) ?> <code>/dev/video0</code>
-    <?php $b($yt->to) ?> <code>mpv</code>
-    <?php $b($yt->to_share) ?>
+    ><?php $b("videos") ?></a>
+    <?php $b("using") ?> <code>ffmpeg</code>
+    <?php $b("piping") ?> <code>/dev/video0</code>
+    <?php $b("to") ?> <code>mpv</code>
+    <?php $b("to-share") ?>
 </p>
 
 <?php

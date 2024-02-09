@@ -1,5 +1,5 @@
 <?php
-    $XML_WITH_STRINGS = simplexml_load_file("home/home.xml");
+    $STR_XML = simplexml_load_file("home/home.xml");
     $a = "echo_localized_from_xml";
 ?>
 

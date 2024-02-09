@@ -15,14 +15,14 @@
     function echo_localized($en, $gr) {
         global $LANG;
         if ($LANG === "gr")
-            echo $en;
-        else
             echo $gr;
+        else
+            echo $en;
     }
     function echo_localized_from_xml($match) {
         global $LANG;
-        global $XML_WITH_STRINGS;
-        foreach ($XML_WITH_STRINGS->s as $s) {
+        global $STR_XML;
+        foreach ($STR_XML->s as $s) {
             if ($s->attributes()["n"] == $match) {
                 if ($LANG === "gr")
                     echo $s->gr;

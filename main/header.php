@@ -9,7 +9,7 @@
     $l = "echo_localized";
 ?>
 <a href="#main-content" class="skip-link">
-    <?php $l("Μετάβαση στο περιεχόμενο", "Skip to content") ?>
+    <?php $l("Skip to content", "Μετάβαση στο περιεχόμενο") ?>
 </a>
 <h1><?php echo $TITLE ?></h1>
 <p>
