@@ -18,20 +18,19 @@
 ?>
 
 <a href="index.html"
-><?php $EN("the home page"); $GR("η αρχική σελίδα"); ?></a>,
+><?php $EN("the home page"); $GR("η αρχική σελίδα"); ?>,</a>
 <a href="portfolio.html"
-><?php $EN("portfolio"); $GR("χαρτοφυλάκιο"); ?></a>,
+><?php $EN("portfolio"); $GR("χαρτοφυλάκιο"); ?>,</a>
 <a href="biography.html"
-><?php $EN("biography"); $GR("βιογραφικό"); ?></a>,
+><?php $EN("biography"); $GR("βιογραφικό"); ?>,</a>
 <a href="../cv.pdf"
->cv.pdf</a>
-<?php $EN("and dark/light"); $GR("και ανοιχτό/σκούρο"); ?>
+>cv.pdf <?php $EN("and"); $GR("και"); ?></a>
 
 <button
     onclick="switchColorScheme()"
     class="bg1 fg1"
-><?php $EN("theme"); $GR("θέμα"); ?>
-</button>.
+><?php $EN("dark/light theme."); $GR("ανοιχτό/σκούρο θέμα."); ?>
+</button>
 </p>
 <script> setUpColorScheme() </script>
 

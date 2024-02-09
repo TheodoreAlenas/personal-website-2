@@ -1,37 +1,83 @@
 <all>
 
-<and_my_youtube>
-<en>and I also have a YouTube channel as</en>
-<gr>και έχω επίσης κανάλι στο YouTube, με ψευδώνυμο</gr>
-</and_my_youtube>
+<find_me_on>
+<en>You may find me on</en>
+<gr>Για περισσότερα,</gr>
+</find_me_on>
+<youtube>
+<en>YouTube as Theodore Alenas or</en>
+<gr>στο YouTube ονομάζομαι Theodore Alenas και</gr>
+</youtube>
+<github>
+<en>GitHub also as TheodoreAlenas,</en>
+<gr>στο GitHub TheodoreAlenas.</gr>
+</github>
+<email>
+<en>or email me at dimakopt732@gmail.com.</en>
+<gr>Το e-mail μου είναι dimakopt732@gmail.com.</gr>
+</email>
+<active_on_youtube>
+<en>
+I produce about weekly content on YouTube
+but I'm inactive on social media otherwise.
+</en>
+<gr>
+Ανεβάζω βίντεο στο YouTube περίπου κάθε εβδομάδα,
+αλλά κρατάω μια απόσταση από άλλα μέσα δικτύωσης.
+</gr>
+</active_on_youtube>
 <alenas_is_greek>
 <en>Alenas is what the word Greek sounds like in Greek.</en>
-<gr>Alenas σημαίνει Έλληνας.</gr>
+<gr>Alenas σημαίνει Έλληνας, όπως alien, ale.</gr>
 </alenas_is_greek>
 <hello>
 <en>
-Welcome, I'm a fan of iterative creative processes and minimalism.
-I've been through many phases, where I became obsessed with
-the agile manifesto and then got punished for trying to inspire
-teammates, or before that where I thought it's not necessary to
-communicate with people and then I became obsessed with
-face to face collaboration until people didn't want to follow,
-and there have been many smaller opinion changes too.
-I'm not fully shaped but I have started taking shape.
+So, welcome! I'm a University student,
+started in 2019, and I love programming.
+I mostly tinker the operating system
+on the lowest possible level every time
+and I've been through the journey to Linux, NeoVim and Emacs.
+Today I consider it to be a journey
+to the different cultures of programmers,
+because these tools have a history that belongs to
+mathematicians, system administrators, low level programmers and so on.
 </en>
 <gr>
-Γενικά συμπαθώ την σταδιακή πρόοδο, δηλαδή να φτιάχνω πράγματα
-στάδιο στάδιο αντί για κομμάτι κομμάτι, και είμαι μινιμαλιστής.
-Ελπίζω να φαίνεται ότι έχω περάσει από πολλά στάδια και σαν
-προσωπικότητα. Είχα πάθος με το agile manifesto για ένα διάστημα,
-επίσης από εσωστρεφής γύρισα στο άλλο άκρο να προσπαθώ απεγνωσμένα
-να συνεργαστώ πρόσωπο με πρόσωπο σε ενοχλητικό σημείο,
-έχω αλλάξει και μερικές απόψεις όσο αφορά λογισμικό,
-και κάθε φορά υπάρχει αυτή η έντονη αλλαγή από τη μία άποψη στην άλλη
-μέχρι που το περιβάλλον με βάζει σε μία σειρά.
-Έχω αρχίσει να σχηματίζομαι, αλλά έχω πολύ δρόμο ακόμα.
+Οπότε, χαίρετε! Είμαι φοιτητής του 2019 και λατρεύω την πληροφορική.
+Κυρίως ασχολούμαι με μικρά πράγματα του λειτουργικού συστήματος
+στο χαμηλότερο δυνατό επίπεδο κάθε φορά
+και έχω περάσει από το ταξίδι σε Linux, NeoVim και Emacs.
+Το εκλαμβάνω σαν ταξίδι πλέον, γιατί αυτά τα εργαλεία έχουν
+μια ιστορία που αφορά προγραμματιστές συγκεκριμένης κουλτούρας
+όπως μαθηματικοί, system administrators, χαμηλού επιπέδου και λοιπά.
 </gr>
 </hello>
+<im_minimalist>
+<en>
+I love minimalism and I move iteratively,
+so that there is always something to demonstrate.
+I've been through multiple iterations myself too.
+I used to be obsessed with the agile manifesto,
+also I switched from being closed
+to obsessing over face to face collaboration to an annoying extent,
+I've changed opinions regarding software too
+and generally I'd rather be hurt now than get hurt making realizations.
+I do find that all of this is nice but you may want
+to keep in mind that I perform well among like minded people.
+</en>
+<gr>
+Μου αρέσει ο μινιμαλισμός και εργάζομαι σε στάδια,
+όπου σε κάθε στάδιο υπάρχει κάτι που θα μπορούσε να επιδείξει κανείς.
+Έχω περάσει από πολλά στάδια και σαν προσωπικότητα.
+Είχα πάθος με το agile manifesto για ένα διάστημα,
+επίσης από κλειστός χαρακτήρας άρχισα να επιμένω
+στη συνεργασία πρόσωπο με πρόσωπο σε ενοχλητικό σημείο,
+έχω αλλάξει απόψεις όσο αφορά λογισμικό
+και γενικά προτιμώ να πονέσω τώρα παρά να πονάω ανακαλύπτοντας.
+Φυσικά έχει διπλή όψη αυτό το νόμισμα και προτιμώ να συνεργάζομαι
+με άτομα που έχουμε κοινό τρόπο σκέψης.
+</gr>
+</im_minimalist>
 <for_hr>
 <en>
 I keep this website mainly for people who think of hiring me.
@@ -61,22 +107,16 @@ for an undergraduate.
 </what_ive_done>
 <lets_go_out>
 <en>
-If you're okay with it
+If you don't mind,
 I'd like to go outside with the developers
-and have some fun talking and coding,
-perhaps doing our warm ups or exercises.
-Then we can all judge together if I fit and where I'd fit.
-Of course I'll cover up for backlash from higher ups wherever I can
-and if you're not willing anyway, I understand that.
+and have some fun together and see it from there,
+we can all judge together if I fit and where I'd fit.
+I'll cover for backlash from higher ups.
 </en>
 <gr>
 Αν συμφωνείτε θα χαιρόμουν να βγω με τους προγραμματιστές
-και να συζητήσουμε ή να κάνουμε μαζί ασκήσεις ή προθέρμανση
-αν τους ενδιαφέρουν αυτά.
-Μετά μπορούμε να συμφωνήσουμε όλοι μαζί
-αν ταιριάζω στην εταιρία και πού.
-Εννοείται πως αν προκύψουν προβλήματα με ανώτερα στελέχη
-θα συμπαρασταθώ όπου μπορώ, και αν δε θέλετε το καταλαβαίνω.
+και να το πάμε βλέποντας, να δούμε αν ταιριάζω και πού.
+Αν προκύψουν προβλήματα με ανώτερα στελέχη σας καλύπτω.
 </gr>
 </lets_go_out>
 </all>

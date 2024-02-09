@@ -19,28 +19,18 @@
         />
     </div>
     <p>
-        <span style="display: inline-block">
-            E-mail:
-            <a href="mailto:dimakopt732@gmail.com"
-            >dimakopt732@gmail.com</a>,
-        </span>
-        <span style="display: inline-block">
-            Instagram:
-            <a href="https://www.instagram.com/theodore_alenas/"
-            >theodore_alenas</a>,
-        </span>
-        <span style="display: inline-block">
-            GitHub:
-            <a href="https://https://github.com/TheodoreAlenas/"
-            >TheodoreAlenas</a>
-        </span>
-        <?php $a($h->and_my_youtube) ?>
+        <?php $a($h->find_me_on) ?>
         <a href="https://www.youtube.com/@theodorealenas3171"
-        >Theodore Alenas</a>.
-        <?php $a($h->alenas_is_greek) ?>
+        ><?php $a($h->youtube) ?></a>
+        <a href="https://https://github.com/TheodoreAlenas/"
+        ><?php $a($h->github) ?></a>
+        <a href="mailto:dimakopt732@gmail.com"
+        ><?php $a($h->email) ?></a>
+        <?php $a($h->active_on_youtube); $a($h->alenas_is_greek) ?>
     </p>
 </div>
 <p><?php $a($h->hello) ?></p>
+<p><?php $a($h->im_minimalist) ?></p>
 <p><?php $a($h->for_hr) ?></p>
 <p><?php $a($h->what_ive_done) ?></p>
 <p><?php $a($h->lets_go_out) ?></p>
