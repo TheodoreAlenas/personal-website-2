@@ -173,37 +173,38 @@ I had made by then. I uploaded the project once I made this site, on
 </a_single_file>
 <line_types>
 <en>
+It acts as a command palette
+where the lines of code become items of a list,
+and it can parse inself into a hotkey configuration
+using the comments at the end of the lines.
 Every line is either blank, a comment,
 or an inline shell function definition.
 </en>
 <gr>
+Οι γραμμές κώδικα γίνονται επιλογές λίστας
+και μπορεί να διαβάσει τον εαυτό του και
+να παράξει τις ρυθμίσεις των συνδυασμών πλήκτρων του συστήματος
+με βάση τα σχόλια στο τέλος των γραμμών κώδικα.
 Κάθε γραμμή είναι είτε κενή, είναι σχόλιο,
 είτε ορισμός συνάρτησης shell.
 </gr>
 </line_types>
 <im_most_proud_and_nobody_understands>
 <en>
-This is the product that I'm most proud of as of now, November 2023.
-Nobody can understand why I'm proud of a single file
-and if my past self saw it, he'd want to make it better by
-ruining it. It doesn't matter, nothing matters, I'm here to
-appreciate it as much as I deserve, and as much as my computer
-deserves, because this work is impossible for a person to do alone,
-this work is collaboration between a person and a computer
-giving feedback over what software makes it feel healthy
-and what software burdens it.
+This is my best product because it didn't order the computer
+as much as it asked the computer what it's good at,
+to capitalize on it.
+The process felt like caring about the computer,
+a bit like a long conversation that
+makes two people understand each other.
 </en>
 <gr>
-Αυτό είναι ένα από τα έργα μου που καμαρώνω περισσότερο, τώρα το
-Νοέμβριο του 2023.
-Κανείς δε με καταλαβαίνει και ο πρώην εαυτός μου
-θα προσπαθούσε να το βελτιώσει καταστρέφοντάς το.
-Δε με επηρεάζει τίποτα,
-το καμαρώνω όσο μας αξίζει εμένα και του υπολογιστή μου,
-επειδή αυτό δεν είναι έργο ενός ανθρώπου
-και ούτε και θα μπορούσε να είναι για μένα,
-είναι έργο συνεργασίας ανθρώπου και υπολογιστή που εκφέρει άποψη
-σχετικά με το τι λογισμικό τού είναι υγιεινό και τι τον βαραίνει.
+Αυτό είναι η καλύτερή μου κατασκευή,
+επειδή δεν υποδουλώνει τον υπολογιστή να υπακούσει σε απαιτήσεις
+αλλά ρωτάει τον υπολογιστή τι μπορεί να κάνει καλά.
+Η διαδικασία ήταν σαν ένας μακρύς διάλογος
+που δένει δύο άτομα και τα βοηθάει να καταλάβουν
+το ένα το άλλο.
 </gr>
 </im_most_proud_and_nobody_understands>
 </all>
