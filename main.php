@@ -45,10 +45,16 @@
         <div>
             <header>
                 <nav>
+                    <a href="#main-content" class="skip-link">
+                        <?php
+                            $EN("Skip to content");
+                            $GR("Μετάβαση στο περιεχόμενο");
+                        ?>
+                    </a>
                     <?php include("main/header.php") ?>
                 </nav>
             </header>
-            <main>
+            <main id="main-content">
                 <?php
                     $b = "biography";
                     $p = "portfolio";
