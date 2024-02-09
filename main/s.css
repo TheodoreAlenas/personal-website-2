@@ -29,6 +29,7 @@ h2 { margin-top: 3rem; margin-left: 2rem; }
 pre {
     border-radius: 5px; padding-left: 1em; overflow: scroll;
     font-family: 'Source Code Pro Light', monospace;
+    font-size: 0.4cm; line-height: 1.2em;
 }
 a {
     text-underline-offset: 0.2em;
