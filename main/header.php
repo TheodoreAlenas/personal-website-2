@@ -9,12 +9,11 @@
 ?>
 <h1><?php echo $TITLE ?></h1>
 <p>
-<?php $EN("Στηρίζεται και η"); ?>
 
 <a href="<?php echo($menu_opposite_language); ?>"
-><?php $EN("Ελληνική"); $GR("English"); ?></a>
+><?php $EN("Greek"); $GR("English"); ?></a>
 <?php
-    $EN("γλώσσα. Available are");
+    $EN("is also supported. Available are");
     $GR("is also supported. Διατίθενται");
 ?>
 

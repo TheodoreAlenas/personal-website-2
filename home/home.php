@@ -11,7 +11,7 @@
 <div class="img-and-p">
     <img
         src="../face.png"
-        alt="white male face with long hair starring at viewer"
+        alt="white male face with long hair staring at viewer"
         style="width: 204px; height: 188px; background-color: #d3cbca"
     />
     <p>
