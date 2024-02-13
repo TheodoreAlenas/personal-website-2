@@ -24,9 +24,9 @@
     ><?php $a("v2") ?></a>
     <?php $a("on-gh") ?>.
 </p>
-<pre><?php $c("php 1") ?></pre>
+<pre aria-label="PHP function snippet"><?php $c("php 1") ?></pre>
 <i>V1</i>
-<pre><?php $c("php 2") ?></pre>
+<pre aria-label="PHP with HTML tags"><?php $c("php 2") ?></pre>
 <i>V2</i>
 <p><?php $a("many-phases") ?></p>
 
@@ -45,7 +45,7 @@
     <?php $a("working-together-and-key") ?><code>W</code>,
     <?php $a("often-does-nothing") ?>
 </p>
-<pre><?php $c("hk-tui.bash") ?></pre>
+<pre aria-label="BASH if statement"><?php $c("hk-tui.bash") ?></pre>
 <i>
     <?php $a("part-of-file") ?>
     <code><a href="../hk-tui.bash">hk-tui.bash</a></code>
@@ -61,7 +61,7 @@
     <code>INTERACTIVE</code> <?php $a("var-set-the-defs-of") ?>
     <code>alk-*</code> <?php $a("compile-to-help-note-posix") ?>
 </p>
-<pre><?php $c("al") ?></pre>
+<pre aria-label="short shell functions"><?php $c("al") ?></pre>
 <i>
     <?php $a("part-of-file") ?>
     <code><a href="https://github.com/TheodoreAlenas/alk/blob/main/al"
@@ -70,7 +70,8 @@
 <p><?php $a("but-verbose-and-never-term") ?></p>
 <h3><?php $l("Version", "Έκδοση"); ?> 3: alsnip</h3>
 <p><?php $a("snip-gen-w-compl-unpublished") ?></p>
-<pre><?php $c("example-config/reset.sh") ?></pre>
+<pre aria-label="weird shell case statement"
+ ><?php $c("example-config/reset.sh") ?></pre>
 <i>
     <?php $a("part-of-file") ?>
     <code><a href="https://github.com/TheodoreAlenas/alsnip/blob/main/example-config/reset.sh"
@@ -83,11 +84,14 @@
 
 <h3><?php $l("Version", "Έκδοση"); ?> 4: scmd</h3>
 <p><?php $a("a-single-file") ?></p>
-<pre><?php $c("scmd volume") ?></pre>
+<pre aria-label="long lines of inline shell functions"
+ ><?php $c("scmd volume") ?></pre>
 <p><?php $a("line-types") ?></p>
-<pre><?php $c("scmd this_file") ?></pre>
+<pre aria-label="2 inline shell functions"
+ ><?php $c("scmd this_file") ?></pre>
 <p><?php $a("im-most-proud-and-nobody-understands") ?></p>
-<pre><?php $c("scmd sxhkd") ?></pre>
+<pre aria-label="functions with regular expressions"
+ ><?php $c("scmd sxhkd") ?></pre>
 <a href="https://github.com/TheodoreAlenas/dotfiles/blob/main/scmd.sh"
 >scmd.sh</a>.
 <?php
