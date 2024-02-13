@@ -176,7 +176,7 @@ I had made by then. I uploaded the project once I made this site, on
 <en>
 It acts as a command palette
 where the lines of code become items of a list,
-and it can parse inself into a hotkey configuration
+and it can parse itself into a hotkey configuration
 using the comments at the end of the lines.
 Every line is either blank, a comment,
 or an inline shell function definition.

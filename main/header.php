@@ -31,7 +31,7 @@
 <button
     onclick="switchColorScheme()"
     class="bg1 fg1"
-><?php $l("dark/light theme.", "ανοιχτό/σκούρο θέμα."); ?>
+><?php $l("dark/light themes.", "ανοιχτά/σκούρα θέματα."); ?>
 </button>
 </p>
 <script> setUpColorScheme() </script>

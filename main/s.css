@@ -6,15 +6,6 @@ body {
     font-family: system-ui, sans-serif;
     font-weight: normal;
     font-size: 0.5cm;
-    background-color: #cde;
-}
-body > div { max-width: 30cm; margin: 0 auto; }
-@media (min-width: 30cm) {
-    body {
-        background-image: url(../blue-mountains.svg);
-        background-attachment: fixed;
-        background-size: cover;
-    }
 }
 body > div > * { padding: 1em 1em; }
 .img-and-p { display: flex; flex-direction: row; align-items: center; }
@@ -50,20 +41,23 @@ button {
     padding: 0.5em 0.5em;
 }
 
+body > div { max-width: 30cm; margin: 0 auto; }
+@media (min-width: 30cm) {
+    [scheme=dark] body,
+    [scheme=light] body {
+        background-color: #cde;
+        background-image: url(../blue-mountains.svg);
+        background-attachment: fixed;
+        background-size: cover;
+    }
+}
+
 [scheme=light] a { color: #036; }
 [scheme=light] a:visited { color: #604; }
-[scheme=light] a.skip-link,
-[scheme=light] a.skip-link::before,
-[scheme=light] button:hover,
-[scheme=light] a:hover,
-[scheme=light] a:hover::before,
-[scheme=light] *::selection { background-color: #112; color: #cdf; }
-[scheme=light] body,
-[scheme=light] button { color: #111; }
-[scheme=light] button { background-color: #fff; }
 [scheme=light] button,
 [scheme=light] pre { box-sizing: border-box; border: #888c 1px solid; }
-[scheme=light] body > div { background-color: #fffd; }
+[scheme=light] body > div,
+[scheme=light] button { background-color: #fffd; color: #111; }
 [scheme=light] pre,
 [scheme=light] body > div > header { background-color: #0088ff0e; }
 [scheme=light] body > div > header::after {
@@ -74,12 +68,6 @@ button {
 
 [scheme=dark] a { color: #7aa2f7; }
 [scheme=dark] a:visited { color: #bb9af7; }
-[scheme=dark] a.skip-link,
-[scheme=dark] a.skip-link::before,
-[scheme=dark] button:hover,
-[scheme=dark] a:hover,
-[scheme=dark] a:hover::before,
-[scheme=dark] *::selection { background-color: #cf6; color: #000; }
 [scheme=dark] body > div > header,
 [scheme=dark] pre {
     background-color: #134; box-shadow: inset 0 3px 5px 0 #0003;
@@ -89,6 +77,26 @@ button {
 [scheme=dark] button {
     color: #bde; border-color: #bde; background-color: #245;
 }
+
+[scheme=accessible-dark] button,
+[scheme=accessible-dark] body { background-color: #000; color: #fff; }
+[scheme=accessible-dark] a { color: #8af; }
+[scheme=accessible-dark] a:visited { color: #fa8; }
+
+[scheme=accessible-light] button,
+[scheme=accessible-light] body { background-color: #fff; color: #000; }
+[scheme=accessible-light] a { color: #043; }
+[scheme=accessible-light] a:visited { color: #804; }
+
+
+[scheme=light] body { --bg-hov: #112; --fg-hov: #cdf; }
+[scheme=dark] body { --bg-hov: #cf6; --fg-hov: #000; }
+[scheme=accessible-light] body { --bg-hov: #000; --fg-hov: #fff; }
+[scheme=accessible-dark] body { --bg-hov: #fff; --fg-hov: #000; }
+
+a.skip-link, a.skip-link::before,
+button:hover, [scheme] a:hover, a:hover::before,
+*::selection { background-color: var(--bg-hov); color: var(--fg-hov); }
 
 /* <?php echo "The original file had the MIT notice here";
 // Copyright (c) 2023 Dimakopoulos Theodoros <dimakopt732@gmail.com>

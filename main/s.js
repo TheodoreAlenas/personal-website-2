@@ -1,34 +1,42 @@
 /* <?php echo basename(__FILE__);  // s.js as of now ?> */
 
 function setUpColorScheme() {
-    const html = document.querySelector("html");
     const stored = localStorage.getItem("lastTheme");
-    setDefinersOfScheme(html, getThisOrPreferedScheme(stored));
+    const html = document.querySelector("html");
+    setSchemeByChangingElement(html, getThisOrPreferedScheme(stored));
 }
 
 function switchColorScheme() {
     const html = document.querySelector("html");
-    const opposite = getOppositeSchemeThanSet(html);
-    setDefinersOfScheme(html, opposite);
-    localStorage.setItem("lastTheme", opposite);
+    const next = getNextSchemeLookingAtElement(html);
+    setSchemeByChangingElement(html, next);
+    localStorage.setItem("lastTheme", next);
 }
 
-function setDefinersOfScheme(html, newScheme) {
+function setSchemeByChangingElement(html, newScheme) {
     html.setAttribute("scheme", newScheme);
-    html.style.colorScheme = newScheme;
+    if (newScheme === "light" || newScheme === "accessible-light")
+        html.style.colorScheme = "light";
+    if (newScheme === "dark" || newScheme === "accessible-dark")
+        html.style.colorScheme = "dark";
 }
 
 function getThisOrPreferedScheme(stored) {
-    if (stored === "dark" || stored === "light")
+    if (stored)
         return stored;
     if (window.matchMedia('(prefers-color-scheme: dark)').matches)
         return "dark";
     return "light";
 }
 
-function getOppositeSchemeThanSet(html) {
-    if (html.getAttribute("scheme") === "light")
+function getNextSchemeLookingAtElement(html) {
+    const now = html.getAttribute("scheme");
+    if (now === "light")
         return "dark";
+    if (now === "dark")
+        return "accessible-light";
+    if (now === "accessible-light")
+        return "accessible-dark";
     return "light";
 }
 
