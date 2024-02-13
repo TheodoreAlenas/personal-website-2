@@ -7,11 +7,11 @@
 <div class="img-and-p">
     <div
         class="img-container"
-        style="height: 188px; background-color: #d3cbca">
+        style="height: 128px; background-color: #d3cbca">
         <img
             src="../face.png"
             alt="white male face with long hair staring at viewer"
-            style="width: 204px; height: 188px"
+            style="width: 128px; height: 128px"
         />
     </div>
     <p>
