@@ -98,7 +98,7 @@
     <?php $b("and-with"); ?>
     <a href="https://www.proko.com"
     ><?php $b("proko") ?></a>.
-    <?php $b("quit-drawing"); ?>
+    <?php $b("quit"); ?>
 </p>
 <p><?php $b("cultivated"); ?></p>
 

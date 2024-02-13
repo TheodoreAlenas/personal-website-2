@@ -94,7 +94,7 @@ body > div { max-width: 30cm; margin: 0 auto; }
 [scheme=accessible-light] body { --bg-hov: #000; --fg-hov: #fff; }
 [scheme=accessible-dark] body { --bg-hov: #fff; --fg-hov: #000; }
 
-a.skip-link, a.skip-link::before,
+[scheme] a.skip-link, a.skip-link::before,
 button:hover, [scheme] a:hover, a:hover::before,
 *::selection { background-color: var(--bg-hov); color: var(--fg-hov); }
 
